@@ -235,11 +235,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             if (window.localStorage.getItem('progress')) {
-                NProgress.configure({"easing": "none"})
-                NProgress.set(Number(localStorage.getItem('progress')));
-                NProgress.configure({"easing": "ease"})
+                NProgress.configure({"easing": "none"}).set(Number(localStorage.getItem('progress')))
             }
-            NProgress.start()
+            NProgress.configure({"easing": "ease"}).start()
         });
         window.addEventListener('load', function () {
             NProgress.done()
