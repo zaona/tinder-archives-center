@@ -175,8 +175,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             if (window.localStorage.getItem('progress')) {
-                console.log('find')
+                NProgress.configure({"easing": "none"})
                 NProgress.set(Number(localStorage.getItem('progress')));
+                NProgress.configure({"easing": "ease"})
             }
             NProgress.start()
         });
