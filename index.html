@@ -185,6 +185,7 @@
         });
         window.addEventListener('beforeunload', function (ev) {
             NProgress.start();
+            window.localStorage.setItem('progress', NProgress.status)
             setInterval(function () {
                 window.localStorage.setItem('progress', NProgress.status)
             }, 400);
