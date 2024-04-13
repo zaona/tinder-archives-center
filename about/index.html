@@ -181,10 +181,21 @@
             showSpinner: false, // 是否显示加载指示器（旋转图标）
         });
         document.addEventListener('DOMContentLoaded', function () {
-            NProgress.start();
+            if (window.localStorage.getItem('progress')) {
+                console.log('find')
+                NProgress.set(Number(localStorage.getItem('progress')));
+            }
+            NProgress.start()
         });
         window.addEventListener('load', function () {
             NProgress.done()
+            window.localStorage.removeItem('progress')
+        });
+        window.addEventListener('beforeunload', function (ev) {
+            NProgress.start();
+            setInterval(function () {
+                window.localStorage.setItem('progress', NProgress.status)
+            }, 400);
         });
     </script>
 
