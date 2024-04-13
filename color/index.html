@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/src/logo/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/tailwind3.4.1.js"></script>
+    <link rel='stylesheet' href='/css/nprogress.css' />
 </head>
 
 <body>
@@ -127,7 +128,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <footer>
         <div class="bg-[#F9FAFB] h-[250px]">
@@ -159,4 +160,23 @@
             </div>
         </div>
     </footer>
+
+    <script src='/js/nprogress.js'></script>
+    <script>
+        NProgress.configure({
+            minimum: 0.1, // 显示进度条所需的最小加载量
+            easing: 'ease', // 动画效果
+            speed: 500, // 动画速度（毫秒）
+            trickleRate: 0.02, // 自动递增进度的速度
+            trickleSpeed: 800, // 自动递增间隔（毫秒）
+            showSpinner: false, // 是否显示加载指示器（旋转图标）
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            NProgress.start();
+        });
+        window.addEventListener('load', function () {
+            NProgress.done()
+        });
+    </script>
+
 </body>
