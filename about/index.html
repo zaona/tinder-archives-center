@@ -182,10 +182,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             if (window.localStorage.getItem('progress')) {
-                console.log('find')
-                NProgress.set(Number(localStorage.getItem('progress')));
+                NProgress.configure({"easing": "none"}).set(Number(localStorage.getItem('progress')))
             }
-            NProgress.start()
+            NProgress.configure({"easing": "ease"}).start()
         });
         window.addEventListener('load', function () {
             NProgress.done()
@@ -193,6 +192,7 @@
         });
         window.addEventListener('beforeunload', function (ev) {
             NProgress.start();
+            window.localStorage.setItem('progress', NProgress.status)
             setInterval(function () {
                 window.localStorage.setItem('progress', NProgress.status)
             }, 400);
