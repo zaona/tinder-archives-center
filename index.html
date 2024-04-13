@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/tailwind3.4.1.js"></script>
     <link rel='stylesheet' href='/css/nprogress.css' />
+    <script>
+        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
+        let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
+        document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
+    </script>
 </head>
 
 <body>

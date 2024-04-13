@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/tailwind3.4.1.js"></script>
     <link rel='stylesheet' href='/css/nprogress.css' />
+    <script>
+        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
+        let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
+        document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
+    </script>
 </head>
 
 <body>
@@ -130,9 +135,9 @@
     </div>
     <div class="mx-auto max-w-[1200px] px-4 mb-12">
         <div class="flex flex-col items-center">
-        <img class="w-[100px] pb-10" src="/src/img/bone.svg">
-        <p class="text-[16px]">这里空空如也</p>
-        <p class="text-[16px]">只有一根断裂后愈合的股骨</p>
+            <img class="w-[100px] pb-10" src="/src/img/bone.svg">
+            <p class="text-[16px]">这里空空如也</p>
+            <p class="text-[16px]">只有一根断裂后愈合的股骨</p>
         </div>
     </div>
 
@@ -179,9 +184,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             if (window.localStorage.getItem('progress')) {
-                NProgress.configure({"easing": "none"}).set(Number(localStorage.getItem('progress')))
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
             }
-            NProgress.configure({"easing": "ease"}).start()
+            NProgress.configure({ "easing": "ease" }).start()
         });
         window.addEventListener('load', function () {
             NProgress.done()

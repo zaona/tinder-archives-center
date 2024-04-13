@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/tailwind3.4.1.js"></script>
     <link rel='stylesheet' href='/css/nprogress.css' />
+    <script>
+        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
+        let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
+        document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
+    </script>
 </head>
 
 <body>
@@ -157,7 +162,7 @@
             </div>
             <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">小鱼yuzifu</p>
-                <p class="text-[16px] px-[16px] py-[16px] w-full">为作者写Mastergo插件时提供了技术支持</p>
+                <p class="text-[16px] px-[16px] py-[16px] w-full">将作者从js的水生火热中解脱出来</p>
             </div>
             <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">fish</p>
