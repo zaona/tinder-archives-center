@@ -144,34 +144,57 @@
         <p class="text-[16px] mb-[12px]">衷心感谢电影流浪地球，衷心感谢为本网站提供部分设计资源与改进建议的小破球爱好者们。</p>
         <p class="text-[16px] mb-[12px]">特别鸣谢：无论我问多智障的问题他都会认真回答的通义灵码</p>
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-[16px] mt-[16px]">
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">海藻酸钠</p>
                 <p class="text-[16px] px-[16px] py-[16px] w-full">本网站的唯一设计+前端开发</p>
             </div>
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
-                <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">Terminator7211</p>
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+                <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">terminator7211</p>
                 <p class="text-[16px] px-[16px] py-[16px] w-full">为本站制作了最初的海报</p>
             </div>
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">吕小技同学</p>
                 <p class="text-[16px] px-[16px] py-[16px] w-full">提供了非常多的高质量流浪地球海报</p>
             </div>
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">梅花糕糕</p>
                 <p class="text-[16px] px-[16px] py-[16px] w-full">为本站的“小苔藓计划”风格海报提供了手写字支持</p>
             </div>
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">小鱼yuzifu</p>
-                <p class="text-[16px] px-[16px] py-[16px] w-full">将作者从js的水生火热中解脱出来</p>
+                <p class="text-[16px] px-[16px] py-[16px] w-full">将作者从js的水深火热中解脱出来</p>
             </div>
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">fish</p>
                 <p class="text-[16px] px-[16px] py-[16px] w-full">帮助作者找到了很多有用的开发资源</p>
             </div>
-            <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+            <div
+                class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
                 <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">叶梦昀</p>
                 <p class="text-[16px] px-[16px] py-[16px] w-full">提了非常多非常多我完不成的建议...</p>
             </div>
+        </div>
+        <p class="text-[36px] mt-[48px] mb-[12px]">想要了解有关流浪地球的更多内容？</p>
+        <div class="flex items-center text-[14px] mt-[16px]">
+            <img class="mr-2 mb-0.5" src="/src/icon/info.svg">以下内容来源于网络，仅收录
+        </div>
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-[16px] mt-[16px]">
+            <a target="_blank" class="" href="https://unitedearth.wiki/">
+                <div
+                    class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">
+                    <div class="flex items-center justify-between px-[16px] py-[16px] w-full">
+                    <p class="text-[16px] font-bold">地球联合百科</p>
+                    <img class="h-[16px]" src="/src/img/share/uewiki.svg">
+                    </div>
+                    <p class="text-[16px] px-[16px] py-[16px] w-full">一个收录《流浪地球》的相关内容的百科</p>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -218,9 +241,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             if (window.localStorage.getItem('progress')) {
-                NProgress.configure({"easing": "none"}).set(Number(localStorage.getItem('progress')))
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
             }
-            NProgress.configure({"easing": "ease"}).start()
+            NProgress.configure({ "easing": "ease" }).start()
         });
         window.addEventListener('load', function () {
             NProgress.done()
