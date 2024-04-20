@@ -9,7 +9,6 @@
     <script src="/js/tailwind3.4.1.js"></script>
     <link rel='stylesheet' href='/css/nprogress.css' />
     <script>
-        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
         let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
         document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
     </script>
@@ -136,6 +135,43 @@
             </div>
         </div>
     </div>
+    <div class="max-w-[1200px] mx-auto border-solid border-[1px] my-[80px] px-4 lg:px-10 py-10">
+        <p class="text-2xl font-bold" id="randomSentence"></p>
+        <div class="flex items-center text-[14px] mt-[16px] justify-between">
+            <div class="flex items-center">
+                <img class="mr-2" src="/src/icon/info.svg">
+                <p class="" id="category"></p>
+            </div>
+            <img id="generateButton" class="mr-2 cursor-pointer" src="/src/icon/refresh.svg">
+        </div>
+    </div>
+    <script>
+        const oneSentences = [
+          { sentence: "这小小的白点，是我们的一切。", category: "流浪地球2" },
+          { sentence: "北京第三区交通委提醒您：道路千万条，安全第一条。行车不规范，亲人两行泪。", category: "流浪地球1" },
+          { sentence: "无论结果如何，人类的勇气和坚毅，都被镌刻在星空下。", category: "流浪地球1" },
+          { sentence: "希望是这个时代的黄金和宝石。", category: "流浪地球原著" },
+        ];
+    
+        function getRandomSentence() {
+          const randomIndex = Math.floor(Math.random() * oneSentences.length);
+          return oneSentences[randomIndex];
+        }
+    
+        const displayElement = document.getElementById("randomSentence");
+        const categoryElement = document.getElementById("category");
+        const button = document.getElementById("generateButton");
+    
+        button.addEventListener("click", function () {
+          const randomSentenceObject = getRandomSentence();
+          displayElement.textContent = randomSentenceObject.sentence;
+          categoryElement.textContent = `来自：${randomSentenceObject.category}`;
+        });
+    
+        const initialRandomSentence = getRandomSentence();
+        displayElement.textContent = initialRandomSentence.sentence;
+        categoryElement.textContent = `来自：${initialRandomSentence.category}`;
+      </script>
 
     <footer>
         <div class="bg-[#F9FAFB] h-[250px]">
@@ -180,9 +216,9 @@
         });
         document.addEventListener('DOMContentLoaded', function () {
             if (window.localStorage.getItem('progress')) {
-                NProgress.configure({"easing": "none"}).set(Number(localStorage.getItem('progress')))
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
             }
-            NProgress.configure({"easing": "ease"}).start()
+            NProgress.configure({ "easing": "ease" }).start()
         });
         window.addEventListener('load', function () {
             NProgress.done()
