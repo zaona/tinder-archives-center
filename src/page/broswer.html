@@ -6,26 +6,79 @@
     <title>地球联合资源站</title>
     <link rel="icon" type="image/svg+xml" href="/src/logo/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/tailwind3.4.3.js"></script>
+    <!-- <script src="/js/tailwind3.4.3.js"></script> -->
     <link rel='stylesheet' href='/css/nprogress.css' />
     <script>
         let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
         document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
     </script>
-    <script src="/js/broswer.js"></script>
+    <style>
+        body,
+        html {
+            overflow: hidden;
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100vw;
+        }
+
+        .inner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1200px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .image {
+            width: 100px;
+            margin-bottom: 2.5rem;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .link {
+            margin-top: 40px;
+            cursor: pointer;
+            border-width: 2px;
+            border-color: black;
+            background-color: white;
+            border-style: solid;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 24px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="flex justify-center items-center h-screen mx-auto w-screen">
-        <div class="mx-auto max-w-[1200px] px-4">
-            <div class="flex flex-col items-center">
-                <img class="w-[100px] mb-10" src="/src/img/bone.svg">
-                <p class="text-[16px]">这里空空如也</p>
-                <p class="text-[16px]">只有一根断裂后愈合的股骨</p>
-                <a class="mt-10 cursor-pointer truncate border-2 border-black bg-white px-6 py-2 font-medium text-black"
-            href="/">返回首页</a>
-            </div>
+    <div class="container">
+        <div class="inner-container">
+            <img class="image" src="/src/img/bone.svg">
+            <p class="text">浏览器版本不支持</p>
+            <p class="text">请使用最新版本的Chrome、Firefox、Safari或Edge浏览器</p>
+            <a class="link" target="_blank" href="https://www.google.cn/chrome/index.html">下载Chrome</a>
         </div>
+    </div>
     </div>
 
     <script src='/js/nprogress.js'></script>
