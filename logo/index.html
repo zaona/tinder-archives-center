@@ -182,7 +182,7 @@
                     item.logos.forEach(logo => {
                         html += `      <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">\n`;
                         html += `        <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">${logo.name}</p>\n`;
-                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" class="w-full"><img class="w-full h-[150px] bg-[#FAFAFA]" src="${logo.imgSrc}"></a>\n`;
+                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" data-download-filename="${logo.name}" class="w-full"><img class="w-full h-[150px] bg-[#FAFAFA]" src="${logo.imgSrc}"></a>\n`;
                         html += `      </div>\n`;
                     });
 
@@ -210,14 +210,6 @@
             container.innerHTML = generatedHTML;
         </script>
     </div>
-
-    <div class="mx-auto max-w-[1200px] px-4 my-12">
-        <div class="flex flex-col items-center">
-            <img class="w-[100px] mb-10" src="/src/img/bone.svg">
-            <p class="text-[16px]">这是一根断裂后愈合的股骨</p>
-        </div>
-    </div>
-
 
     <footer>
         <div class="bg-[#F9FAFB] h-[250px]">
@@ -280,9 +272,11 @@
     </script>
 
     <script src="/js/fancybox.umd.js"></script>
+    <script src="/js/fancybox_zh_CN.umd.js"></script>
     <script>
         Fancybox.bind("[data-fancybox]", {
             hideScrollbar: false,
+            l10n: Fancybox.l10n.zh_CN,
             Toolbar: {
                 display: {
                     left: [

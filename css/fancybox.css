@@ -348,8 +348,8 @@
     height: var(--f-button-height);
     border: var(--f-button-border);
     border-radius: var(--f-button-border-radius);
-    color: var(--f-button-color);
-    background: var(--f-button-bg);
+    color: #ffffff;
+    background: #000;
     box-shadow: var(--f-button-shadow);
     pointer-events: all;
     cursor: pointer;
@@ -485,9 +485,9 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .fancybox__container {
-    --fancybox-color: #dbdbdb;
+    --fancybox-color: #0d0d0d;
     --fancybox-hover-color: #fff;
-    --fancybox-bg: rgba(24, 24, 27, 0.98);
+    --fancybox-bg: rgba(255, 255, 255, 0.9);
     --fancybox-slide-gap: 10px;
     --f-spinner-width: 50px;
     --f-spinner-height: 50px;
