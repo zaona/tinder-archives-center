@@ -13,6 +13,7 @@
         document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
     </script>
     <script src="/js/broswer.js"></script>
+    <link rel="stylesheet" href="/css/fancybox.css" />
 </head>
 
 <body>
@@ -178,10 +179,10 @@
                     }
 
                     html += `    <div class="grid lg:grid-cols-5 grid-cols-2 gap-[16px] mt-[16px]">\n`;
-                    item.logos.forEach(font => {
+                    item.logos.forEach(logo => {
                         html += `      <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">\n`;
-                        html += `        <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">${font.name}</p>\n`;
-                        html += `        <img class="w-full h-[100px] bg-[#FAFAFA]" src="${font.imgSrc}">\n`;
+                        html += `        <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">${logo.name}</p>\n`;
+                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" class="w-full"><img class="w-full h-[150px] bg-[#FAFAFA]" src="${logo.imgSrc}"></a>\n`;
                         html += `      </div>\n`;
                     });
 
@@ -278,4 +279,24 @@
         });
     </script>
 
+    <script src="/js/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            hideScrollbar: false,
+            Toolbar: {
+                display: {
+                    left: [
+                        "infobar",
+                    ],
+                    middle: [],
+                    right: [
+                        "slideshow",
+                        "download",
+                        "thumbs",
+                        "close",
+                    ],
+                }
+            },
+        });
+    </script>
 </body>
