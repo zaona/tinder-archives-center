@@ -121,7 +121,8 @@
                 <a class="text-sm text-white" href="/font">字体</a>
                 <a class="text-sm text-white" href="/logo">标志</a>
                 <a class="text-sm text-white" href="/about">关于</a>
-                <a target="_blank" class="text-sm text-white" href="https://github.com/zaona/UEFilesSite/discussions">交流</a>
+                <a target="_blank" class="text-sm text-white"
+                    href="https://github.com/zaona/UEFilesSite/discussions">交流</a>
             </div>
         </div>
     </div>
@@ -133,15 +134,86 @@
             </div>
         </div>
     </div>
-    <div class="max-w-[1200px] mx-auto bg-[#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-10">
-        <p class="mb-[12px]">以下所有标志的修复底图都取自「流浪地球美术设定」和「流浪地球2制作手记」</p>
-        <p class="">参与修复的设计师：海藻酸钠、terminator7211</p>
+    <div class="max-w-[1200px] mx-auto mb-12 px-4">
+        <div class="bg-[#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
+            <p class="mb-[12px]">以下所有标志的修复底图都取自「流浪地球美术设定」和「流浪地球2制作手记」</p>
+            <p class="">参与修复的设计师：海藻酸钠、terminator7211</p>
+        </div>
     </div>
+
+    <div class="mx-auto max-w-[1200px] px-4 mb-12">
+        <div id="content-container"></div>
+
+        <script>
+            const config = [
+                {
+                    title: '测试中',
+                    source: '本页面仍在测试中，不代表最终效果',
+                    logos: [
+                        { name: '微软雅黑(旧版)', imgSrc: '/src/img/font/wryh.svg' },
+                        { name: 'Gobold Thin', imgSrc: '/src/img/font/gobold.svg' },
+                    ],
+                },
+                {
+                    title: '550系列',
+                    source: '流浪地球2制作手记 | 哔哩哔哩 @RQvan',
+                    logos: [
+                        { name: '思源黑体', imgSrc: '/src/img/font/sy.svg' },
+                        { name: 'Rajdhani', imgSrc: '/src/img/font/rajdhani.svg' },
+                    ],
+                },
+            ];
+
+            // 生成HTML的函数
+            function generateHTML(config) {
+                let html = `<div>\n`;
+
+                config.forEach((item, index) => {
+                    html += `  <div class="mb-[80px]">\n`;
+                    html += `    <p class="text-[36px]">${item.title}</p>\n`;
+                    if (item.source) {
+                        html += `    <div class="flex items-center text-[14px] mt-[16px]">\n`;
+                        html += `      <img class="mr-2" src="/src/icon/info.svg">来自：${item.source}\n`;
+                        html += `    </div>\n`;
+                    }
+
+                    html += `    <div class="grid lg:grid-cols-5 grid-cols-2 gap-[16px] mt-[16px]">\n`;
+                    item.logos.forEach(font => {
+                        html += `      <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">\n`;
+                        html += `        <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">${font.name}</p>\n`;
+                        html += `        <img class="w-full h-[100px] bg-[#FAFAFA]" src="${font.imgSrc}">\n`;
+                        html += `      </div>\n`;
+                    });
+
+                    html += `    </div>\n`;
+                    html += `  </div>\n`;
+
+                    // 在最后一个项后面添加额外的换行符
+                    if (index !== config.length - 1) {
+                        html += `\n`;
+                    }
+                });
+
+                html += `</div>`;
+
+                return html;
+            }
+
+            // 获取容器
+            const container = document.getElementById('content-container');
+
+            // 调用函数生成HTML字符串
+            const generatedHTML = generateHTML(config);
+
+            // 将生成的HTML插入到页面中
+            container.innerHTML = generatedHTML;
+        </script>
+    </div>
+
     <div class="mx-auto max-w-[1200px] px-4 my-12">
         <div class="flex flex-col items-center">
             <img class="w-[100px] mb-10" src="/src/img/bone.svg">
-            <p class="text-[16px]">这里空空如也</p>
-            <p class="text-[16px]">只有一根断裂后愈合的股骨</p>
+            <p class="text-[16px]">这是一根断裂后愈合的股骨</p>
         </div>
     </div>
 
