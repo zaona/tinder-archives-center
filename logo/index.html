@@ -151,7 +151,7 @@
                     title: '测试中',
                     source: '本页面仍在测试中，不代表最终效果',
                     logos: [
-                        { name: '微软雅黑(旧版)', imgSrc: '/src/img/font/wryh.svg' },
+                        { name: '移山计划', imgSrc: '/src/img/logo/移山计划.svg' },
                         { name: 'Gobold Thin', imgSrc: '/src/img/font/gobold.svg' },
                     ],
                 },
@@ -182,7 +182,7 @@
                     item.logos.forEach(logo => {
                         html += `      <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">\n`;
                         html += `        <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">${logo.name}</p>\n`;
-                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" data-download-filename="${logo.name}" class="w-full"><img class="w-full h-[150px] bg-[#FAFAFA]" src="${logo.imgSrc}"></a>\n`;
+                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" data-download-filename="${logo.name}" class="w-full"><img class="w-full h-[150px] bg-[#FAFAFA] px-[16px] py-[16px]" src="${logo.imgSrc}"></a>\n`;
                         html += `      </div>\n`;
                     });
 
