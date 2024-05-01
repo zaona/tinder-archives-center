@@ -151,23 +151,110 @@
                     title: '地球联合政府',
                     source: '',
                     logos: [
-                        { name: 'UEG', imgSrc: '/src/img/logo/移山计划.svg' },
-                        { name: '图形+文字', imgSrc: '/src/img/font/gobold.svg' },
-                        { name: '徽章', imgSrc: '/src/img/logo/移山计划.svg' },
-                        { name: '北极基地', imgSrc: '/src/img/font/gobold.svg' },
-                        { name: '加蓬联合实验基地', imgSrc: '/src/img/logo/移山计划.svg' },
-                        { name: '难民署', imgSrc: '/src/img/font/gobold.svg' },
-                        { name: '粮食计划署', imgSrc: '/src/img/logo/移山计划.svg' },
-                        { name: '飞行控制中心', imgSrc: '/src/img/font/gobold.svg' },
+                        { name: 'UEG', imgSrc: '/src/logo/logo.svg' },
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                        { name: '徽章', imgSrc: '/src/logo/logo.svg' },
+                        { name: '北极基地', imgSrc: '/src/logo/logo.svg' },
+                        { name: '加蓬联合实验基地', imgSrc: '/src/logo/logo.svg' },
+                        { name: '难民署', imgSrc: '/src/logo/logo.svg' },
+                        { name: '粮食计划署', imgSrc: '/src/logo/logo.svg' },
+                        { name: '飞行控制中心', imgSrc: '/src/logo/logo.svg' },
                     ],
                 },
                 {
                     title: '550系列',
                     source: '',
                     logos: [
-                        { name: '550A', imgSrc: '/src/img/font/sy.svg' },
-                        { name: '550C', imgSrc: '/src/img/font/rajdhani.svg' },
-                        { name: '550W', imgSrc: '/src/img/font/rajdhani.svg' },
+                        { name: '550A', imgSrc: '/src/logo/logo.svg' },
+                        { name: '550C', imgSrc: '/src/logo/logo.svg' },
+                        { name: '550W', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '逐月计划',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                        { name: '徽标', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '流浪地球计划/移山计划',
+                    source: '',
+                    logos: [
+                        { name: '徽标', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '方舟计划',
+                    source: '',
+                    logos: [
+                        { name: '徽标', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '领航员计划',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                        { name: '徽标', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '北京航天中心',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '太空电梯',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '门框机器人',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '2044 上海',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                        { name: '海报', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '中国应急预案执行组',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '中国科学院数字生命研究所',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '中国互联网中心北京基地',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
+                    ],
+                },
+                {
+                    title: '智能量子计算机重点实验室',
+                    source: '',
+                    logos: [
+                        { name: '图形+文字', imgSrc: '/src/logo/logo.svg' },
                     ],
                 },
             ];
@@ -248,6 +335,28 @@
             </div>
         </div>
     </footer>
+
+    <img id="backToTopBtn" class="fixed bottom-4 right-4 bg-black cursor-pointer py-3 px-3"
+        src="/src/icon/up.svg">
+    <script>
+        document.getElementById('backToTopBtn').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 使用平滑滚动效果
+            });
+        });
+        function checkScrollPosition() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > 0) {
+                document.getElementById('backToTopBtn').classList.remove('hidden');
+            } else {
+                document.getElementById('backToTopBtn').classList.add('hidden');
+            }
+        }
+        window.addEventListener('scroll', checkScrollPosition);
+        checkScrollPosition()
+    </script>
+
 
     <script src='/js/nprogress.js'></script>
     <script>
