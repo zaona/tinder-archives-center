@@ -182,7 +182,7 @@
                     item.logos.forEach(logo => {
                         html += `      <div class="flex flex-col items-center border-solid border-[1px] divide-y transition-shadow hover:shadow-lg">\n`;
                         html += `        <p class="text-[16px] font-bold px-[16px] py-[16px] w-full">${logo.name}</p>\n`;
-                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" data-download-filename="${logo.name}" class="w-full"><img class="w-full h-[150px] bg-[#FAFAFA] px-[16px] py-[16px]" src="${logo.imgSrc}"></a>\n`;
+                        html += `        <a data-fancybox data-src="${logo.imgSrc}" data-caption="${logo.name}" data-download-src="${logo.imgSrc}" data-download-filename="${logo.name}" class="w-full px-[16px] py-[16px] bg-[#FAFAFA]"><img class="w-full h-[150px]" src="${logo.imgSrc}"></a>\n`;
                         html += `      </div>\n`;
                     });
 
