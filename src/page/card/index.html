@@ -137,17 +137,43 @@
     <div class="flex justify-center lg:flex-row flex-col items-center lg:h-screen max-w-[1200px] mx-auto gap-[16px]">
       <div class="lg:basis-1/2">
         <div class="w-[360px] relative" id="card">
-          <img clss="w-full" src="card.svg">
+          <div class="absolute top-0 left-0">
+            <!-- 实际生成时用的 -->
+            <div class="w-[360px] relative -z-10" id="card2">
+              <img clss="w-[360px]" src="bg.png">
+              <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[167.5px] object-cover" src="zzz.png"
+                id="avatar2" />
+              <p class="absolute top-[245px] left-[105px] text-[45px] font-bold text-white mt-[0px]" id="family-name2">
+                ZHOU</p>
+              <p class="absolute top-[310px] left-[105px] font-bold text-white mt-[0px]" id="first-name2">ZHEZHI
+              </p>
+              <p class="absolute top-[370px] left-[105px] text-white mt-[0px]" id="position2">PERMANENT REPRESENTATIVE
+              </p>
+            </div>
+          </div>
+          <!-- 预览用的 -->
+          <img clss="w-[360px]" src="bg.png">
           <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166.09px] object-cover" src="zzz.png"
             id="avatar" />
-          <p class="absolute top-[276px] left-[105px] text-[45px] leading-[45px] h-[40px]" id="family-name">ZHOU</p>
-          <p class="absolute top-[320px] left-[105px] font-['Rajdhani'] leading-[24px] h-[24px]" id="first-name">ZHEZHI
+          <p class="absolute top-[266px] left-[105px] text-[45px] font-bold text-white mt-[0px]" id="family-name">ZHOU
           </p>
-          <p class="absolute top-[380px] left-[105px] leading-[24px] h-[24px]" id="position">PERMANENT REPRESENTATIVE
+          <p class="absolute top-[320px] left-[105px] font-bold text-white mt-[0px]" id="first-name">ZHEZHI
+          </p>
+          <p class="absolute top-[380px] left-[105px] text-white mt-[0px]" id="position">PERMANENT REPRESENTATIVE
           </p>
         </div>
       </div>
 
+      <div class="hidden w-[360px] relative" id="card2">
+        <img clss="w-[360px]" src="bg.png">
+        <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166.09px] object-cover" src="zzz.png"
+          id="avatar" />
+        <p class="absolute top-[245px] left-[105px] text-[45px] font-bold text-white mt-[0px]" id="family-name">ZHOU</p>
+        <p class="absolute top-[310px] left-[105px] font-bold text-white mt-[0px]" id="first-name">ZHEZHI
+        </p>
+        <p class="absolute top-[370px] left-[105px] text-white mt-[0px]" id="position">PERMANENT REPRESENTATIVE
+        </p>
+      </div>
 
       <div class="lg:basis-1/2 w-full">
         <div class="w-full [#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
@@ -179,21 +205,28 @@
         reader.onload = function (e) { // 定义读取完成后的方法
           document.getElementById('avatar').src = e.target.result; // 将读取到的DataURL赋值给img元素的src
           document.getElementById('avatar').style.display = 'block'; // 显示图片
+          document.getElementById('avatar2').src = e.target.result; // 将读取到的DataURL赋值给img元素的src
+          document.getElementById('avatar2').style.display = 'block'; // 显示图片
         };
         reader.readAsDataURL(file); // 读取文件为DataURL
       } else {
         document.getElementById('avatar').src = ''; // 如果没有选中文件，清空图片src
         document.getElementById('avatar').style.display = 'none'; // 隐藏图片
+        document.getElementById('avatar2').src = ''; // 如果没有选中文件，清空图片src
+        document.getElementById('avatar2').style.display = 'none'; // 隐藏图片
       }
     });
     document.getElementById('input-family-name').addEventListener('input', function () {
       document.getElementById('family-name').textContent = this.value;
+      document.getElementById('family-name2').textContent = this.value;
     });
     document.getElementById('input-first-name').addEventListener('input', function () {
       document.getElementById('first-name').textContent = this.value;
+      document.getElementById('first-name2').textContent = this.value;
     });
     document.getElementById('input-position').addEventListener('input', function () {
       document.getElementById('position').textContent = this.value;
+      document.getElementById('position2').textContent = this.value;
     });
   </script>
 
@@ -201,8 +234,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('screenshotBtn').addEventListener('click', function () {
-        const cardElement = document.getElementById('card');
-        html2canvas(cardElement).then(function (canvas) {
+        const cardElement = document.getElementById('card2');
+        html2canvas(cardElement, { scale: 2 }).then(function (canvas) {
           const imgUrl = canvas.toDataURL('image/png');
           downloadImage(imgUrl, 'card.png');
         });
