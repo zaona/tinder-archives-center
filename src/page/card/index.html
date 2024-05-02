@@ -134,7 +134,7 @@
   </div>
 
   <div class="px-4 py-8 lg:py-0">
-    <div class="flex justify-center lg:flex-row flex-col items-center h-screen max-w-[1200px] mx-auto gap-[16px]">
+    <div class="flex justify-center lg:flex-row flex-col items-center lg:h-screen max-w-[1200px] mx-auto gap-[16px]">
       <div class="lg:basis-1/2">
         <div class="w-[360px] relative" id="card">
           <img clss="w-full" src="card.svg">
@@ -164,7 +164,7 @@
             <input type="text" placeholder="职位" id="input-position"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
             <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white"
-              id="screenshotBtn">下载</button>
+              id="screenshotBtn">下载[实验性]</button>
           </div>
         </div>
       </div>
@@ -204,7 +204,7 @@
         const cardElement = document.getElementById('card');
         html2canvas(cardElement).then(function (canvas) {
           const imgUrl = canvas.toDataURL('image/png');
-          downloadImage(imgUrl, 'card-screenshot.png');
+          downloadImage(imgUrl, 'card.png');
         });
       });
     });
@@ -216,6 +216,36 @@
       link.click();
     }
   </script>
+
+  <footer>
+    <div class="bg-[#F9FAFB] h-[250px]">
+      <div class="max-w-[1200px] h-full mx-auto flex items-center justify-between px-4">
+        <div class="hidden lg:block">
+          <img class="w-[67px] pb-2" src="/src/logo/logo.svg">
+          <img class="w-[166px] pb-1" src="/src/logo/text.svg">
+          <img class="w-[166px]" src="/src/logo/text-eng.svg">
+        </div>
+        <div class="grid grid-cols-2 gap-x-[100px] lg:w-[350px] w-full">
+          <div class="">
+            <p class="text-[14px] font-bold pb-2">开源代码</p>
+            <a target="_blank" class="text-[14px] text-[#6C7280]" href="https://github.com/zaona/UEFileSite">Github</a>
+          </div>
+          <div class="">
+            <p class="text-[14px] font-bold pb-2">特别鸣谢</p>
+            <p class="text-[14px] text-[#6C7280] pb-1">OSS Compass</p>
+            <p class="text-[14px] text-[#6C7280] pb-1">United Earth Team</p>
+            <p class="text-[14px] text-[#6C7280]">电影流浪地球</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#F3F4F6] h-[78px]">
+      <div class="max-w-[1200px] px-4 h-full flex items-center justify-between mx-auto">
+        <p class="text-[14px] text-[#6C7280]">Copyright © 2024 地球联合资源站。保留所有权利。</p>
+        <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
+      </div>
+    </div>
+  </footer>
 
   <script src='/js/nprogress.js'></script>
   <script>
