@@ -13,6 +13,7 @@
     document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
   </script>
   <script src="/js/broswer.js"></script>
+  <script src="/js/html-to-image.min.js"></script>
   <style type="text/tailwindcss">
     @font-face {
       font-family: Rajdhani-Medium;
@@ -145,22 +146,6 @@
     <div class="flex justify-center lg:flex-row flex-col items-center lg:h-screen max-w-[1200px] mx-auto gap-[16px]">
       <div class="lg:basis-1/2">
         <div class="w-[360px] relative" id="card">
-          <!-- <div class="absolute top-0 left-0">
-            <div class="w-[360px] relative -z-10" id="card2">
-              <img clss="w-[360px]" src="bg.png">
-              <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[167px] object-cover" src="zzz.png"
-                id="avatar2" />
-              <p class="absolute top-[240px] left-[105px] text-[45px] font-bold text-white mt-[0px] font-rajdhani"
-                id="family-name2">
-                ZHOU</p>
-              <p class="absolute top-[310px] left-[105px] font-bold text-white mt-[0px] font-rajdhani" id="first-name2">
-                ZHEZHI
-              </p>
-              <p class="absolute top-[370px] left-[105px] font-bold text-white mt-[0px] font-rajdhani" id="position2">
-                PERMANENT REPRESENTATIVE
-              </p>
-            </div>
-          </div> -->
           <img clss="w-[360px]" src="bg.svg">
           <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover" src="zzz.png"
             id="avatar" />
@@ -224,7 +209,6 @@
     });
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
   <script>
     function convertToImage() {
       const element = document.getElementById('card');
@@ -266,27 +250,7 @@
       link.click();
       document.body.removeChild(link); // 下载后移除这个元素
     }
-
   </script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById('screenshotBtn').addEventListener('click', function () {
-        const cardElement = document.getElementById('card2');
-        html2canvas(cardElement, { scale: 2 }).then(function (canvas) {
-          const imgUrl = canvas.toDataURL('image/png');
-          downloadImage(imgUrl, 'card.png');
-        });
-      });
-    });
-
-    function downloadImage(dataUrl, fileName) {
-      const link = document.createElement('a');
-      link.href = dataUrl;
-      link.download = fileName;
-      link.click();
-    }
-  </script> -->
 
   <footer>
     <div class="bg-[#F9FAFB] h-[250px]">
