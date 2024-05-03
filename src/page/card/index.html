@@ -232,6 +232,7 @@
       htmlToImage.toPng(element, options)
         .then(function (dataUrl) {
           downloadImage(dataUrl, 'card.png');
+          console.log(dataUrl)
         })
         .catch(function (error) {
           console.error('Failed to generate image', error);
@@ -250,6 +251,18 @@
       link.click();
       document.body.removeChild(link); // 下载后移除这个元素
     }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const element = document.getElementById('card');
+      if (!element) {
+        console.error('Element not found');
+        return;
+      }
+      htmlToImage.toPng(element)
+        .then(function (dataUrl) {
+          console.log(dataUrl)
+        })
+    });
   </script>
 
   <footer>
