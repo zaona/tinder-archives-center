@@ -153,7 +153,7 @@
       <div class="lg:basis-1/2">
         <div class="w-[360px] relative" id="card">
           <img clss="w-[360px]" src="bg.svg">
-          <div class="bg-[#F3F4F6] h-[78px] hidden" id="card-footer">
+          <div class="bg-[#F3F4F6] h-[78px]" id="card-footer">
             <div class="max-w-[1200px] h-full flex items-center justify-between mx-auto">
               <p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p>
               <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
@@ -261,6 +261,7 @@
       // console.log(cardAll);
       // console.log(element);
 
+      const element = document.getElementById('card');
       document.getElementById("card-footer").hidden = false;
 
       // 定义转换选项以提高质量
