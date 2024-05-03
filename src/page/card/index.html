@@ -16,10 +16,10 @@
   <script src="/js/html-to-image.min.js"></script>
   <script src="/js/qrcode.min.js"></script>
   <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
-  <script>
+  <!-- <script>
     // VConsole 默认会挂载到 `window.VConsole` 上
     var vConsole = new window.VConsole();
-  </script>
+  </script> -->
   <style type="text/tailwindcss">
     @font-face {
       font-family: Rajdhani-Medium;
@@ -196,7 +196,7 @@
               class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="职位" id="input-position"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <input type="text" placeholder="二维码[暂不可用]" id="input-qrcode"
+            <input type="text" placeholder="二维码" id="input-qrcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="条形码" id="input-barcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
@@ -208,6 +208,8 @@
     </div>
   </div>
 
+
+  <!-- 信息更新 -->
   <script>
     document.getElementById('imageFile').addEventListener('change', function (event) {
       var file = event.target.files[0]; // 获取选中的文件
@@ -235,9 +237,42 @@
     document.getElementById('input-barcode').addEventListener('input', function () {
       document.getElementById('barcode').textContent = this.value;
     });
-
   </script>
 
+  <!-- 二维码生成 -->
+  <script>
+    // 定义二维码配置为常量
+    const QR_CODE_CONFIG = {
+      width: 80,
+      height: 80,
+      colorDark: "#000000",
+      colorLight: "#ffffff"
+    };
+
+    // 初始化二维码
+    function initQRCode(containerId, initialValue) {
+      const container = document.getElementById(containerId);
+      if (!container) return; // 确保DOM元素存在
+
+      const qrCode = new QRCode(container, QR_CODE_CONFIG);
+      qrCode.makeCode(initialValue);
+
+      // 监听输入变化并更新二维码
+      document.getElementById('input-qrcode').addEventListener('input', function () {
+        if (qrCode) {
+          qrCode.clear();
+          qrCode.makeCode(this.value);
+        }
+      });
+    }
+
+    // 页面加载完成后初始化
+    window.onload = function () {
+      initQRCode('qrcode', 'uef.zaona.top');
+    };
+  </script>
+
+  <!-- 图片生成 -->
   <script>
     document.getElementById("card-footer").hidden = true;
 
