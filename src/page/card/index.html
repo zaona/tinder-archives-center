@@ -166,7 +166,11 @@
           </div>
           <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover" src="zzz.png"
             id="avatar" />
-          <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode"></div>
+          <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode" title="uef.zaona.top"><canvas
+              width="80" height="80" style="display: none;"></canvas><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA41JREFUeF7tnNlShDAQReH/P3osLC0yge45uc0AjtdHzXrSe4LzNE2P6Q0/j8c67DzPwzO0/Wnndp7q/HhOA6So9tstomEJLDB8AqioTTv3qAr180X96f7I/EfucVmXAdLT+WnX23MDfBdA4jmrKtjPEXlO8vuMA1HtrH/m0UMJNMAVqQE2cagSH14OkKoQ2VzmRck8ZI5enQ3QErhvj3pJ+XcSSCMIAmYZK1Jv2j9az21V2ACbist3WgNsjZJKkXFvJ4FUOiq5cObtovmzfJmAVg4w2uPlubABdgSIBNCUyRIoVKSJet1ahRW7N+r6s5CAFA2qAI/c48YGHjn4KIzeixJzQKtBpDCi7v30kv7HSeCDGB71eHb6UWkgEkxTuQOXvxlqNsAaXgOs8ZsQQHpbRtqRNllaWNzvU7pJY9LM7BhgQJEWXg2wCrB9mUA8n6KCVO3I/FliTwIKuv5snqe/GeDr401toAHeCKCSfpGqS9uGqCn14jSozxCji3VqmwwwKEEZYCyDlsDXJjBtgQBGNog+DnqXDaPFBMXWYa0jXtgA1zfemxqkAe5rqCSBo+YgqwhX1XZ0LbQwoGQyOJAeXbQBdm+kDXD/gwWpnFUNio9O2snhEruVwSCPkzaePyrpG+CKyhIIL/klCYzCGFoPq6gW6bu0odVhMh69VqVFDvSdiBLJ0+C7umnSn66FVHp6FgbY0JUAtk7kDEnLFjk6P33aQdWRAEy98OgG+sGIrTLAxOgYoPBlOTXQv+0+TgKjD65JTFTNhWlWUDUt1FMTDdrYQANckRggFbWgnQTwjOdtVAUVsxFlTCQkUa4kcDGheJhP3Q2wSPOjAZ7xb0+omkWgSZ1vmWO0BHdEFHDKI3MDFFRYcQh/XgKJ58pYkjI+tYdRhhNJc5aXK8UEYg6+zQYpqFIBNMDu+18K7redAcK7g6gwMAqQFhYULzx6+NQE4Io0sVVKQZNAVkKSvo8BCv8+gBw6BUuiiNSJkMVYAhMvfCRAEt9laksDcdIuMyEkdNkIzejztiw+IwtQ+hMwmypJ0QRgx2WAK3oiAJdIIM0ERrMPGgYpjoPAvMSJVFMxJQwywIbAnwFIT00x8HupXzYfvasg7aoFk42zOruYQFU4sofVIqgBJpf/l0ugorZRH5IKUWmgHpGMRyWYasqtSvok3MmkzAADgpZAIQwh3j27GCfS3LchZqfv8wVqJzIrLQ7ZwQAAAABJRU5ErkJggg=="
+              style="display: block;"></div>
+          <!-- <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode"></div> -->
           <p class="absolute top-[266px] left-[105px] text-[50px] font-bold text-white mt-[0px] font-rajdhani"
             id="family-name">ZHOU
           </p>
@@ -196,11 +200,11 @@
               class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="职位" id="input-position"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <input type="text" placeholder="二维码" id="input-qrcode"
-              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
+            <!-- <input type="text" placeholder="二维码" id="input-qrcode"
+              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" /> -->
             <input type="text" placeholder="条形码" id="input-barcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white hidden lg:block"
+            <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white"
               id="screenshotBtn">下载</button>
           </div>
         </div>
@@ -240,7 +244,7 @@
   </script>
 
   <!-- 二维码生成 -->
-  <script>
+  <!-- <script>
     // 定义二维码配置为常量
     const QR_CODE_CONFIG = {
       width: 80,
@@ -270,7 +274,7 @@
     window.onload = function () {
       initQRCode('qrcode', 'uef.zaona.top');
     };
-  </script>
+  </script> -->
 
   <!-- 图片生成 -->
   <script>
