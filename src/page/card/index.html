@@ -14,6 +14,7 @@
   </script>
   <script src="/js/broswer.js"></script>
   <script src="/js/html-to-image.min.js"></script>
+  <script src="/js/qrcode.min.js"></script>
   <style type="text/tailwindcss">
     @font-face {
       font-family: Rajdhani-Medium;
@@ -149,6 +150,7 @@
           <img clss="w-[360px]" src="bg.svg">
           <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover" src="zzz.png"
             id="avatar" />
+          <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode"></div>
           <p class="absolute top-[266px] left-[105px] text-[50px] font-bold text-white mt-[0px] font-rajdhani"
             id="family-name">ZHOU
           </p>
@@ -174,6 +176,8 @@
             <input type="text" placeholder="名" id="input-first-name"
               class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="职位" id="input-position"
+              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
+            <input type="text" placeholder="链接" id="input-qrcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
             <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white"
               id="screenshotBtn">下载</button>
@@ -207,6 +211,21 @@
     document.getElementById('input-position').addEventListener('input', function () {
       document.getElementById('position').textContent = this.value;
     });
+
+    qrCode = new QRCode(document.getElementById('qrcode'), {
+      width: 80, // 二维码宽度
+      height: 80, // 二维码高度
+      colorDark: "#000000", // 二维码颜色（深色部分）
+      colorLight: "#ffffff" // 二维码颜色（浅色部分）
+    });
+    qrCode.makeCode("uef.zaona.top")
+    document.getElementById('input-qrcode').addEventListener('input', function () {
+      if (qrCode) {
+        qrCode.clear(); // 清除旧的二维码
+        qrCode.makeCode(this.value); // 根据新内容生成二维码
+      }
+    });
+
   </script>
 
   <script>
