@@ -20,13 +20,18 @@
       font-family: Rajdhani-Medium;
       src: url(Rajdhani-Medium.woff);
     }
+    @font-face {
+      font-family: LibreBarcode39-Regular;
+      src: url(LibreBarcode39-Regular.ttf);
+    }
   </style>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            'rajdhani': ['Rajdhani-Medium']
+            'rajdhani': ['Rajdhani-Medium'],
+            'barcode': ['LibreBarcode39-Regular']
           }
         }
       }
@@ -148,6 +153,12 @@
       <div class="lg:basis-1/2">
         <div class="w-[360px] relative" id="card">
           <img clss="w-[360px]" src="bg.svg">
+          <div class="bg-[#F3F4F6] h-[78px] hidden" id="card-footer">
+            <div class="max-w-[1200px] h-full flex items-center justify-between mx-auto">
+              <p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p>
+              <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
+            </div>
+          </div>
           <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover" src="zzz.png"
             id="avatar" />
           <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode"></div>
@@ -160,11 +171,14 @@
           <p class="absolute top-[381px] left-[105px] font-bold text-white mt-[0px] font-rajdhani" id="position">
             PERMANENT REPRESENTATIVE
           </p>
+          <p class="absolute top-[497.5px] left-[40px] mt-[0px] text-[36px] font-barcode" id="barcode">
+            uef.zaona.top
+          </p>
         </div>
       </div>
 
       <div class="lg:basis-1/2 w-full">
-        <div class="w-full [#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
+        <div class="w-full bg-[#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
           <div class="flex flex-col gap-3">
             <p class="text-2xl font-bold mb-2">UEG 名牌生成</p>
             <input type="file" class="w-full file:cursor-pointer
@@ -177,7 +191,9 @@
               class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="职位" id="input-position"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <input type="text" placeholder="链接" id="input-qrcode"
+            <input type="text" placeholder="二维码" id="input-qrcode"
+              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
+            <input type="text" placeholder="条形码" id="input-barcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
             <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white"
               id="screenshotBtn">下载</button>
@@ -211,6 +227,9 @@
     document.getElementById('input-position').addEventListener('input', function () {
       document.getElementById('position').textContent = this.value;
     });
+    document.getElementById('input-barcode').addEventListener('input', function () {
+      document.getElementById('barcode').textContent = this.value;
+    });
 
     qrCode = new QRCode(document.getElementById('qrcode'), {
       width: 80, // 二维码宽度
@@ -229,18 +248,26 @@
   </script>
 
   <script>
+    document.getElementById("card-footer").hidden = true;
+
     function convertToImage() {
-      const element = document.getElementById('card');
-      if (!element) {
-        console.error('Element not found');
-        return;
-      }
+      //一个不可行的方案，生成图片时加入footer
+      // document.getElementById("card-footer").hidden = false;
+      // const card = document.getElementById('card').outerHTML;
+      // const cardFooter = '<div class="bg-[#F3F4F6] h-[78px]" id="card-footer"><div class="max-w-[1200px] h-full flex items-center justify-between mx-auto"><p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p><img class="h-full hidden lg:block" src="/src/img/earth-engine.svg"></div></div>';
+      // const cardAll = card + cardFooter;
+      // const parser = new DOMParser()
+      // const element = parser.parseFromString(cardAll, 'text/html');
+      // console.log(cardAll);
+      // console.log(element);
+
+      document.getElementById("card-footer").hidden = false;
 
       // 定义转换选项以提高质量
       const options = {
         quality: 1, // 图像质量，范围从0到1，1为最高质量
         width: 712, // 可选，指定输出宽度，单位像素
-        height: 1112.462, // 可选，指定输出高度，单位像素
+        height: 1268.426, // 可选，指定输出高度，单位像素
         style: { // 自定义样式，用于覆盖或补充原有样式，以解决可能的渲染问题
           transform: 'scale(2)', // 例如，放大元素两倍后再截图，可能会提高清晰度
           transformOrigin: 'top left',
@@ -251,7 +278,7 @@
       htmlToImage.toPng(element, options)
         .then(function (dataUrl) {
           downloadImage(dataUrl, 'card.png');
-          console.log(dataUrl)
+          // console.log(dataUrl)
         })
         .catch(function (error) {
           console.error('Failed to generate image', error);
@@ -269,6 +296,9 @@
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link); // 下载后移除这个元素
+
+      document.getElementById("card-footer").hidden = true;
+
     }
 
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -279,7 +309,7 @@
       }
       htmlToImage.toPng(element)
         .then(function (dataUrl) {
-          console.log(dataUrl)
+          // console.log(dataUrl)
         })
     });
   </script>
