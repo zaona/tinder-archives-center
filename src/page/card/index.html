@@ -15,6 +15,11 @@
   <script src="/js/broswer.js"></script>
   <script src="/js/html-to-image.min.js"></script>
   <script src="/js/qrcode.min.js"></script>
+  <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+  <script>
+    // VConsole 默认会挂载到 `window.VConsole` 上
+    var vConsole = new window.VConsole();
+  </script>
   <style type="text/tailwindcss">
     @font-face {
       font-family: Rajdhani-Medium;
@@ -154,9 +159,9 @@
         <div class="w-[360px] relative" id="card">
           <img clss="w-[360px]" src="bg.svg">
           <div class="bg-[#F3F4F6] h-[78px]" id="card-footer">
-            <div class="max-w-[1200px] h-full flex items-center justify-between mx-auto">
+            <div class="h-full flex items-center justify-between mx-auto">
               <p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p>
-              <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
+              <img class="h-full" src="/src/img/earth-engine.svg">
             </div>
           </div>
           <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover" src="zzz.png"
@@ -172,7 +177,7 @@
             PERMANENT REPRESENTATIVE
           </p>
           <p class="absolute top-[497.5px] left-[40px] mt-[0px] text-[36px] font-barcode" id="barcode">
-            uef.zaona.top
+            barcode
           </p>
         </div>
       </div>
@@ -191,7 +196,7 @@
               class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="职位" id="input-position"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <input type="text" placeholder="二维码" id="input-qrcode"
+            <input type="text" placeholder="二维码[暂不可用]" id="input-qrcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
             <input type="text" placeholder="条形码" id="input-barcode"
               class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
@@ -231,20 +236,6 @@
       document.getElementById('barcode').textContent = this.value;
     });
 
-    qrCode = new QRCode(document.getElementById('qrcode'), {
-      width: 80, // 二维码宽度
-      height: 80, // 二维码高度
-      colorDark: "#000000", // 二维码颜色（深色部分）
-      colorLight: "#ffffff" // 二维码颜色（浅色部分）
-    });
-    qrCode.makeCode("uef.zaona.top")
-    document.getElementById('input-qrcode').addEventListener('input', function () {
-      if (qrCode) {
-        qrCode.clear(); // 清除旧的二维码
-        qrCode.makeCode(this.value); // 根据新内容生成二维码
-      }
-    });
-
   </script>
 
   <script>
@@ -279,7 +270,6 @@
       htmlToImage.toPng(element, options)
         .then(function (dataUrl) {
           downloadImage(dataUrl, 'card.png');
-          // console.log(dataUrl)
         })
         .catch(function (error) {
           console.error('Failed to generate image', error);
