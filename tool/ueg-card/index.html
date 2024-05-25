@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>地球联合资源站</title>
-  <link rel="icon" type="image/svg+xml" href="/src/logo/logo.svg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/js/tailwind3.4.3.js"></script>
-  <link rel='stylesheet' href='/css/nprogress.css' />
-  <script>
-    let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
-    document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
-  </script>
-  <script src="/js/broswer.js"></script>
-  <script src="/js/html-to-image.min.js"></script>
-  <script src="/js/qrcode.min.js"></script>
-  <!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script> -->
-  <!-- <script>
+    <meta charset="UTF-8">
+    <title>地球联合资源站</title>
+    <link rel="icon" type="image/svg+xml" href="/src/logo/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/tailwind3.4.3.js"></script>
+    <link rel='stylesheet' href='/css/nprogress.css' />
+    <script>
+        let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
+        document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
+    </script>
+    <script src="/js/broswer.js"></script>
+    <script src="/js/html-to-image.min.js"></script>
+    <script src="/js/qrcode.min.js"></script>
+    <!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script> -->
+    <!-- <script>
     // VConsole 默认会挂载到 `window.VConsole` 上
     var vConsole = new window.VConsole();
   </script> -->
-  <style type="text/tailwindcss">
-    @font-face {
+    <style type="text/tailwindcss">
+        @font-face {
       font-family: Rajdhani-Medium;
       src: url(/tool/ueg-card/Rajdhani-Medium.woff);
     }
@@ -30,381 +30,318 @@
       src: url(/tool/ueg-card/LibreBarcode39-Regular.ttf);
     }
   </style>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'rajdhani': ['Rajdhani-Medium'],
-            'barcode': ['LibreBarcode39-Regular']
-          }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'rajdhani': ['Rajdhani-Medium'],
+                        'barcode': ['LibreBarcode39-Regular']
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
 
 <body>
-  <div class="bg-black hidden lg:block">
-    <div class="h-20 px-4 flex items-center justify-between">
-      <div class="flex h-full items-center justify-between w-[1000px]">
-        <a class="flex h-full items-center" href="/">
-          <div class="h-[40px] mb-[2px]">
-            <svg class="h-[40px] w-full fill-white" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="788.511962890625"
-              height="648.270263671875" viewBox="0 0 788.511962890625 648.270263671875">
-              <g>
-                <g>
-                  <path
-                    d="M400.478,327.269L487.929,567.278L545.376,567.278L438.209,273.269L188.409,273.302L101.068,513.269L54,513.269L54,54L173.982,54L200.39,126.556L257.911,126.556L211.903,0L0,0L0,567.279L138.901,567.266L226.29,327.269L400.478,327.269Z"
-                    fill-rule="evenodd" fill-opacity="1" />
-                </g>
-                <g>
-                  <path
-                    d="M788.512,648.27L788.512,72.5563L325.948,72.5564L299.54,0L242.016,0L288.079,126.556L734.512,126.556L734.512,594.27L0,594.27L0,648.27L788.512,648.27Z"
-                    fill-rule="evenodd" fill-opacity="1" />
-                </g>
-                <g>
-                  <path
-                    d="M451.2277934570312,567.27804296875L431.57379345703123,513.27804296875L288.37849345703125,513.27804296875L264.35329345703127,447.26904296875L407.5477934570313,447.26904296875L387.89279345703125,393.26904296875L234.97769345703125,393.26904296875L210.50079345703125,457.35634296875L250.48729345703126,567.27804296875L451.2277934570312,567.27804296875Z"
-                    fill-rule="evenodd" fill-opacity="1" />
-                </g>
-                <g>
-                  <path
-                    d="M492.12307529296874,328.67529296875L471.72967529296875,272.67529296875L616.6286752929688,272.67529296875L637.0226752929688,328.67529296875L492.12307529296874,328.67529296875ZM535.8232752929688,448.67529296875L515.4298752929687,392.67529296875L660.3296752929688,392.67529296875L680.7226752929687,448.67529296875L535.8232752929688,448.67529296875Z"
-                    fill-rule="evenodd" fill-opacity="1" />
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div class="h-[24px] ml-6">
-            <svg class="h-[24px] w-full fill-white" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
-              width="1976.8079833984375" height="159.46400451660156"
-              viewBox="0 0 1976.8079833984375 159.46400451660156">
-              <g>
-                <path
-                  d="M84.568,0L100.192,0Q104.656,0,104.656,3.968L104.656,121.024Q104.656,139.128,94.364,149.296Q84.072,159.464,65.968,159.464L38.44,159.464Q20.336,159.464,10.168,149.296Q0,139.128,0,121.024L0,4.216Q0,0,4.216,0L19.84,0Q24.056,0,24.056,4.216L24.056,120.032Q24.056,138.384,41.912,138.384L62.248,138.384Q80.352,138.384,80.352,120.032L80.352,4.216Q80.352,0,84.568,0ZM158.968,159.464L143.592,159.464Q139.376,159.464,139.376,155.248L139.376,4.216Q139.376,0,143.592,0L157.48,0Q161.448,0,162.936,2.72801L222.952,110.608L223.944,110.608L223.944,4.216Q223.944,0,228.16,0L243.536,0Q247.752,0,247.752,4.216L247.752,155.248Q247.752,159.464,243.536,159.464L230.144,159.464Q226.176,159.464,223.696,155.496L164.176,48.856L163.184,48.856L163.184,155.248Q163.184,159.464,158.968,159.464ZM309.256,4.216L309.256,155.248Q309.256,159.464,305.04,159.464L289.416,159.464Q285.2,159.464,285.2,155.248L285.2,4.216Q285.2,0,289.416,0L305.04,0Q309.256,0,309.256,4.216ZM390.352,159.464L374.728,159.464Q370.264,159.464,370.264,155.248L370.264,23.56Q370.264,21.08,367.784,21.08L336.536,21.08Q332.072,21.08,332.072,16.864L332.072,4.216Q332.072,0,336.536,0L428.544,0Q433.008,0,433.008,4.216L433.008,16.864Q433.008,21.08,428.544,21.08L397.296,21.08Q394.568,21.08,394.568,23.56L394.568,155.248Q394.568,159.464,390.352,159.464ZM537.912,159.464L458.552,159.464Q454.336,159.464,454.336,155.248L454.336,4.216Q454.336,0,458.552,0L537.912,0Q541.88,0,541.88,4.216L541.88,16.864Q541.88,21.08,537.912,21.08L481.368,21.08Q478.392,21.08,478.392,23.56L478.392,65.472Q478.392,67.952,481.368,67.952L529.232,67.952Q533.696,67.952,533.696,72.168L533.696,84.816Q533.696,89.032,529.232,89.032L481.368,89.032Q478.392,89.032,478.392,91.512L478.392,135.656Q478.392,138.384,481.368,138.384L537.912,138.384Q541.88,138.384,541.88,142.6L541.88,155.248Q541.88,159.464,537.912,159.464ZM600.16,138.384L635.128,138.384Q652.984,138.384,652.984,120.032L652.984,39.432Q652.984,21.08,635.128,21.08L600.16,21.08Q597.432,21.08,597.432,23.56L597.432,135.656Q597.432,138.384,600.16,138.384ZM573.376,155.248L573.376,4.216Q573.376,0,577.592,0L638.6,0Q656.704,0,666.996,10.044Q677.288,20.088,677.288,38.44L677.288,121.024Q677.288,139.128,666.996,149.296Q656.704,159.464,638.6,159.464L577.592,159.464Q573.376,159.464,573.376,155.248ZM853.616,159.464L774.256,159.464Q770.04,159.464,770.04,155.248L770.04,4.216Q770.04,0,774.256,0L853.616,0Q857.584,0,857.584,4.216L857.584,16.864Q857.584,21.08,853.616,21.08L797.072,21.08Q794.096,21.08,794.096,23.56L794.096,65.472Q794.096,67.952,797.072,67.952L844.936,67.952Q849.4,67.952,849.4,72.168L849.4,84.816Q849.4,89.032,844.936,89.032L797.072,89.032Q794.096,89.032,794.096,91.512L794.096,135.656Q794.096,138.384,797.072,138.384L853.616,138.384Q857.584,138.384,857.584,142.6L857.584,155.248Q857.584,159.464,853.616,159.464ZM897.76,159.464L879.904,159.464Q876.432,159.464,877.424,155.248L920.576,4.216Q921.816,0,926.528,0L951.328,0Q956.288,0,957.28,4.216L1000.43,155.248Q1001.42,159.464,997.704,159.464L980.096,159.464Q977.864,159.464,976.996,158.596Q976.128,157.728,975.632,155.248L966.208,123.008L911.648,123.008L902.224,155.248Q901.232,159.464,897.76,159.464ZM938.432,23.808L916.608,103.168L961.496,103.168L939.424,23.808L938.432,23.808ZM1044.82,159.464L1029.2,159.464Q1024.98,159.464,1024.98,155.248L1024.98,4.216Q1024.98,0,1029.2,0L1087.23,0Q1105.34,0,1115.63,10.292Q1125.92,20.584,1125.92,38.688L1125.92,59.52Q1125.92,88.04,1102.36,95.48L1102.36,96.472L1129.89,154.504Q1132.62,159.464,1126.66,159.464L1111.29,159.464Q1105.34,159.464,1103.6,155.248L1077.06,98.208L1052.02,98.208Q1049.04,98.208,1049.04,100.688L1049.04,155.248Q1049.04,159.464,1044.82,159.464ZM1051.77,78.368L1083.26,78.368Q1101.62,78.368,1101.62,60.264L1101.62,39.432Q1101.62,21.08,1083.26,21.08L1051.77,21.08Q1049.04,21.08,1049.04,23.56L1049.04,75.888Q1049.04,78.368,1051.77,78.368ZM1203.05,159.464L1187.42,159.464Q1182.96,159.464,1182.96,155.248L1182.96,23.56Q1182.96,21.08,1180.48,21.08L1149.23,21.08Q1144.77,21.08,1144.77,16.864L1144.77,4.216Q1144.77,0,1149.23,0L1241.24,0Q1245.7,0,1245.7,4.216L1245.7,16.864Q1245.7,21.08,1241.24,21.08L1209.99,21.08Q1207.26,21.08,1207.26,23.56L1207.26,155.248Q1207.26,159.464,1203.05,159.464ZM1286.87,159.464L1271.25,159.464Q1267.03,159.464,1267.03,155.248L1267.03,4.216Q1267.03,0,1271.25,0L1286.87,0Q1291.09,0,1291.09,4.216L1291.09,66.216Q1291.09,68.696,1294.06,68.696L1346.39,68.696Q1348.87,68.696,1348.87,66.216L1348.87,4.216Q1348.87,0,1353.09,0L1368.96,0Q1373.18,0,1373.18,4.216L1373.18,155.248Q1373.18,159.464,1368.96,159.464L1353.09,159.464Q1348.87,159.464,1348.87,155.248L1348.87,92.504Q1348.87,90.024,1346.39,90.024L1294.06,90.024Q1291.09,90.024,1291.09,92.504L1291.09,155.248Q1291.09,159.464,1286.87,159.464ZM1488.25,159.464L1472.62,159.464Q1468.41,159.464,1468.41,155.248L1468.41,4.216Q1468.41,0,1472.62,0L1550.5,0Q1554.71,0,1554.71,4.216L1554.71,16.864Q1554.71,21.08,1550.5,21.08L1495.44,21.08Q1492.46,21.08,1492.46,23.56L1492.46,70.432Q1492.46,73.16,1495.44,73.16L1543.3,73.16Q1547.77,73.16,1547.77,77.376L1547.77,89.776Q1547.77,94.24,1543.3,94.24L1495.44,94.24Q1492.46,94.24,1492.46,96.72L1492.46,155.248Q1492.46,159.464,1488.25,159.464ZM1606.3,4.216L1606.3,155.248Q1606.3,159.464,1602.08,159.464L1586.46,159.464Q1582.24,159.464,1582.24,155.248L1582.24,4.216Q1582.24,0,1586.46,0L1602.08,0Q1606.3,0,1606.3,4.216ZM1728.31,159.464L1647.96,159.464Q1643.74,159.464,1643.74,155.248L1643.74,4.216Q1643.74,0,1647.96,0L1663.58,0Q1667.8,0,1667.8,4.216L1667.8,135.408Q1667.8,137.888,1670.78,137.888L1728.31,137.888Q1732.53,137.888,1732.53,142.352L1732.53,155.248Q1732.53,159.464,1728.31,159.464ZM1838.92,159.464L1759.56,159.464Q1755.34,159.464,1755.34,155.248L1755.34,4.216Q1755.34,0,1759.56,0L1838.92,0Q1842.89,0,1842.89,4.216L1842.89,16.864Q1842.89,21.08,1838.92,21.08L1782.38,21.08Q1779.4,21.08,1779.4,23.56L1779.4,65.472Q1779.4,67.952,1782.38,67.952L1830.24,67.952Q1834.7,67.952,1834.7,72.168L1834.7,84.816Q1834.7,89.032,1830.24,89.032L1782.38,89.032Q1779.4,89.032,1779.4,91.512L1779.4,135.656Q1779.4,138.384,1782.38,138.384L1838.92,138.384Q1842.89,138.384,1842.89,142.6L1842.89,155.248Q1842.89,159.464,1838.92,159.464ZM1871.41,120.776L1871.41,114.328Q1871.41,110.112,1875.62,110.112L1891.5,110.112Q1895.71,110.112,1895.71,114.328L1895.71,118.792Q1895.71,129.208,1900.3,133.796Q1904.89,138.384,1915.55,138.384L1932.66,138.384Q1943.33,138.384,1948.04,133.548Q1952.75,128.712,1952.75,117.8L1952.75,112.096Q1952.75,104.16,1946.68,99.572Q1940.6,94.984,1931.67,93.62Q1922.74,92.256,1912.08,89.776Q1901.42,87.296,1892.49,84.072Q1883.56,80.848,1877.48,71.92Q1871.41,62.992,1871.41,49.104L1871.41,38.688Q1871.41,20.584,1881.7,10.292Q1891.99,0,1910.1,0L1936.38,0Q1954.74,0,1965.03,10.292Q1975.32,20.584,1975.32,38.688L1975.32,44.144Q1975.32,48.36,1971.1,48.36L1955.23,48.36Q1951.02,48.36,1951.02,44.144L1951.02,40.92Q1951.02,30.256,1946.43,25.668Q1941.84,21.08,1931.18,21.08L1915.55,21.08Q1904.89,21.08,1900.3,25.916Q1895.71,30.752,1895.71,42.408L1895.71,50.096Q1895.71,61.256,1911.83,65.224Q1919.02,66.96,1927.58,68.2Q1936.14,69.44,1944.82,71.92Q1953.5,74.4,1960.69,78.492Q1967.88,82.584,1972.34,90.892Q1976.81,99.2,1976.81,111.104L1976.81,120.776Q1976.81,138.88,1966.52,149.172Q1956.22,159.464,1938.12,159.464L1910.34,159.464Q1892.24,159.464,1881.82,149.172Q1871.41,138.88,1871.41,120.776Z"
-                  fill-opacity="1" />
-              </g>
-            </svg>
-          </div>
-        </a>
-        <a class="font-medium text-white" href="/color">颜色</a>
-        <a class="font-medium text-white" href="/font">字体</a>
-        <a class="font-medium text-white" href="/logo">标志</a>
-        <a class="font-medium text-white" href="/tool">工具</a>
-        <a class="font-medium text-white" href="/about">关于</a>
-      </div>
-      <a target="_blank"
-        class="ml-24 cursor-pointer truncate border-2 border-white bg-black px-6 py-2 font-medium text-white shrink-0"
-        href="https://github.com/zaona/united-earth-files/discussions">交流讨论</a>
-    </div>
-  </div>
-
-  <div class="bg-black block lg:hidden">
-    <div class="px-4 py-4">
-      <a class="flex items-center justify-between" href="/">
-        <div class="h-[40px]">
-          <svg class="h-[40px] w-full fill-white" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="788.511962890625"
-            height="648.270263671875" viewBox="0 0 788.511962890625 648.270263671875">
-            <g>
-              <g>
-                <path
-                  d="M400.478,327.269L487.929,567.278L545.376,567.278L438.209,273.269L188.409,273.302L101.068,513.269L54,513.269L54,54L173.982,54L200.39,126.556L257.911,126.556L211.903,0L0,0L0,567.279L138.901,567.266L226.29,327.269L400.478,327.269Z"
-                  fill-rule="evenodd" fill-opacity="1" />
-              </g>
-              <g>
-                <path
-                  d="M788.512,648.27L788.512,72.5563L325.948,72.5564L299.54,0L242.016,0L288.079,126.556L734.512,126.556L734.512,594.27L0,594.27L0,648.27L788.512,648.27Z"
-                  fill-rule="evenodd" fill-opacity="1" />
-              </g>
-              <g>
-                <path
-                  d="M451.2277934570312,567.27804296875L431.57379345703123,513.27804296875L288.37849345703125,513.27804296875L264.35329345703127,447.26904296875L407.5477934570313,447.26904296875L387.89279345703125,393.26904296875L234.97769345703125,393.26904296875L210.50079345703125,457.35634296875L250.48729345703126,567.27804296875L451.2277934570312,567.27804296875Z"
-                  fill-rule="evenodd" fill-opacity="1" />
-              </g>
-              <g>
-                <path
-                  d="M492.12307529296874,328.67529296875L471.72967529296875,272.67529296875L616.6286752929688,272.67529296875L637.0226752929688,328.67529296875L492.12307529296874,328.67529296875ZM535.8232752929688,448.67529296875L515.4298752929687,392.67529296875L660.3296752929688,392.67529296875L680.7226752929687,448.67529296875L535.8232752929688,448.67529296875Z"
-                  fill-rule="evenodd" fill-opacity="1" />
-              </g>
-            </g>
-          </svg>
-        </div>
-        <div class="h-[24px] ml-6">
-          <svg class="w-full h-[24px] fill-white" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1"
-            width="1976.8079833984375" height="159.46400451660156" viewBox="0 0 1976.8079833984375 159.46400451660156">
-            <g>
-              <path
-                d="M84.568,0L100.192,0Q104.656,0,104.656,3.968L104.656,121.024Q104.656,139.128,94.364,149.296Q84.072,159.464,65.968,159.464L38.44,159.464Q20.336,159.464,10.168,149.296Q0,139.128,0,121.024L0,4.216Q0,0,4.216,0L19.84,0Q24.056,0,24.056,4.216L24.056,120.032Q24.056,138.384,41.912,138.384L62.248,138.384Q80.352,138.384,80.352,120.032L80.352,4.216Q80.352,0,84.568,0ZM158.968,159.464L143.592,159.464Q139.376,159.464,139.376,155.248L139.376,4.216Q139.376,0,143.592,0L157.48,0Q161.448,0,162.936,2.72801L222.952,110.608L223.944,110.608L223.944,4.216Q223.944,0,228.16,0L243.536,0Q247.752,0,247.752,4.216L247.752,155.248Q247.752,159.464,243.536,159.464L230.144,159.464Q226.176,159.464,223.696,155.496L164.176,48.856L163.184,48.856L163.184,155.248Q163.184,159.464,158.968,159.464ZM309.256,4.216L309.256,155.248Q309.256,159.464,305.04,159.464L289.416,159.464Q285.2,159.464,285.2,155.248L285.2,4.216Q285.2,0,289.416,0L305.04,0Q309.256,0,309.256,4.216ZM390.352,159.464L374.728,159.464Q370.264,159.464,370.264,155.248L370.264,23.56Q370.264,21.08,367.784,21.08L336.536,21.08Q332.072,21.08,332.072,16.864L332.072,4.216Q332.072,0,336.536,0L428.544,0Q433.008,0,433.008,4.216L433.008,16.864Q433.008,21.08,428.544,21.08L397.296,21.08Q394.568,21.08,394.568,23.56L394.568,155.248Q394.568,159.464,390.352,159.464ZM537.912,159.464L458.552,159.464Q454.336,159.464,454.336,155.248L454.336,4.216Q454.336,0,458.552,0L537.912,0Q541.88,0,541.88,4.216L541.88,16.864Q541.88,21.08,537.912,21.08L481.368,21.08Q478.392,21.08,478.392,23.56L478.392,65.472Q478.392,67.952,481.368,67.952L529.232,67.952Q533.696,67.952,533.696,72.168L533.696,84.816Q533.696,89.032,529.232,89.032L481.368,89.032Q478.392,89.032,478.392,91.512L478.392,135.656Q478.392,138.384,481.368,138.384L537.912,138.384Q541.88,138.384,541.88,142.6L541.88,155.248Q541.88,159.464,537.912,159.464ZM600.16,138.384L635.128,138.384Q652.984,138.384,652.984,120.032L652.984,39.432Q652.984,21.08,635.128,21.08L600.16,21.08Q597.432,21.08,597.432,23.56L597.432,135.656Q597.432,138.384,600.16,138.384ZM573.376,155.248L573.376,4.216Q573.376,0,577.592,0L638.6,0Q656.704,0,666.996,10.044Q677.288,20.088,677.288,38.44L677.288,121.024Q677.288,139.128,666.996,149.296Q656.704,159.464,638.6,159.464L577.592,159.464Q573.376,159.464,573.376,155.248ZM853.616,159.464L774.256,159.464Q770.04,159.464,770.04,155.248L770.04,4.216Q770.04,0,774.256,0L853.616,0Q857.584,0,857.584,4.216L857.584,16.864Q857.584,21.08,853.616,21.08L797.072,21.08Q794.096,21.08,794.096,23.56L794.096,65.472Q794.096,67.952,797.072,67.952L844.936,67.952Q849.4,67.952,849.4,72.168L849.4,84.816Q849.4,89.032,844.936,89.032L797.072,89.032Q794.096,89.032,794.096,91.512L794.096,135.656Q794.096,138.384,797.072,138.384L853.616,138.384Q857.584,138.384,857.584,142.6L857.584,155.248Q857.584,159.464,853.616,159.464ZM897.76,159.464L879.904,159.464Q876.432,159.464,877.424,155.248L920.576,4.216Q921.816,0,926.528,0L951.328,0Q956.288,0,957.28,4.216L1000.43,155.248Q1001.42,159.464,997.704,159.464L980.096,159.464Q977.864,159.464,976.996,158.596Q976.128,157.728,975.632,155.248L966.208,123.008L911.648,123.008L902.224,155.248Q901.232,159.464,897.76,159.464ZM938.432,23.808L916.608,103.168L961.496,103.168L939.424,23.808L938.432,23.808ZM1044.82,159.464L1029.2,159.464Q1024.98,159.464,1024.98,155.248L1024.98,4.216Q1024.98,0,1029.2,0L1087.23,0Q1105.34,0,1115.63,10.292Q1125.92,20.584,1125.92,38.688L1125.92,59.52Q1125.92,88.04,1102.36,95.48L1102.36,96.472L1129.89,154.504Q1132.62,159.464,1126.66,159.464L1111.29,159.464Q1105.34,159.464,1103.6,155.248L1077.06,98.208L1052.02,98.208Q1049.04,98.208,1049.04,100.688L1049.04,155.248Q1049.04,159.464,1044.82,159.464ZM1051.77,78.368L1083.26,78.368Q1101.62,78.368,1101.62,60.264L1101.62,39.432Q1101.62,21.08,1083.26,21.08L1051.77,21.08Q1049.04,21.08,1049.04,23.56L1049.04,75.888Q1049.04,78.368,1051.77,78.368ZM1203.05,159.464L1187.42,159.464Q1182.96,159.464,1182.96,155.248L1182.96,23.56Q1182.96,21.08,1180.48,21.08L1149.23,21.08Q1144.77,21.08,1144.77,16.864L1144.77,4.216Q1144.77,0,1149.23,0L1241.24,0Q1245.7,0,1245.7,4.216L1245.7,16.864Q1245.7,21.08,1241.24,21.08L1209.99,21.08Q1207.26,21.08,1207.26,23.56L1207.26,155.248Q1207.26,159.464,1203.05,159.464ZM1286.87,159.464L1271.25,159.464Q1267.03,159.464,1267.03,155.248L1267.03,4.216Q1267.03,0,1271.25,0L1286.87,0Q1291.09,0,1291.09,4.216L1291.09,66.216Q1291.09,68.696,1294.06,68.696L1346.39,68.696Q1348.87,68.696,1348.87,66.216L1348.87,4.216Q1348.87,0,1353.09,0L1368.96,0Q1373.18,0,1373.18,4.216L1373.18,155.248Q1373.18,159.464,1368.96,159.464L1353.09,159.464Q1348.87,159.464,1348.87,155.248L1348.87,92.504Q1348.87,90.024,1346.39,90.024L1294.06,90.024Q1291.09,90.024,1291.09,92.504L1291.09,155.248Q1291.09,159.464,1286.87,159.464ZM1488.25,159.464L1472.62,159.464Q1468.41,159.464,1468.41,155.248L1468.41,4.216Q1468.41,0,1472.62,0L1550.5,0Q1554.71,0,1554.71,4.216L1554.71,16.864Q1554.71,21.08,1550.5,21.08L1495.44,21.08Q1492.46,21.08,1492.46,23.56L1492.46,70.432Q1492.46,73.16,1495.44,73.16L1543.3,73.16Q1547.77,73.16,1547.77,77.376L1547.77,89.776Q1547.77,94.24,1543.3,94.24L1495.44,94.24Q1492.46,94.24,1492.46,96.72L1492.46,155.248Q1492.46,159.464,1488.25,159.464ZM1606.3,4.216L1606.3,155.248Q1606.3,159.464,1602.08,159.464L1586.46,159.464Q1582.24,159.464,1582.24,155.248L1582.24,4.216Q1582.24,0,1586.46,0L1602.08,0Q1606.3,0,1606.3,4.216ZM1728.31,159.464L1647.96,159.464Q1643.74,159.464,1643.74,155.248L1643.74,4.216Q1643.74,0,1647.96,0L1663.58,0Q1667.8,0,1667.8,4.216L1667.8,135.408Q1667.8,137.888,1670.78,137.888L1728.31,137.888Q1732.53,137.888,1732.53,142.352L1732.53,155.248Q1732.53,159.464,1728.31,159.464ZM1838.92,159.464L1759.56,159.464Q1755.34,159.464,1755.34,155.248L1755.34,4.216Q1755.34,0,1759.56,0L1838.92,0Q1842.89,0,1842.89,4.216L1842.89,16.864Q1842.89,21.08,1838.92,21.08L1782.38,21.08Q1779.4,21.08,1779.4,23.56L1779.4,65.472Q1779.4,67.952,1782.38,67.952L1830.24,67.952Q1834.7,67.952,1834.7,72.168L1834.7,84.816Q1834.7,89.032,1830.24,89.032L1782.38,89.032Q1779.4,89.032,1779.4,91.512L1779.4,135.656Q1779.4,138.384,1782.38,138.384L1838.92,138.384Q1842.89,138.384,1842.89,142.6L1842.89,155.248Q1842.89,159.464,1838.92,159.464ZM1871.41,120.776L1871.41,114.328Q1871.41,110.112,1875.62,110.112L1891.5,110.112Q1895.71,110.112,1895.71,114.328L1895.71,118.792Q1895.71,129.208,1900.3,133.796Q1904.89,138.384,1915.55,138.384L1932.66,138.384Q1943.33,138.384,1948.04,133.548Q1952.75,128.712,1952.75,117.8L1952.75,112.096Q1952.75,104.16,1946.68,99.572Q1940.6,94.984,1931.67,93.62Q1922.74,92.256,1912.08,89.776Q1901.42,87.296,1892.49,84.072Q1883.56,80.848,1877.48,71.92Q1871.41,62.992,1871.41,49.104L1871.41,38.688Q1871.41,20.584,1881.7,10.292Q1891.99,0,1910.1,0L1936.38,0Q1954.74,0,1965.03,10.292Q1975.32,20.584,1975.32,38.688L1975.32,44.144Q1975.32,48.36,1971.1,48.36L1955.23,48.36Q1951.02,48.36,1951.02,44.144L1951.02,40.92Q1951.02,30.256,1946.43,25.668Q1941.84,21.08,1931.18,21.08L1915.55,21.08Q1904.89,21.08,1900.3,25.916Q1895.71,30.752,1895.71,42.408L1895.71,50.096Q1895.71,61.256,1911.83,65.224Q1919.02,66.96,1927.58,68.2Q1936.14,69.44,1944.82,71.92Q1953.5,74.4,1960.69,78.492Q1967.88,82.584,1972.34,90.892Q1976.81,99.2,1976.81,111.104L1976.81,120.776Q1976.81,138.88,1966.52,149.172Q1956.22,159.464,1938.12,159.464L1910.34,159.464Q1892.24,159.464,1881.82,149.172Q1871.41,138.88,1871.41,120.776Z"
-                fill-opacity="1" />
-            </g>
-          </svg>
-        </div>
-      </a>
-      <div class="mt-4 flex items-center justify-between">
-        <a class="text-sm text-white" href="/color">颜色</a>
-        <a class="text-sm text-white" href="/font">字体</a>
-        <a class="text-sm text-white" href="/logo">标志</a>
-        <a class="text-sm text-white" href="/tool">工具</a>
-        <a class="text-sm text-white" href="/about">关于</a>
-        <!-- <a target="_blank" class="text-sm text-white"
-                href="https://github.com/zaona/united-earth-files/discussions">交流</a> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="px-4 py-8 lg:py-0">
-    <div class="flex justify-center lg:flex-row flex-col items-center lg:h-screen max-w-[1200px] mx-auto gap-[16px]">
-      <div class="lg:basis-1/2">
-        <div class="w-[360px] relative" id="card">
-          <img clss="w-[360px]" src="/tool/ueg-card/bg.svg">
-          <div class="bg-[#F3F4F6] h-[78px]" id="card-footer">
-            <div class="h-full flex items-center justify-between mx-auto">
-              <p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p>
-              <img class="h-full" src="/src/img/earth-engine.svg">
+    <div class="bg-black hidden lg:block">
+        <div class="h-20 px-4 flex items-center justify-between">
+            <div class="flex h-full items-center justify-between w-[1000px]">
+                <a class="flex h-full items-center" href="/">
+                    <div class="h-[40px] mb-[2px]">
+                        <img class="h-[40px]" src="/src/logo/logo-white.svg">
+                    </div>
+                    <div class="h-[24px] ml-6">
+                        <img class="h-[24px]" src="/src/logo/text-eng-white.svg">
+                    </div>
+                </a>
+                <a class="font-medium text-white" href="/color">颜色</a>
+                <a class="font-medium text-white" href="/font">字体</a>
+                <a class="font-medium text-white" href="/logo">标志</a>
+                <a class="font-medium text-white" href="/tool">工具</a>
+                <a class="font-medium text-white" href="/about">关于</a>
             </div>
-          </div>
-          <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover" src="/tool/ueg-card/zzz.png"
-            id="avatar" />
-          <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode" title="uef.zaona.top"><canvas
-              width="80" height="80" style="display: none;"></canvas><img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA41JREFUeF7tnNlShDAQReH/P3osLC0yge45uc0AjtdHzXrSe4LzNE2P6Q0/j8c67DzPwzO0/Wnndp7q/HhOA6So9tstomEJLDB8AqioTTv3qAr180X96f7I/EfucVmXAdLT+WnX23MDfBdA4jmrKtjPEXlO8vuMA1HtrH/m0UMJNMAVqQE2cagSH14OkKoQ2VzmRck8ZI5enQ3QErhvj3pJ+XcSSCMIAmYZK1Jv2j9az21V2ACbist3WgNsjZJKkXFvJ4FUOiq5cObtovmzfJmAVg4w2uPlubABdgSIBNCUyRIoVKSJet1ahRW7N+r6s5CAFA2qAI/c48YGHjn4KIzeixJzQKtBpDCi7v30kv7HSeCDGB71eHb6UWkgEkxTuQOXvxlqNsAaXgOs8ZsQQHpbRtqRNllaWNzvU7pJY9LM7BhgQJEWXg2wCrB9mUA8n6KCVO3I/FliTwIKuv5snqe/GeDr401toAHeCKCSfpGqS9uGqCn14jSozxCji3VqmwwwKEEZYCyDlsDXJjBtgQBGNog+DnqXDaPFBMXWYa0jXtgA1zfemxqkAe5rqCSBo+YgqwhX1XZ0LbQwoGQyOJAeXbQBdm+kDXD/gwWpnFUNio9O2snhEruVwSCPkzaePyrpG+CKyhIIL/klCYzCGFoPq6gW6bu0odVhMh69VqVFDvSdiBLJ0+C7umnSn66FVHp6FgbY0JUAtk7kDEnLFjk6P33aQdWRAEy98OgG+sGIrTLAxOgYoPBlOTXQv+0+TgKjD65JTFTNhWlWUDUt1FMTDdrYQANckRggFbWgnQTwjOdtVAUVsxFlTCQkUa4kcDGheJhP3Q2wSPOjAZ7xb0+omkWgSZ1vmWO0BHdEFHDKI3MDFFRYcQh/XgKJ58pYkjI+tYdRhhNJc5aXK8UEYg6+zQYpqFIBNMDu+18K7redAcK7g6gwMAqQFhYULzx6+NQE4Io0sVVKQZNAVkKSvo8BCv8+gBw6BUuiiNSJkMVYAhMvfCRAEt9laksDcdIuMyEkdNkIzejztiw+IwtQ+hMwmypJ0QRgx2WAK3oiAJdIIM0ERrMPGgYpjoPAvMSJVFMxJQwywIbAnwFIT00x8HupXzYfvasg7aoFk42zOruYQFU4sofVIqgBJpf/l0ugorZRH5IKUWmgHpGMRyWYasqtSvok3MmkzAADgpZAIQwh3j27GCfS3LchZqfv8wVqJzIrLQ7ZwQAAAABJRU5ErkJggg=="
-              style="display: block;"></div>
-          <!-- <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode"></div> -->
-          <p class="absolute top-[266px] left-[105px] text-[50px] font-bold text-white mt-[0px] font-rajdhani"
-            id="family-name">ZHOU
-          </p>
-          <p class="absolute top-[320px] left-[105px] font-bold text-white mt-[0px] font-rajdhani" id="first-name">
-            ZHEZHI
-          </p>
-          <p class="absolute top-[381px] left-[105px] font-bold text-white mt-[0px] font-rajdhani" id="position">
-            PERMANENT REPRESENTATIVE
-          </p>
-          <p class="absolute top-[497.5px] left-[40px] mt-[0px] text-[36px] font-barcode" id="barcode">
-            barcode
-          </p>
+            <a target="_blank"
+                class="ml-24 cursor-pointer truncate border-2 border-white bg-black px-6 py-2 font-medium text-white shrink-0"
+                href="https://github.com/zaona/united-earth-files/discussions">交流讨论</a>
         </div>
-      </div>
-
-      <div class="lg:basis-1/2 w-full">
-        <div class="w-full bg-[#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
-          <div class="flex flex-col gap-3">
-            <p class="text-2xl font-bold mb-2">UEG 名牌生成</p>
-            <input type="file" class="w-full file:cursor-pointer
-          file:mr-4 file:py-2 file:px-4
-          file:rounded-0 file:border-0
-          file:bg-black file:text-white" id="imageFile" />
-            <input type="text" placeholder="姓" id="input-family-name"
-              class="appearance-none border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
-            <input type="text" placeholder="名" id="input-first-name"
-              class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
-            <input type="text" placeholder="职位" id="input-position"
-              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <!-- <input type="text" placeholder="二维码" id="input-qrcode"
-              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" /> -->
-            <input type="text" placeholder="条形码" id="input-barcode"
-              class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
-            <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white"
-              id="screenshotBtn">下载</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+
+    <div class="bg-black block lg:hidden">
+        <div class="px-4 py-4">
+            <a class="flex items-center justify-between" href="/">
+                <div class="h-[40px]">
+                    <img class="h-[40px]" src="/src/logo/logo-white.svg">
+                </div>
+                <div class="h-[24px] ml-6">
+                    <img class="h-[24px]" src="/src/logo/text-eng-white.svg">
+                </div>
+            </a>
+            <div class="mt-4 flex items-center justify-between">
+                <a class="text-sm text-white" href="/color">颜色</a>
+                <a class="text-sm text-white" href="/font">字体</a>
+                <a class="text-sm text-white" href="/logo">标志</a>
+                <a class="text-sm text-white" href="/tool">工具</a>
+                <a class="text-sm text-white" href="/about">关于</a>
+                <!-- <a target="_blank" class="text-sm text-white"
+                    href="https://github.com/zaona/united-earth-files/discussions">交流</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-8 lg:py-0">
+        <div
+            class="flex justify-center lg:flex-row flex-col items-center lg:h-screen max-w-[1200px] mx-auto gap-[16px]">
+            <div class="lg:basis-1/2">
+                <div class="w-[360px] relative" id="card">
+                    <img clss="w-[360px]" src="/tool/ueg-card/bg.svg">
+                    <div class="bg-[#F3F4F6] h-[78px]" id="card-footer">
+                        <div class="h-full flex items-center justify-between mx-auto">
+                            <p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p>
+                            <img class="h-full" src="/src/img/earth-engine.svg">
+                        </div>
+                    </div>
+                    <img class="absolute top-[88.84px] left-[45.085px] w-[130px] h-[166px] object-cover"
+                        src="/tool/ueg-card/zzz.png" id="avatar" />
+                    <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode" title="uef.zaona.top">
+                        <canvas width="80" height="80" style="display: none;"></canvas><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAA41JREFUeF7tnNlShDAQReH/P3osLC0yge45uc0AjtdHzXrSe4LzNE2P6Q0/j8c67DzPwzO0/Wnndp7q/HhOA6So9tstomEJLDB8AqioTTv3qAr180X96f7I/EfucVmXAdLT+WnX23MDfBdA4jmrKtjPEXlO8vuMA1HtrH/m0UMJNMAVqQE2cagSH14OkKoQ2VzmRck8ZI5enQ3QErhvj3pJ+XcSSCMIAmYZK1Jv2j9az21V2ACbist3WgNsjZJKkXFvJ4FUOiq5cObtovmzfJmAVg4w2uPlubABdgSIBNCUyRIoVKSJet1ahRW7N+r6s5CAFA2qAI/c48YGHjn4KIzeixJzQKtBpDCi7v30kv7HSeCDGB71eHb6UWkgEkxTuQOXvxlqNsAaXgOs8ZsQQHpbRtqRNllaWNzvU7pJY9LM7BhgQJEWXg2wCrB9mUA8n6KCVO3I/FliTwIKuv5snqe/GeDr401toAHeCKCSfpGqS9uGqCn14jSozxCji3VqmwwwKEEZYCyDlsDXJjBtgQBGNog+DnqXDaPFBMXWYa0jXtgA1zfemxqkAe5rqCSBo+YgqwhX1XZ0LbQwoGQyOJAeXbQBdm+kDXD/gwWpnFUNio9O2snhEruVwSCPkzaePyrpG+CKyhIIL/klCYzCGFoPq6gW6bu0odVhMh69VqVFDvSdiBLJ0+C7umnSn66FVHp6FgbY0JUAtk7kDEnLFjk6P33aQdWRAEy98OgG+sGIrTLAxOgYoPBlOTXQv+0+TgKjD65JTFTNhWlWUDUt1FMTDdrYQANckRggFbWgnQTwjOdtVAUVsxFlTCQkUa4kcDGheJhP3Q2wSPOjAZ7xb0+omkWgSZ1vmWO0BHdEFHDKI3MDFFRYcQh/XgKJ58pYkjI+tYdRhhNJc5aXK8UEYg6+zQYpqFIBNMDu+18K7redAcK7g6gwMAqQFhYULzx6+NQE4Io0sVVKQZNAVkKSvo8BCv8+gBw6BUuiiNSJkMVYAhMvfCRAEt9laksDcdIuMyEkdNkIzejztiw+IwtQ+hMwmypJ0QRgx2WAK3oiAJdIIM0ERrMPGgYpjoPAvMSJVFMxJQwywIbAnwFIT00x8HupXzYfvasg7aoFk42zOruYQFU4sofVIqgBJpf/l0ugorZRH5IKUWmgHpGMRyWYasqtSvok3MmkzAADgpZAIQwh3j27GCfS3LchZqfv8wVqJzIrLQ7ZwQAAAABJRU5ErkJggg=="
+                            style="display: block;"></div>
+                    <!-- <div class="absolute top-[128px] left-[236px] w-[80px] h-[80px]" id="qrcode"></div> -->
+                    <p class="absolute top-[266px] left-[105px] text-[50px] font-bold text-white mt-[0px] font-rajdhani"
+                        id="family-name">ZHOU
+                    </p>
+                    <p class="absolute top-[320px] left-[105px] font-bold text-white mt-[0px] font-rajdhani"
+                        id="first-name">
+                        ZHEZHI
+                    </p>
+                    <p class="absolute top-[381px] left-[105px] font-bold text-white mt-[0px] font-rajdhani"
+                        id="position">
+                        PERMANENT REPRESENTATIVE
+                    </p>
+                    <p class="absolute top-[497.5px] left-[40px] mt-[0px] text-[36px] font-barcode" id="barcode">
+                        barcode
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:basis-1/2 w-full">
+                <div class="w-full bg-[#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
+                    <div class="flex flex-col gap-3">
+                        <p class="text-2xl font-bold mb-2">UEG 名牌生成</p>
+                        <input type="file" class="w-full file:cursor-pointer
+              file:mr-4 file:py-2 file:px-4
+              file:rounded-0 file:border-0
+              file:bg-black file:text-white" id="imageFile" />
+                        <input type="text" placeholder="姓" id="input-family-name"
+                            class="appearance-none border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
+                        <input type="text" placeholder="名" id="input-first-name"
+                            class="border-2 border-black rounded-none focus:rounded-none bg-white px-3 py-2 text-black outline-none" />
+                        <input type="text" placeholder="职位" id="input-position"
+                            class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
+                        <!-- <input type="text" placeholder="二维码" id="input-qrcode"
+                  class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" /> -->
+                        <input type="text" placeholder="条形码" id="input-barcode"
+                            class="border-2 border-black rounded-none focusrounded-none bg-white px-3 py-2 text-black outline-none" />
+                        <button class="border-2 border-black bg-black px-6 py-2 font-medium text-white"
+                            id="screenshotBtn">下载</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-  <!-- 信息更新 -->
-  <script>
-    document.getElementById('imageFile').addEventListener('change', function (event) {
-      var file = event.target.files[0]; // 获取选中的文件
-      if (file) {
-        var reader = new FileReader(); // 创建FileReader对象
-        reader.onload = function (e) { // 定义读取完成后的方法
-          document.getElementById('avatar').src = e.target.result; // 将读取到的DataURL赋值给img元素的src
-          document.getElementById('avatar').style.display = 'block'; // 显示图片
-        };
-        reader.readAsDataURL(file); // 读取文件为DataURL
-      } else {
-        document.getElementById('avatar').src = ''; // 如果没有选中文件，清空图片src
-        document.getElementById('avatar').style.display = 'none'; // 隐藏图片
-      }
-    });
-    document.getElementById('input-family-name').addEventListener('input', function () {
-      document.getElementById('family-name').textContent = this.value;
-    });
-    document.getElementById('input-first-name').addEventListener('input', function () {
-      document.getElementById('first-name').textContent = this.value;
-    });
-    document.getElementById('input-position').addEventListener('input', function () {
-      document.getElementById('position').textContent = this.value;
-    });
-    document.getElementById('input-barcode').addEventListener('input', function () {
-      document.getElementById('barcode').textContent = this.value;
-    });
-  </script>
-
-  <!-- 二维码生成 -->
-  <!-- <script>
-    // 定义二维码配置为常量
-    const QR_CODE_CONFIG = {
-      width: 80,
-      height: 80,
-      colorDark: "#000000",
-      colorLight: "#ffffff"
-    };
-
-    // 初始化二维码
-    function initQRCode(containerId, initialValue) {
-      const container = document.getElementById(containerId);
-      if (!container) return; // 确保DOM元素存在
-
-      const qrCode = new QRCode(container, QR_CODE_CONFIG);
-      qrCode.makeCode(initialValue);
-
-      // 监听输入变化并更新二维码
-      document.getElementById('input-qrcode').addEventListener('input', function () {
-        if (qrCode) {
-          qrCode.clear();
-          qrCode.makeCode(this.value);
-        }
-      });
-    }
-
-    // 页面加载完成后初始化
-    window.onload = function () {
-      initQRCode('qrcode', 'uef.zaona.top');
-    };
-  </script> -->
-
-  <!-- 图片生成 -->
-  <script>
-    document.getElementById("card-footer").hidden = true;
-
-    function convertToImage() {
-      //一个不可行的方案，生成图片时加入footer
-      // document.getElementById("card-footer").hidden = false;
-      // const card = document.getElementById('card').outerHTML;
-      // const cardFooter = '<div class="bg-[#F3F4F6] h-[78px]" id="card-footer"><div class="max-w-[1200px] h-full flex items-center justify-between mx-auto"><p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p><img class="h-full hidden lg:block" src="/src/img/earth-engine.svg"></div></div>';
-      // const cardAll = card + cardFooter;
-      // const parser = new DOMParser()
-      // const element = parser.parseFromString(cardAll, 'text/html');
-      // console.log(cardAll);
-      // console.log(element);
-
-      const element = document.getElementById('card');
-      document.getElementById("card-footer").hidden = false;
-
-      // 定义转换选项以提高质量
-      const options = {
-        quality: 1, // 图像质量，范围从0到1，1为最高质量
-        width: 712, // 可选，指定输出宽度，单位像素
-        height: 1268.426, // 可选，指定输出高度，单位像素
-        style: { // 自定义样式，用于覆盖或补充原有样式，以解决可能的渲染问题
-          transform: 'scale(2)', // 例如，放大元素两倍后再截图，可能会提高清晰度
-          transformOrigin: 'top left',
-        },
-      };
-
-      // 使用options参数进行转换
-      htmlToImage.toPng(element, options)
-        .then(function (dataUrl) {
-          downloadImage(dataUrl, 'card.png');
-        })
-        .catch(function (error) {
-          console.error('Failed to generate image', error);
+    <!-- 信息更新 -->
+    <script>
+        document.getElementById('imageFile').addEventListener('change', function (event) {
+            var file = event.target.files[0]; // 获取选中的文件
+            if (file) {
+                var reader = new FileReader(); // 创建FileReader对象
+                reader.onload = function (e) { // 定义读取完成后的方法
+                    document.getElementById('avatar').src = e.target.result; // 将读取到的DataURL赋值给img元素的src
+                    document.getElementById('avatar').style.display = 'block'; // 显示图片
+                };
+                reader.readAsDataURL(file); // 读取文件为DataURL
+            } else {
+                document.getElementById('avatar').src = ''; // 如果没有选中文件，清空图片src
+                document.getElementById('avatar').style.display = 'none'; // 隐藏图片
+            }
         });
-    }
+        document.getElementById('input-family-name').addEventListener('input', function () {
+            document.getElementById('family-name').textContent = this.value;
+        });
+        document.getElementById('input-first-name').addEventListener('input', function () {
+            document.getElementById('first-name').textContent = this.value;
+        });
+        document.getElementById('input-position').addEventListener('input', function () {
+            document.getElementById('position').textContent = this.value;
+        });
+        document.getElementById('input-barcode').addEventListener('input', function () {
+            document.getElementById('barcode').textContent = this.value;
+        });
+    </script>
 
-    // 点击事件监听器
-    document.getElementById('screenshotBtn').addEventListener('click', convertToImage);
+    <!-- 二维码生成 -->
+    <!-- <script>
+        // 定义二维码配置为常量
+        const QR_CODE_CONFIG = {
+          width: 80,
+          height: 80,
+          colorDark: "#000000",
+          colorLight: "#ffffff"
+        };
+    
+        // 初始化二维码
+        function initQRCode(containerId, initialValue) {
+          const container = document.getElementById(containerId);
+          if (!container) return; // 确保DOM元素存在
+    
+          const qrCode = new QRCode(container, QR_CODE_CONFIG);
+          qrCode.makeCode(initialValue);
+    
+          // 监听输入变化并更新二维码
+          document.getElementById('input-qrcode').addEventListener('input', function () {
+            if (qrCode) {
+              qrCode.clear();
+              qrCode.makeCode(this.value);
+            }
+          });
+        }
+    
+        // 页面加载完成后初始化
+        window.onload = function () {
+          initQRCode('qrcode', 'uef.zaona.top');
+        };
+      </script> -->
 
-    // 下载图片的函数
-    function downloadImage(dataUrl, fileName) {
-      const link = document.createElement('a');
-      link.href = dataUrl;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link); // 下载后移除这个元素
+    <!-- 图片生成 -->
+    <script>
+        document.getElementById("card-footer").hidden = true;
 
-      document.getElementById("card-footer").hidden = true;
+        function convertToImage() {
+            //一个不可行的方案，生成图片时加入footer
+            // document.getElementById("card-footer").hidden = false;
+            // const card = document.getElementById('card').outerHTML;
+            // const cardFooter = '<div class="bg-[#F3F4F6] h-[78px]" id="card-footer"><div class="max-w-[1200px] h-full flex items-center justify-between mx-auto"><p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p><img class="h-full hidden lg:block" src="/src/img/earth-engine.svg"></div></div>';
+            // const cardAll = card + cardFooter;
+            // const parser = new DOMParser()
+            // const element = parser.parseFromString(cardAll, 'text/html');
+            // console.log(cardAll);
+            // console.log(element);
 
-    }
+            const element = document.getElementById('card');
+            document.getElementById("card-footer").hidden = false;
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-      const element = document.getElementById('card');
-      if (!element) {
-        console.error('Element not found');
-        return;
-      }
-      htmlToImage.toPng(element)
-        .then(function (dataUrl) {
-          // console.log(dataUrl)
-        })
-    });
-  </script>
+            // 定义转换选项以提高质量
+            const options = {
+                quality: 1, // 图像质量，范围从0到1，1为最高质量
+                width: 712, // 可选，指定输出宽度，单位像素
+                height: 1268.426, // 可选，指定输出高度，单位像素
+                style: { // 自定义样式，用于覆盖或补充原有样式，以解决可能的渲染问题
+                    transform: 'scale(2)', // 例如，放大元素两倍后再截图，可能会提高清晰度
+                    transformOrigin: 'top left',
+                },
+            };
 
-  <footer>
-    <div class="bg-[#F9FAFB] h-[250px]">
-      <div class="max-w-[1200px] h-full mx-auto flex items-center justify-between px-4">
-        <div class="hidden lg:block flex flex-col w-[166px]">
-          <img class="w-[67px] mb-2" src="/src/logo/logo.svg">
-          <img class="w-full mb-1" src="/src/logo/text.svg">
-          <img class="w-full pl-[1px] pr-[1px]" src="/src/logo/text-eng.svg">
+            // 使用options参数进行转换
+            htmlToImage.toPng(element, options)
+                .then(function (dataUrl) {
+                    downloadImage(dataUrl, 'card.png');
+                })
+                .catch(function (error) {
+                    console.error('Failed to generate image', error);
+                });
+        }
+
+        // 点击事件监听器
+        document.getElementById('screenshotBtn').addEventListener('click', convertToImage);
+
+        // 下载图片的函数
+        function downloadImage(dataUrl, fileName) {
+            const link = document.createElement('a');
+            link.href = dataUrl;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link); // 下载后移除这个元素
+
+            document.getElementById("card-footer").hidden = true;
+
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const element = document.getElementById('card');
+            if (!element) {
+                console.error('Element not found');
+                return;
+            }
+            htmlToImage.toPng(element)
+                .then(function (dataUrl) {
+                    // console.log(dataUrl)
+                })
+        });
+    </script>
+
+    <footer>
+        <div class="bg-[#F9FAFB] h-[250px]">
+            <div class="max-w-[1200px] h-full mx-auto flex items-center justify-between px-4">
+                <div class="hidden lg:block flex flex-col w-[166px]">
+                    <img class="w-[67px] mb-2 pl-[2px]" src="/src/logo/logo.svg">
+                    <img class="w-full mb-1" src="/src/logo/text.svg">
+                    <img class="w-full pl-[2px] pr-[1px]" src="/src/logo/text-eng.svg">
+                </div>
+                <div class="grid grid-cols-2 gap-x-[100px] lg:w-[350px] w-full">
+                    <div class="">
+                        <p class="text-[14px] font-bold mb-2">开源代码</p>
+                        <a target="_blank" class="text-[14px] text-[#6C7280]"
+                            href="https://github.com/zaona/united-earth-files">Github</a>
+                    </div>
+                    <div class="">
+                        <p class="text-[14px] font-bold mb-2">特别鸣谢</p>
+                        <p class="text-[14px] text-[#6C7280] mb-1">OSS Compass</p>
+                        <p class="text-[14px] text-[#6C7280] mb-1">United Earth Team</p>
+                        <p class="text-[14px] text-[#6C7280]">电影流浪地球</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid grid-cols-2 gap-x-[100px] lg:w-[350px] w-full">
-          <div class="">
-            <p class="text-[14px] font-bold mb-2">开源代码</p>
-            <a target="_blank" class="text-[14px] text-[#6C7280]"
-              href="https://github.com/zaona/united-earth-files">Github</a>
-          </div>
-          <div class="">
-            <p class="text-[14px] font-bold mb-2">特别鸣谢</p>
-            <p class="text-[14px] text-[#6C7280] mb-1">OSS Compass</p>
-            <p class="text-[14px] text-[#6C7280] mb-1">United Earth Team</p>
-            <p class="text-[14px] text-[#6C7280]">电影流浪地球</p>
-          </div>
+        <div class="bg-[#F3F4F6] h-[78px]">
+            <div class="max-w-[1200px] px-4 h-full flex items-center justify-between mx-auto">
+                <p class="text-[14px] text-[#6C7280]">Copyright © 2024 地球联合资源站。保留所有权利。</p>
+                <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="bg-[#F3F4F6] h-[78px]">
-      <div class="max-w-[1200px] px-4 h-full flex items-center justify-between mx-auto">
-        <p class="text-[14px] text-[#6C7280]">Copyright © 2024 地球联合资源站。保留所有权利。</p>
-        <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src='/js/nprogress.js'></script>
-  <script>
-    NProgress.configure({
-      minimum: 0.1, // 显示进度条所需的最小加载量
-      easing: 'ease', // 动画效果
-      speed: 500, // 动画速度（毫秒）
-      trickleRate: 0.02, // 自动递增进度的速度
-      trickleSpeed: 800, // 自动递增间隔（毫秒）
-      showSpinner: false, // 是否显示加载指示器（旋转图标）
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-      if (window.localStorage.getItem('progress')) {
-        NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
-      }
-      NProgress.configure({ "easing": "ease" }).start()
-    });
-    window.addEventListener('load', function () {
-      NProgress.done()
-      window.localStorage.removeItem('progress')
-    });
-    window.addEventListener('beforeunload', function (ev) {
-      NProgress.start();
-      window.localStorage.setItem('progress', NProgress.status)
-      setInterval(function () {
-        window.localStorage.setItem('progress', NProgress.status)
-      }, 400);
-    });
-  </script>
+    <script src='/js/nprogress.js'></script>
+    <script>
+        NProgress.configure({
+            minimum: 0.1, // 显示进度条所需的最小加载量
+            easing: 'ease', // 动画效果
+            speed: 500, // 动画速度（毫秒）
+            trickleRate: 0.02, // 自动递增进度的速度
+            trickleSpeed: 800, // 自动递增间隔（毫秒）
+            showSpinner: false, // 是否显示加载指示器（旋转图标）
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.localStorage.getItem('progress')) {
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
+            }
+            NProgress.configure({ "easing": "ease" }).start()
+        });
+        window.addEventListener('load', function () {
+            NProgress.done()
+            window.localStorage.removeItem('progress')
+        });
+        window.addEventListener('beforeunload', function (ev) {
+            NProgress.start();
+            window.localStorage.setItem('progress', NProgress.status)
+            setInterval(function () {
+                window.localStorage.setItem('progress', NProgress.status)
+            }, 400);
+        });
+    </script>
+
 </body>
-
-</html>
