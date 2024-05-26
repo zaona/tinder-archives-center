@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>地球联合资源站</title>
+    <link rel="icon" type="image/svg+xml" href="/src/logo/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/tailwind3.4.3.js"></script>
+    <link rel='stylesheet' href='/css/nprogress.css' />
+    <script>
+        let newFavicon = window.matchMedia('(prefers-color-scheme: dark)').matches ? '/src/logo/logo-white.svg' : '/src/logo/logo.svg';
+        document.querySelector("link[rel='icon']").setAttribute('href', newFavicon);
+    </script>
+    <script src="/js/broswer.js"></script>
+    <style type="text/tailwindcss">
+        @font-face {
+      font-family: Rajdhani-Medium;
+      src: url(/tool/ueg-card/Rajdhani-Medium.woff);
+    }
+    @font-face {
+      font-family: LibreBarcode39-Regular;
+      src: url(/tool/ueg-card/LibreBarcode39-Regular.ttf);
+    }
+  </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'rajdhani': ['Rajdhani-Medium'],
+                        'barcode': ['LibreBarcode39-Regular']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bg-black hidden lg:block">
+        <div class="h-20 px-4 flex items-center justify-between">
+            <div class="flex h-full items-center justify-between w-[1000px]">
+                <a class="flex h-full items-center" href="/">
+                    <div class="h-[40px] mb-[2px]">
+                        <img class="h-[40px]" src="/src/logo/logo-white.svg">
+                    </div>
+                    <div class="h-[24px] ml-6">
+                        <img class="h-[24px]" src="/src/logo/text-eng-white.svg">
+                    </div>
+                </a>
+                <a class="font-medium text-white" href="/color">颜色</a>
+                <a class="font-medium text-white" href="/font">字体</a>
+                <a class="font-medium text-white" href="/logo">标志</a>
+                <a class="font-medium text-white" href="/tool">工具</a>
+                <a class="font-medium text-white" href="/about">关于</a>
+            </div>
+            <a target="_blank"
+                class="ml-24 cursor-pointer truncate border-2 border-white bg-black px-6 py-2 font-medium text-white shrink-0"
+                href="https://github.com/zaona/united-earth-files/discussions">交流讨论</a>
+        </div>
+    </div>
+
+    <div class="bg-black block lg:hidden">
+        <div class="px-4 py-4">
+            <a class="flex items-center justify-between" href="/">
+                <div class="h-[40px]">
+                    <img class="h-[40px]" src="/src/logo/logo-white.svg">
+                </div>
+                <div class="h-[24px] ml-6">
+                    <img class="h-[24px]" src="/src/logo/text-eng-white.svg">
+                </div>
+            </a>
+            <div class="mt-4 flex items-center justify-between">
+                <a class="text-sm text-white" href="/color">颜色</a>
+                <a class="text-sm text-white" href="/font">字体</a>
+                <a class="text-sm text-white" href="/logo">标志</a>
+                <a class="text-sm text-white" href="/tool">工具</a>
+                <a class="text-sm text-white" href="/about">关于</a>
+                <!-- <a target="_blank" class="text-sm text-white"
+                    href="https://github.com/zaona/united-earth-files/discussions">交流</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-4 lg:px-8 lg:py-8 lg:h-screen bg">
+        <div class="w-full lg:h-full relative flex flex-col lg:flex-row bg-black">
+            <div class="grid flex-1 grid-flow-row grid-rows-4 gap-x-1 gap-y-1 px-1 py-1">
+                <div class="grid grid-flow-col grid-cols-4 grid-rows-6 row-span-3 gap-x-1 gap-y-1">
+                    <div
+                        class="p-1 lg:p-3 row-span-2 text-xl text-white bg-black font-bold flex flex-col justify-center items-center bg-black">
+                        <img src="/tool/earth-daily/earth-daily-logo-white.svg">
+                    </div>
+                    <div class="p-1 lg:p-3 row-span-2 bg-white">
+                        2
+                    </div>
+                    <div class="p-1 lg:p-3 flex space-x-1 bg-white">
+                        3
+                    </div>
+                    <div class="p-1 lg:p-3 col-span-4 bg-white">
+                        4
+                    </div>
+                    <div class="p-1 lg:p-3 justify-center col-span-3 row-span-5 p-3 bg-white">
+                        5
+                    </div>
+                </div>
+                <div class="grid row-span-1">
+                    <div class="p-1 lg:p-3 flex bg-white">
+                        6
+                    </div>
+                </div>
+            </div>
+            <div class="grid flex-1 grid-cols-4 grid-rows-4 gap-x-1 gap-y-1 pl-1 lg:pl-0 pr-1 pt-0 lg:pt-1 pb-1">
+                <div class="relative grid grid-cols-2 col-span-2 grid-rows-2 row-span-2 gap-x-1 gap-y-1">
+                    <div class="p-1 lg:p-3 row-span-2 bg-black text-white">
+                        7
+                    </div>
+                    <div class="p-1 lg:p-3 row-span-2 bg-white">8</div>
+                </div>
+                <div class="grid grid-cols-2 col-span-2 grid-rows-2 row-span-2 gap-x-1 gap-y-1">
+                    <div class="p-1 lg:p-3 bg-white">9</div>
+                    <div class="p-1 lg:p-3 h-[80px] lg:h-full bg-white">
+                        10
+                    </div>
+                    <div class="p-1 lg:p-3 col-span-2 bg-white">11</div>
+                </div>
+                <div class="grid grid-cols-2 col-span-2 grid-rows-2 row-span-2 gap-x-1 gap-y-1">
+                    <div
+                        class="p-1 lg:p-3 text-xl text-black font-bold flex flex-col justify-center items-center bg-white">
+                        12
+                    </div>
+                    <div class="p-1 lg:p-3 bg-white">
+                        13
+                    </div>
+                    <div class="p-1 lg:p-3 col-span-2 bg-black text-white">
+                        13
+                    </div>
+                </div>
+                <div class="grid col-span-2 row-span-2 gap-x-1 gap-y-1">
+                    <div class="p-1 lg:p-3 overflow-hidden bg-white">
+                        灵感来自：https://github.com/d3adrabbit/to-kill-a-rabbit
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="bg-[#F9FAFB] h-[250px]">
+            <div class="max-w-[1200px] h-full mx-auto flex items-center justify-between px-4">
+                <div class="hidden lg:block flex flex-col w-[166px]">
+                    <img class="w-[67px] mb-2 pl-[2px]" src="/src/logo/logo.svg">
+                    <img class="w-full mb-1" src="/src/logo/text.svg">
+                    <img class="w-full pl-[2px] pr-[1px]" src="/src/logo/text-eng.svg">
+                </div>
+                <div class="grid grid-cols-2 gap-x-[100px] lg:w-[350px] w-full">
+                    <div class="">
+                        <p class="text-[14px] font-bold mb-2">开源代码</p>
+                        <a target="_blank" class="text-[14px] text-[#6C7280]"
+                            href="https://github.com/zaona/united-earth-files">Github</a>
+                    </div>
+                    <div class="">
+                        <p class="text-[14px] font-bold mb-2">特别鸣谢</p>
+                        <p class="text-[14px] text-[#6C7280] mb-1">OSS Compass</p>
+                        <p class="text-[14px] text-[#6C7280] mb-1">United Earth Team</p>
+                        <p class="text-[14px] text-[#6C7280]">电影流浪地球</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#F3F4F6] h-[78px]">
+            <div class="max-w-[1200px] px-4 h-full flex items-center justify-between mx-auto">
+                <p class="text-[14px] text-[#6C7280]">Copyright © 2024 地球联合资源站。保留所有权利。</p>
+                <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
+            </div>
+        </div>
+    </footer>
+
+    <script src='/js/nprogress.js'></script>
+    <script>
+        NProgress.configure({
+            minimum: 0.1, // 显示进度条所需的最小加载量
+            easing: 'ease', // 动画效果
+            speed: 500, // 动画速度（毫秒）
+            trickleRate: 0.02, // 自动递增进度的速度
+            trickleSpeed: 800, // 自动递增间隔（毫秒）
+            showSpinner: false, // 是否显示加载指示器（旋转图标）
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.localStorage.getItem('progress')) {
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
+            }
+            NProgress.configure({ "easing": "ease" }).start()
+        });
+        window.addEventListener('load', function () {
+            NProgress.done()
+            window.localStorage.removeItem('progress')
+        });
+        window.addEventListener('beforeunload', function (ev) {
+            NProgress.start();
+            window.localStorage.setItem('progress', NProgress.status)
+            setInterval(function () {
+                window.localStorage.setItem('progress', NProgress.status)
+            }, 400);
+        });
+    </script>
+
+</body>
