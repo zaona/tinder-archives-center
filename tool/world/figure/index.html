@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>地球联合资源站</title>
+    <link rel="icon" type="image/svg+xml" href="/src/uef-logo/logo.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="/src/uef-logo/logo-white.svg" media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/src/js/tailwind3.4.3.js"></script>
+    <link rel='stylesheet' href='/src/css/nprogress.css' />
+    <script src="/src/js/broswer.js"></script>
+    <style type="text/tailwindcss">
+        @font-face {
+        font-family: Rajdhani-Medium;
+        src: url(/src/font/Rajdhani-Medium.woff);
+        }
+        @font-face {
+        font-family: "AlimamaFangYuanTiVF-Thin";
+        src: url(/src/font/AlimamaFangYuanTiVF-Thin.woff);
+        }   
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'rajdhani': ['Rajdhani-Medium'],
+                        'square': ['AlimamaFangYuanTiVF-Thin']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="h-dvh">
+    <header class="fixed top-0 left-0 z-10 w-full">
+        <div class="bg-black hidden lg:block">
+            <div class="h-20 px-4 flex items-center justify-between">
+                <div class="flex h-full items-center justify-between w-[1000px]">
+                    <a class="flex h-full items-center" href="/">
+                        <div class="h-[40px] mb-[2px]">
+                            <img class="h-[40px]" src="/src/uef-logo/logo-white.svg">
+                        </div>
+                        <div class="h-[24px] ml-6">
+                            <img class="h-[24px]" src="/src/uef-logo/text-eng-white.svg">
+                        </div>
+                    </a>
+                    <a class="font-medium text-white" href="/color">颜色</a>
+                    <a class="font-medium text-white" href="/font">字体</a>
+                    <a class="font-medium text-white" href="/logo">标志</a>
+                    <a class="font-medium text-white" href="/tool">工具</a>
+                    <a class="font-medium text-white" href="/about">关于</a>
+                </div>
+                <a target="_blank"
+                    class="ml-24 cursor-pointer truncate border-2 border-white bg-black px-6 py-2 font-medium text-white shrink-0"
+                    href="https://github.com/zaona/united-earth-files/discussions">交流讨论</a>
+            </div>
+        </div>
+
+        <div class="bg-black block lg:hidden">
+            <div class="px-4 py-4">
+                <a class="flex items-center justify-between">
+                    <div id="menuToggle" class="h-[40px] cursor-pointer">
+                        <img class="h-[40px]" src="/src/icon/menu-white.svg">
+                    </div>
+                    <div class="h-[24px] ml-6">
+                        <img class="h-[24px]" src="/src/uef-logo/text-eng-white.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="overlay" class="fixed inset-0 z-10 bg-black opacity-30 transition-opacity hidden"></div>
+        <div id="sideMenu" class="z-20 fixed inset-y-0 left-0 w-80 bg-black transition ease-in-out"
+            style="transform: translateX(-100%);">
+            <div class="pt-14 w-full flex flex-col gap-2">
+                <a class="py-2 px-8 text-white" href="/">首页</a>
+                <a class="py-2 px-8 text-white" href="/color">颜色</a>
+                <a class="py-2 px-8 text-white" href="/font">字体</a>
+                <a class="py-2 px-8 text-white" href="/logo">标志</a>
+                <a class="py-2 px-8 text-white" href="/tool">工具</a>
+                <a class="py-2 px-8 text-white" href="/about">关于</a>
+                <a class="py-2 px-8 text-white" href="https://github.com/zaona/united-earth-files/discussions">交流</a>
+            </div>
+        </div>
+        <script>
+            let isOpen = false;            // 定义一个变量来记录侧边栏的打开状态
+            document.getElementById('menuToggle').addEventListener('click', function () {        // 给菜单切换按钮添加点击事件监听器
+                const sideMenu = document.getElementById('sideMenu');            // 获取侧边栏和遮罩层元素
+                const overlay = document.getElementById('overlay');
+                isOpen = !isOpen;            // 切换侧边栏的打开状态
+                sideMenu.style.transform = isOpen ? 'translateX(0)' : 'translateX(-100%)';            // 根据侧边栏的打开状态，改变其平移值以实现展开或收起
+                overlay.style.display = isOpen ? 'block' : 'none';            // 根据侧边栏的打开状态，控制遮罩层的显示或隐藏
+            });
+            document.getElementById('overlay').addEventListener('click', function () {        // 给遮罩层添加点击事件监听器，以便于点击遮罩层时关闭侧边栏
+                document.getElementById('menuToggle').click();            // 触发菜单按钮的点击事件来关闭侧边栏
+            });
+        </script>
+    </header>
+
+    <div class="h-full bg-[url('/tool/world/bg.jpg')] pt-16 lg:pt-20">
+        <div class="h-full bg-black/50 backdrop-blur-md">
+            <div class="h-full flex lg:gap-8 px-8 py-8 lg:px-12 lg:py-12 ">
+                <div class="h-full lg:basis-1/2 flex flex-col justify-between">
+                    <div>
+                        <img class="w-[200px]" src="/tool/world/strike.svg">
+                        <p class="font-square text-2xl font-bold text-white mb-8">FIGURE</p>
+                    </div>
+                    <div>
+                        <div class="flex mb-8">
+                            <p class="font-square text-5xl font-bold text-white">刘培强</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <img class="w-[24px]" src="/tool/world/icon/line.svg">
+                            <p class="text-white text-lg">
+                                2023年1月22日—2075年2月15日
+                            </p>
+                        </div>
+                        <div class="mt-3 flex gap-3">
+                            <img class="w-[24px]" src="/tool/world/icon/star.svg">
+                            <p class="text-white text-lg">
+                                军衔中校
+                            </p>
+                        </div>
+                        <div class="mt-3 flex gap-3 w-full">
+                            <div class="flex flex-col w-[24px] shrink-0 items-center">
+                                <img class="w-[24px] h-[24px]" src="/tool/world/icon/cricle.svg">
+                                <span class="mt-2 w-[2.5px] h-full mb-1 bg-white"></span>
+                            </div>
+                            <p class="text-white text-lg">
+                                领航员国际空间站中的中国航天员，机械工程专家航空飞行专业，军人家庭出身，父母早早双亡，为张鹏徒弟。在2044年太空电梯危机中立功，曾参与逐月计划。因为执行任务，使得孩子的成长过程中缺少陪伴，导致父子关系疏远。2075年2月15日为拯救地球驾驶领航员国际空间站冲击发动机火焰，点燃木星，壮烈牺牲。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:basis-1/2">
+                </div>
+            </div>
+            <div class="fixed bottom-0 lg:right-16 h-full hidden lg:block">
+                <img class="h-full" src="/tool/world/lpq.png">
+            </div>
+        </div>
+    </div>
+
+
+    <script src='/src/js/nprogress.js'></script>
+    <script>
+        NProgress.configure({
+            minimum: 0.1, // 显示进度条所需的最小加载量
+            easing: 'ease', // 动画效果
+            speed: 500, // 动画速度（毫秒）
+            trickleRate: 0.02, // 自动递增进度的速度
+            trickleSpeed: 800, // 自动递增间隔（毫秒）
+            showSpinner: false, // 是否显示加载指示器（旋转图标）
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.localStorage.getItem('progress')) {
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
+            }
+            NProgress.configure({ "easing": "ease" }).start()
+        });
+        window.addEventListener('load', function () {
+            NProgress.done()
+            window.localStorage.removeItem('progress')
+        });
+        window.addEventListener('beforeunload', function (ev) {
+            NProgress.start();
+            window.localStorage.setItem('progress', NProgress.status)
+            setInterval(function () {
+                window.localStorage.setItem('progress', NProgress.status)
+            }, 400);
+        });
+    </script>
+
+</body>
