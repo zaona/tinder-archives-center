@@ -77,15 +77,15 @@
         </script>
     </header>
 
-    <div class="flex overflow-hidden">
-        <div class="lg:basis-1/4 p-4 bg-[#F9FAFB] w-[100px] flex flex-col">
-            <div class="flex gap-4 items-center mb-4 lg:justify-between justify-center px-1">
-                <a href="/tool/world/">
-                    <img class="h-[30px]" src="/src/icon/left.svg">
+    <div class="flex lg:flex-row flex-col overflow-hidden h-full justify-between">
+        <div class="lg:order-first order-2 lg:basis-1/4 p-4 bg-[#F9FAFB] lg:w-[100px] w-full flex lg:flex-col flex-row">
+            <div class="flex gap-4 items-center mb-4 lg:justify-between ustify-center px-1">
+                <a class="w-[30px]" href="/tool/world/">
+                    <img class="h-[30px] w-[30px]" src="/src/icon/left.svg">
                 </a>
                 <p class="lg:block hidden font-bold text-xl">人物</p>
             </div>
-            <div id="figure-list" class="flex flex-col divide-y overflow-auto">
+            <div id="figure-list" class="flex lg:flex-col flex-row lg:divide-y lg:divide-x-0 divide-x overflow-auto">
                 <button class="text-left w-full px-6 py-4 font-medium hover:bg-[#F3F4F6]"
                     data-figure="figure1">刘培强</button>
                 <button class="text-left w-full px-6 py-4 font-medium hover:bg-[#F3F4F6]"
