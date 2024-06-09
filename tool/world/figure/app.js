@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const figureList = document.querySelector('.flex.flex-col.gap-4');
+    const figureList = document.getElementById('figure-list');
     const figureDescription = document.getElementById('figure-description');
     const figureImage = document.getElementById('figure-image'); // 新增：用于显示人物图片的元素
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             figureDescription.innerHTML = `
                 <img src="${figureData.imageUrl}" alt="${figureData.name} 图片" class="w-full lg:h-[300px] h-[200px] mb-2 object-cover">
                 <p class="text-[36px] mb-[12px]">${figureData.name}</p>
-                <p>${figureData.bio}</p>
+                <p class="text-[16px]">${figureData.bio}</p>
             `;
         } else {
             figureDescription.innerHTML = "";
