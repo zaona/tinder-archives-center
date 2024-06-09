@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${figureData.imageUrl}" alt="${figureData.name} 图片" class="w-full lg:h-[300px] h-[200px] mb-2 object-cover">
                 <p class="text-[36px] mb-[12px]">${figureData.name}</p>
                 <p class="text-[16px]">${figureData.bio}</p>
+                <p class="text-[16px] text-stone-500 ">（本页面部分或全部文字内容源自地球联合百科（https://unitedearth.wiki），以CC BY-NC-SA 3.0（知识共享 署名-非商业性使用-以相同方式共享 3.0）协议转载。）</p>
             `;
         } else {
             figureDescription.innerHTML = "";
