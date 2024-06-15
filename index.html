@@ -35,7 +35,9 @@
         <div class="bg-black block lg:hidden">
             <a class="h-20 px-4 flex items-center justify-between">
                 <img id="menuToggle" class="h-[40px] cursor-pointer" src="/src/icon/menu-white.svg">
-                <img class="h-6 ml-8" src="/src/uef-logo/text-eng-white.svg">
+                <div class="h-6 ml-8 mr-1">
+                    <img class="h-full" src="/src/uef-logo/text-eng-white.svg">
+                </div>
             </a>
         </div>
         <div id="overlay" class="fixed inset-0 z-10 bg-black opacity-30 transition-opacity hidden"></div>
@@ -68,20 +70,18 @@
     </header>
 
     <div class="bg-no-repeat bg-cover bg-none lg:bg-[url('/src/img/index-bg.svg')] w-full h-[620px]">
-        <div class="h-full max-w-[1200px] mx-auto pt-[220px] pl-4 pr-[40px]">
-            <img class="w-[480px] bg-white" src="/src/uef-logo/text.svg">
-            <img class="pl-[3px] pt-4 w-[326px] bg-white" src="/src/uef-logo/text-eng.svg">
-            <p class="pl-[4px] pt-10 text-[18px] bg-white w-[250px] font-bold">一个「流浪地球」设计资源站</p>
+        <div class="h-full max-w-[1200px] mx-auto pt-[220px] px-4">
+            <img class="w-[480px] bg-white pr-20 lg:pr-0" src="/src/uef-logo/text.svg">
+            <img class="pl-0.5 pt-8 w-[360px] bg-white pr-20 lg:pr-0" src="/src/uef-logo/text-eng.svg">
+            <p class="pl-1 pt-10 text-[18px] bg-white w-[250px] font-bold">一个「流浪地球」设计资源站</p>
             <div class="flex justify-end pt-10">
                 <img class="w-[140px] lg:hidden mr-[50px]" src="/src/img/little-white.svg">
             </div>
         </div>
     </div>
-    <div class="group max-w-[1200px] mx-auto border-solid border-[1px] my-[80px] relative bg-white">
+    <div class="max-w-[1200px] mx-auto lg:px-4 px-0 my-[80px]">
         <div
-            class="absolute w-full h-full border-solid border-[1px] bg-[#F9FAFB] transform origin-center rotate-0 -z-10 hidden lg:block transition-all group-hover:rotate-1">
-        </div>
-        <div class="w-full h-full px-4 lg:px-10 py-10">
+            class="w-full h-full lg:px-8 lg:py-8 px-6 py-6 border-solid border-[1px] bg-white transition-shadow lg:hover:shadow-lg">
             <p class="text-2xl font-bold" id="randomSentence"></p>
             <div class="flex items-center text-[14px] mt-[16px] justify-between">
                 <div class="flex items-center">
