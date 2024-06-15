@@ -17,38 +17,27 @@
     <header>
         <div class="bg-black hidden lg:block">
             <div class="h-20 px-4 flex items-center justify-between">
-                <div class="flex h-full items-center justify-between w-[1000px]">
-                    <a class="flex h-full items-center" href="/">
-                        <div class="h-[40px] mb-[2px]">
-                            <img class="h-[40px]" src="/src/uef-logo/logo-white.svg">
-                        </div>
-                        <div class="h-[24px] ml-6">
-                            <img class="h-[24px]" src="/src/uef-logo/text-eng-white.svg">
-                        </div>
-                    </a>
+                <a class="flex h-full items-center" href="/">
+                    <img class="h-10 mb-0.5" src="/src/uef-logo/logo-white.svg">
+                    <img class="h-6 ml-8" src="/src/uef-logo/text-eng-white.svg">
+                </a>
+                <div class="flex h-full items-center justify-between w-1/2 mr-4">
                     <a class="font-medium text-white" href="/color">颜色</a>
                     <a class="font-medium text-white" href="/font">字体</a>
                     <a class="font-medium text-white" href="/logo">标志</a>
                     <a class="font-medium text-white" href="/tool">工具</a>
                     <a class="font-medium text-white" href="/about">关于</a>
+                    <a target="_blank" class="font-medium text-white"
+                        href="https://github.com/zaona/united-earth-files/discussions">交流</a>
                 </div>
-                <a target="_blank"
-                    class="ml-24 cursor-pointer truncate border-2 border-white bg-black px-6 py-2 font-medium text-white shrink-0"
-                    href="https://github.com/zaona/united-earth-files/discussions">交流讨论</a>
             </div>
         </div>
 
         <div class="bg-black block lg:hidden">
-            <div class="px-4 py-4">
-                <a class="flex items-center justify-between">
-                    <div id="menuToggle" class="h-[40px] cursor-pointer">
-                        <img class="h-[40px]" src="/src/icon/menu-white.svg">
-                    </div>
-                    <div class="h-[24px] ml-6">
-                        <img class="h-[24px]" src="/src/uef-logo/text-eng-white.svg">
-                    </div>
-                </a>
-            </div>
+            <a class="h-20 px-4 flex items-center justify-between">
+                <img id="menuToggle" class="h-[40px] cursor-pointer" src="/src/icon/menu-white.svg">
+                <img class="h-6 ml-8" src="/src/uef-logo/text-eng-white.svg">
+            </a>
         </div>
         <div id="overlay" class="fixed inset-0 z-10 bg-black opacity-30 transition-opacity hidden"></div>
         <div id="sideMenu" class="z-20 fixed inset-y-0 left-0 w-80 bg-black transition ease-in-out"
@@ -60,7 +49,8 @@
                 <a class="py-2 px-8 text-white" href="/logo">标志</a>
                 <a class="py-2 px-8 text-white" href="/tool">工具</a>
                 <a class="py-2 px-8 text-white" href="/about">关于</a>
-                <a class="py-2 px-8 text-white" href="https://github.com/zaona/united-earth-files/discussions">交流</a>
+                <a target="_blank" class="py-2 px-8 text-black"
+                    href="https://github.com/zaona/united-earth-files/discussions">交流</a>
             </div>
         </div>
         <script>

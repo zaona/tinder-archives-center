@@ -14,52 +14,42 @@
 
 <body>
     <header>
-        <div class="bg-white hidden lg:block border-b-[1px]">
+        <div class="bg-black hidden lg:block">
             <div class="h-20 px-4 flex items-center justify-between">
-                <div class="flex h-full items-center justify-between w-[1000px]">
-                    <a class="flex h-full items-center" href="/">
-                        <div class="h-[40px] mb-[2px]">
-                            <img class="h-[40px]" src="/src/uef-logo/logo-black.svg">
-                        </div>
-                        <div class="h-[24px] ml-6">
-                            <img class="h-[24px]" src="/src/uef-logo/text-eng.svg">
-                        </div>
-                    </a>
-                    <a class="font-medium text-black" href="/color">颜色</a>
-                    <a class="font-medium text-black" href="/font">字体</a>
-                    <a class="font-medium text-black" href="/logo">标志</a>
-                    <a class="font-medium text-black" href="/tool">工具</a>
-                    <a class="font-medium text-black" href="/about">关于</a>
+                <a class="flex h-full items-center" href="/">
+                    <img class="h-10 mb-0.5" src="/src/uef-logo/logo-white.svg">
+                    <img class="h-6 ml-8" src="/src/uef-logo/text-eng-white.svg">
+                </a>
+                <div class="flex h-full items-center justify-between w-1/2 mr-4">
+                    <a class="font-medium text-white" href="/color">颜色</a>
+                    <a class="font-medium text-white" href="/font">字体</a>
+                    <a class="font-medium text-white" href="/logo">标志</a>
+                    <a class="font-medium text-white" href="/tool">工具</a>
+                    <a class="font-medium text-white" href="/about">关于</a>
+                    <a target="_blank" class="font-medium text-white"
+                        href="https://github.com/zaona/united-earth-files/discussions">交流</a>
                 </div>
-                <a target="_blank"
-                    class="ml-24 cursor-pointer truncate border-2 border-black bg-white px-6 py-2 font-medium text-black shrink-0"
-                    href="https://github.com/zaona/united-earth-files/discussions">交流讨论</a>
             </div>
         </div>
 
-        <div class="bg-white block lg:hidden border-b-[1px]">
-            <div class="px-4 py-4">
-                <a class="flex items-center justify-between">
-                    <div id="menuToggle" class="h-[40px] cursor-pointer">
-                        <img class="h-[40px]" src="/src/icon/menu.svg">
-                    </div>
-                    <div class="h-[24px] ml-6">
-                        <img class="h-[24px]" src="/src/uef-logo/text-eng.svg">
-                    </div>
-                </a>
-            </div>
+        <div class="bg-black block lg:hidden">
+            <a class="h-20 px-4 flex items-center justify-between">
+                <img id="menuToggle" class="h-[40px] cursor-pointer" src="/src/icon/menu-white.svg">
+                <img class="h-6 ml-8" src="/src/uef-logo/text-eng-white.svg">
+            </a>
         </div>
         <div id="overlay" class="fixed inset-0 z-10 bg-black opacity-30 transition-opacity hidden"></div>
-        <div id="sideMenu" class="z-20 fixed inset-y-0 left-0 w-80 bg-white transition ease-in-out"
+        <div id="sideMenu" class="z-20 fixed inset-y-0 left-0 w-80 bg-black transition ease-in-out"
             style="transform: translateX(-100%);">
             <div class="pt-14 w-full flex flex-col gap-2">
-                <a class="py-2 px-8 text-black" href="/">首页</a>
-                <a class="py-2 px-8 text-black" href="/color">颜色</a>
-                <a class="py-2 px-8 text-black" href="/font">字体</a>
-                <a class="py-2 px-8 text-black" href="/logo">标志</a>
-                <a class="py-2 px-8 text-black" href="/tool">工具</a>
-                <a class="py-2 px-8 text-black" href="/about">关于</a>
-                <a class="py-2 px-8 text-black" href="https://github.com/zaona/united-earth-files/discussions">交流</a>
+                <a class="py-2 px-8 text-white" href="/">首页</a>
+                <a class="py-2 px-8 text-white" href="/color">颜色</a>
+                <a class="py-2 px-8 text-white" href="/font">字体</a>
+                <a class="py-2 px-8 text-white" href="/logo">标志</a>
+                <a class="py-2 px-8 text-white" href="/tool">工具</a>
+                <a class="py-2 px-8 text-white" href="/about">关于</a>
+                <a target="_blank" class="py-2 px-8 text-black"
+                    href="https://github.com/zaona/united-earth-files/discussions">交流</a>
             </div>
         </div>
         <script>
