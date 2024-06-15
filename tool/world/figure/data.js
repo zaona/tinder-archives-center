@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <p class="text-[16px]">${itemData.bio}</p>
             <p class="text-[26px] mt-[32px]">测试小标题</p>
             <p class="text-[16px]">${itemData.age}</p>
-            <p class="text-[16px] text-black/50 border px-2 py-2 mt-[32px]">本页面部分或全部文字内容源自地球联合百科（https://unitedearth.wiki），以CC BY-NC-SA 3.0（知识共享 署名-非商业性使用-以相同方式共享 3.0）协议转载。</p>
+            <p class="text-[16px] text-gray-500 border px-2 py-2 mt-[32px]">本页面部分或全部文字内容源自地球联合百科（https://unitedearth.wiki），以CC BY-NC-SA 3.0（知识共享 署名-非商业性使用-以相同方式共享 3.0）协议转载。</p>
         `;
     }
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (items.hasOwnProperty(itemKey)) {
             const button = document.createElement('button');
             button.textContent = items[itemKey].name;
-            button.classList.add('text-left', 'w-full', 'px-6', 'hover:bg-[#F3F4F6]', 'font-medium', 'py-4');
+            button.classList.add('text-left', 'w-full', 'px-6', 'hover:bg-gray-100', 'font-medium', 'py-4');
             button.dataset.item = itemKey; // 使用data属性存储人物标识
 
             button.addEventListener('click', function () {

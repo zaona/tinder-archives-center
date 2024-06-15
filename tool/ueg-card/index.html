@@ -104,9 +104,9 @@
             <div class="lg:basis-1/2">
                 <div class="w-[360px] relative" id="card">
                     <img clss="w-[360px]" src="/tool/ueg-card/bg.svg">
-                    <div class="bg-[#F3F4F6] h-[78px]" id="card-footer">
+                    <div class="bg-gray-100 h-[78px]" id="card-footer">
                         <div class="h-full flex items-center justify-between mx-auto">
-                            <p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p>
+                            <p class="text-[14px] text-gray-500 ml-4">Made By UEF.ZAONA.TOP</p>
                             <img class="h-full" src="/src/img/earth-engine.svg">
                         </div>
                     </div>
@@ -135,7 +135,7 @@
             </div>
 
             <div class="lg:basis-1/2 w-full">
-                <div class="w-full bg-[#F9FAFB] border-solid border-[1px] px-4 lg:px-10 py-4 lg:py-10 ">
+                <div class="w-full bg-gray-50 border-solid border px-4 lg:px-10 py-4 lg:py-10 ">
                     <div class="flex flex-col gap-3">
                         <p class="text-2xl font-bold mb-2">UEG 名牌生成</p>
                         <input type="file" class="w-full file:cursor-pointer
@@ -232,7 +232,7 @@
             //一个不可行的方案，生成图片时加入footer
             // document.getElementById("card-footer").hidden = false;
             // const card = document.getElementById('card').outerHTML;
-            // const cardFooter = '<div class="bg-[#F3F4F6] h-[78px]" id="card-footer"><div class="max-w-[1200px] h-full flex items-center justify-between mx-auto"><p class="text-[14px] text-[#6C7280] ml-4">Made By UEF.ZAONA.TOP</p><img class="h-full hidden lg:block" src="/src/img/earth-engine.svg"></div></div>';
+            // const cardFooter = '<div class="bg-gray-100 h-[78px]" id="card-footer"><div class="max-w-[1200px] h-full flex items-center justify-between mx-auto"><p class="text-[14px] text-gray-500 ml-4">Made By UEF.ZAONA.TOP</p><img class="h-full hidden lg:block" src="/src/img/earth-engine.svg"></div></div>';
             // const cardAll = card + cardFooter;
             // const parser = new DOMParser()
             // const element = parser.parseFromString(cardAll, 'text/html');
@@ -293,7 +293,7 @@
     </script>
 
     <footer>
-        <div class="bg-[#F9FAFB] h-[250px]">
+        <div class="bg-gray-50 h-[250px]">
             <div class="max-w-[1200px] h-full mx-auto flex items-center justify-between px-4">
                 <div class="hidden lg:block flex flex-col w-[166px]">
                     <img class="w-[67px] mb-2 pl-[2px]" src="/src/uef-logo/logo.svg">
@@ -303,21 +303,24 @@
                 <div class="grid grid-cols-2 gap-x-[100px] lg:w-[350px] w-full">
                     <div class="">
                         <p class="text-[14px] font-bold mb-2">开源代码</p>
-                        <a target="_blank" class="text-[14px] text-[#6C7280]"
+                        <a target="_blank" class="text-[14px] text-gray-500"
                             href="https://github.com/zaona/united-earth-files">Github</a>
                     </div>
                     <div class="">
                         <p class="text-[14px] font-bold mb-2">特别鸣谢</p>
-                        <p class="text-[14px] text-[#6C7280] mb-1">OSS Compass</p>
-                        <p class="text-[14px] text-[#6C7280] mb-1">United Earth Team</p>
-                        <p class="text-[14px] text-[#6C7280]">电影流浪地球</p>
+                        <a target="_blank" class="text-[14px] text-gray-500 mb-1" href="https://compass.gitee.com/">OSS
+                            Compass</a>
+                        <a target="_blank" class="text-[14px] text-gray-500 mb-1"
+                            href="https://space.bilibili.com/3493277380643581">United Earth Team</a>
+                        <a target="_blank" class="text-[14px] text-gray-500"
+                            href="https://weibo.com/6436669966">电影流浪地球</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-[#F3F4F6] h-[78px]">
+        <div class="bg-gray-100 h-[78px]">
             <div class="max-w-[1200px] px-4 h-full flex items-center justify-between mx-auto">
-                <p class="text-[14px] text-[#6C7280]">Copyright © 2024 地球联合资源站。保留所有权利。</p>
+                <p class="text-[14px] text-gray-500">Copyright © 2024 地球联合资源站。保留所有权利。</p>
                 <img class="h-full hidden lg:block" src="/src/img/earth-engine.svg">
             </div>
         </div>
