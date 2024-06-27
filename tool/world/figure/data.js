@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (items.hasOwnProperty(itemKey)) {
             const button = document.createElement('button');
             button.textContent = items[itemKey].name;
-            button.classList.add('text-left', 'w-full', 'px-6', 'hover:bg-gray-100', 'font-medium', 'py-4');
+            button.classList.add('text-left', 'w-full', 'px-4', 'hover:bg-gray-100', 'font-medium', 'py-4');
             button.dataset.item = itemKey; // 使用data属性存储人物标识
 
             button.addEventListener('click', function () {
