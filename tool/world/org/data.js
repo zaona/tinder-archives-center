@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "item1": {
             name: "UEG",
             bio: "",
-            imageUrl: "/tool/world/img/figure/刘培强.png",
+            imageUrl: "/tool/world/img/figure/刘培强.jpg",
         },
     };
 
