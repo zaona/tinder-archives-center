@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "item1": {
             name: "刘培强",
             bio: "男，军衔中校，生理年龄40岁（因为在太空中进入休眠状态），实际年龄52岁，领航员国际空间站中的中国航天员，机械工程专家航空飞行专业，军人家庭出身，父母早早双亡，为张鹏徒弟。在2044年太空电梯危机中立功，曾参与逐月计划。领航员国际空间站中的中国航天员。因为执行任务，使得孩子的成长过程中缺少陪伴，导致父子关系疏远。2075年2月15日为拯救地球驾驶领航员国际空间站冲击发动机火焰，点燃木星，壮烈牺牲。",
-            imageUrl: "/tool/world/img/figure/刘培强.png",
+            imageUrl: "/tool/world/img/figure/刘培强.jpg",
             age: "40"
         },
         "item2": {

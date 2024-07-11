@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "item1": {
             name: "2044太空电梯危机",
             bio: "",
-            imageUrl: "/tool/world/img/figure/刘培强.png",
+            imageUrl: "/tool/world/img/figure/刘培强.jpg",
         },
         "item2": {
             name: "2058月球坠落危机",
