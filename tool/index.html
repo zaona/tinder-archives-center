@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>火种档案 | 工具</title>
-    <link rel="icon" type="image/svg+xml" href="/src/uef-logo/logo.svg" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/svg+xml" href="/src/uef-logo/logo-white.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" href="/src/tac-logo/symbol-black.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="/src/tac-logo/symbol-white.svg" media="(prefers-color-scheme: dark)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/src/js/tailwind3.4.3.js"></script>
     <link rel='stylesheet' href='/src/css/nprogress.css' />
@@ -17,8 +17,7 @@
         <div class="bg-black hidden lg:block">
             <div class="h-20 px-4 flex items-center justify-between">
                 <a class="flex h-full items-center" href="/">
-                    <img class="h-10 mb-0.5" src="/src/uef-logo/logo-white.svg">
-                    <img class="h-6 ml-8" src="/src/uef-logo/text-eng-white.svg">
+                    <img class="h-8" src="/src/tac-logo/symbol-type-white.svg">
                 </a>
                 <div class="flex h-full items-center justify-between w-1/2 mr-4">
                     <a class="font-medium text-white" href="/color">颜色</a>
@@ -33,12 +32,10 @@
         </div>
 
         <div class="bg-black block lg:hidden">
-            <a class="h-20 px-4 flex items-center justify-between">
+            <div class="h-20 px-4 flex items-center justify-between">
                 <img id="menuToggle" class="h-[40px] cursor-pointer" src="/src/icon/menu-white.svg">
-                <div class="h-6 ml-8 mr-1">
-                    <img class="h-full" src="/src/uef-logo/text-eng-white.svg">
-                </div>
-            </a>
+                <img class="ml-8 mr-1 h-8" src="/src/tac-logo/symbol-type-white.svg">
+            </div>
         </div>
         <div id="overlay" class="fixed inset-0 z-10 bg-black opacity-30 transition-opacity hidden"></div>
         <div id="sideMenu" class="z-20 fixed inset-y-0 left-0 w-80 bg-black transition ease-in-out"
@@ -195,9 +192,8 @@
         <div class="bg-gray-50 h-[250px]">
             <div class="max-w-[1200px] h-full mx-auto flex items-center justify-between px-4">
                 <div class="hidden lg:block flex flex-col w-[166px]">
-                    <img class="w-[67px] mb-2 pl-[2px]" src="/src/uef-logo/logo.svg">
-                    <img class="w-full mb-1" src="/src/uef-logo/text.svg">
-                    <img class="w-full pl-[2px] pr-[1px]" src="/src/uef-logo/text-eng.svg">
+                    <img class="w-[60px] mb-2" src="/src/tac-logo/symbol-black.svg">
+                    <img class="w-[120px]" src="/src/tac-logo/type-black.svg">
                 </div>
                 <div class="grid grid-cols-2 gap-x-[100px] lg:w-[350px] w-full">
                     <div class="flex flex-col">
@@ -207,7 +203,8 @@
                     </div>
                     <div class="flex flex-col">
                         <p class="text-[14px] font-bold mb-2">特别鸣谢</p>
-                        <a target="_blank" class="text-[14px] text-gray-500 mb-1" href="https://tongyi.aliyun.com/lingma">通义灵码</a>
+                        <a target="_blank" class="text-[14px] text-gray-500 mb-1"
+                            href="https://tongyi.aliyun.com/lingma">通义灵码</a>
                         <a target="_blank" class="text-[14px] text-gray-500 mb-1"
                             href="https://weibo.com/6436669966">电影流浪地球</a>
                         <a target="_blank" class="text-[14px] text-gray-500"
