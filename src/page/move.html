@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>火种档案</title>
+    <link rel="icon" type="image/svg+xml" href="/src/tac-logo/symbol-black.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="/src/tac-logo/symbol-white.svg" media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="/src/js/tailwind3.4.3.js"></script> -->
+    <link rel='stylesheet' href='/src/css/nprogress.css' />
+    <style>
+        body,
+        html {
+            overflow: hidden;
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100vw;
+        }
+
+        .inner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1200px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .image {
+            width: 220px;
+            margin-bottom: 2.5rem;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+
+        .link {
+            margin-top: 40px;
+            cursor: pointer;
+            border-width: 2px;
+            border-color: black;
+            background-color: white;
+            border-style: solid;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 24px;
+            color: black;
+            text-decoration: none;
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <img class="image" src="/src/img/broswer.svg">
+            <p class="text">“地球联合资源站”已更名为“火种档案”</p>
+            <p class="text">请使用新网址：tac.zaona.top 访问</p>
+            <a class="link" target="_blank" href="https://tac.zaona.top">点击前往</a>
+        </div>
+    </div>
+    </div>
+
+    <script src='/src/js/nprogress.js'></script>
+    <script>
+        NProgress.configure({
+            minimum: 0.1, // 显示进度条所需的最小加载量
+            easing: 'ease', // 动画效果
+            speed: 500, // 动画速度（毫秒）
+            trickleRate: 0.02, // 自动递增进度的速度
+            trickleSpeed: 800, // 自动递增间隔（毫秒）
+            showSpinner: false, // 是否显示加载指示器（旋转图标）
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.localStorage.getItem('progress')) {
+                NProgress.configure({ "easing": "none" }).set(Number(localStorage.getItem('progress')))
+            }
+            NProgress.configure({ "easing": "ease" }).start()
+        });
+        window.addEventListener('load', function () {
+            NProgress.done()
+            window.localStorage.removeItem('progress')
+        });
+        window.addEventListener('beforeunload', function (ev) {
+            NProgress.start();
+            window.localStorage.setItem('progress', NProgress.status)
+            setInterval(function () {
+                window.localStorage.setItem('progress', NProgress.status)
+            }, 400);
+        });
+    </script>
+</body>
