@@ -1,6 +1,7 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtLoadingIndicator/>
+    <Header />
+    <NuxtPage />
   </div>
 </template>
