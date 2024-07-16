@@ -1,75 +1,48 @@
-# Nuxt 3 Minimal Starter
+# 火种档案
+一个「流浪地球」设计资源站
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## ✅ Todo
+- [ ] 流浪地球标志修复（/logo）（持续进行）
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🚩 待整理标志
+#### 地球联合政府
+- [x] UEG
+- [x] 图形
+- [x] 文字
+- [ ] 徽标
+- [x] 北极基地
+- [ ] 加蓬联合实验基地
+- [ ] 难民署
+- [ ] 粮食计划署
+- [ ] 飞行控制中心
+#### 550系列
+- [x] 550A
+- [x] 550C
+- [x] 550W
+#### 逐月计划
+- [x] 图形+文字
+- [x] 徽标
+#### 移山计划
+- [x] 徽标
+#### 方舟计划
+- [x] 徽标
+#### 领航员计划
+- [x] 图形+文字
+- [x] 徽标
+#### 北京航天中心
+- [ ] 图形+文字
+#### 太空电梯
+- [ ] 图形+文字
+#### 门框机器人
+- [ ] 图形+文字
+#### 2044上海
+- [x] 图形+文字
+- [x] 海报
+#### 中国应急预案执行组
+- [ ] 图形+文字
+#### 中国科学院数字生命研究所
+- [ ] 图形+文字
+#### 中国互联网中心北京基地
+- [ ] 图形+文字
+#### 智能量子计算机重点实验室
+- [ ] 图形+文字
