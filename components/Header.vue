@@ -52,25 +52,6 @@ const isOpen = ref(false);
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
 };
-// 阻止页面滚动
-const preventBodyScroll = () => {
-  document.body.style.overflow = isOpen.value ? 'hidden' : 'auto';
-};
-
-onMounted(() => {
-  window.addEventListener('resize', preventBodyScroll);
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      toggleMenu();
-    }
-  });
-});
-
-// 清理事件监听器
-onUnmounted(() => {
-  window.removeEventListener('resize', preventBodyScroll);
-  window.removeEventListener('keydown', () => { });
-});
 </script>
 
-<style scoped></style>
+<style></style>
