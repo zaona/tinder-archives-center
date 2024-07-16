@@ -73,6 +73,16 @@ onMounted(() => {
   displaySentence.value = initialRandomSentence.sentence;
   displayCategory.value = `来自：${initialRandomSentence.category}`;
 });
+
+
+import { useHead } from '#app'
+
+useHead({
+  title: '火种档案 | 首页',
+  meta: [
+    { name: 'description', content: 'Page description' }
+  ]
+})
 </script>
 
 <style></style>
