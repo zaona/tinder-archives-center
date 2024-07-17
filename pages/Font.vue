@@ -1,7 +1,8 @@
 <template>
   <div>
     <Banner bgImage="/img/pages-banner/bg-font.png" bannerTitle="字体" />
-    <div class="mx-auto max-w-[1200px] px-4 mb-12">
+    
+    <div class="mx-auto max-w-[1200px] px-4 py-12">
       <div class="mb-12">
         <p class="text-[36px]">流浪地球1</p>
         <div class="flex items-center text-[14px] mt-[16px]">

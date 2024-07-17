@@ -1,7 +1,8 @@
 <template>
   <div>
     <Banner bgImage="/img/pages-banner/bg-color.png" bannerTitle="颜色" />
-    <div class="mx-auto max-w-[1200px] px-4 mb-12">
+    
+    <div class="mx-auto max-w-[1200px] px-4 py-12">
       <div class="mb-12">
         <p class="text-[36px]">流浪地球</p>
         <div class="flex items-center text-[14px] mt-[16px]">

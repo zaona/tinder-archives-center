@@ -2,8 +2,8 @@
   <div>
     <Banner bgImage="/img/pages-banner/bg-tool.png" bannerTitle="工具" />
 
-    <div class="mx-auto max-w-[1200px] px-4 mb-12">
-      <p class="text-[36px] mt-[48px] mb-[12px]">来自网络</p>
+    <div class="mx-auto max-w-[1200px] px-4 py-12">
+      <p class="text-[36px] mb-[12px]">来自网络</p>
       <div class="">
         <div class="flex items-center text-[14px] mt-[16px]">
           <img class="mr-2 mb-0.5" src="~/assets/icon/info.svg">以下内容来源于网络，仅收录
@@ -95,7 +95,7 @@
           </a>
         </div>
       </div>
-      <img class="w-[300px] mx-auto mt-[48px]" src="~/assets/img/illus/thanks.svg">
+      <img class="w-[300px] mx-auto mt-12" src="~/assets/img/illus/thanks.svg">
     </div>
   </div>
 </template>

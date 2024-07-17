@@ -2,13 +2,13 @@
     <div>
         <Banner bgImage="/img/pages-banner/bg-about.png" bannerTitle="关于" />
 
-        <div class="mx-auto max-w-[1200px] px-4 mb-12">
-            <p class="text-[36px] mb-[12px]">关于本站</p>
-            <p class="text-[16px] mb-[12px]">在流浪地球中，“火种计划”是指一旦“流浪地球计划”失败，“领航员号”空间站将携带着受精卵和数据库飞往四光年外的半人马座。</p>
-            <p class="text-[16px] mb-[12px]">“火种档案”目前整合了流浪地球电影中的颜色，字体，标志等内容，未来将会持续更新，</p>
-            <p class="text-[16px] mb-[48px]">希望能给各个流浪地球二创作者带来便利。</p>
-            <p class="text-[36px] mb-[12px]">鸣谢</p>
-            <p class="text-[16px] mb-[12px]">衷心感谢电影流浪地球，衷心感谢为本网站提供部分设计资源与改进建议的小破球爱好者们。</p>
+        <div class="mx-auto max-w-[1200px] px-4 py-12">
+            <p class="text-[36px] leading-loose">关于本站</p>
+            <p class="text-[16px] leading-loose">在流浪地球中，“火种计划”是指一旦“流浪地球计划”失败，“领航员号”空间站将携带着受精卵和数据库飞往四光年外的半人马座。</p>
+            <p class="text-[16px] leading-loose">“火种档案”目前整合了流浪地球电影中的颜色，字体，标志等内容，未来将会持续更新，</p>
+            <p class="text-[16px] leading-loose">希望能给各个流浪地球二创作者带来便利。</p>
+            <p class="text-[36px] leading-loose mt-12">鸣谢</p>
+            <p class="text-[16px] leading-loose">衷心感谢电影流浪地球，衷心感谢为本网站提供部分设计资源与改进建议的小破球爱好者们。</p>
 
             <div class="grid lg:grid-cols-4 grid-cols-2 gap-[16px] mt-[16px]">
                 <a target="_blank" class="" href="https://space.bilibili.com/518916820">
@@ -66,7 +66,7 @@
                     <p class="text-[16px] px-[16px] py-[16px] w-full">提了非常多非常多我完不成的建议...</p>
                 </div>
             </div>
-            <img class="w-[300px] mx-auto mt-[48px]" src="~/assets/img/illus/thanks.svg">
+            <img class="w-[300px] mx-auto mt-12" src="~/assets/img/illus/thanks.svg">
         </div>
     </div>
 </template>

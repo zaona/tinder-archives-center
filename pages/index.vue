@@ -1,28 +1,28 @@
 <template>
   <div>
-  <div class="bg-no-repeat bg-cover bg-none lg:bg-[url('~/assets/img/illus/index-bg.svg')] w-full h-[620px]">
-    <div class="h-full max-w-[1200px] mx-auto pt-[220px] px-4">
-      <img class="h-[95px] bg-white pr-20 lg:pr-0" src="~/assets/tac-logo/name-mix.svg">
-      <p class="pl-1 pt-3 text-3xl bg-white w-[350px] font-bold">Tinder Archives Center</p>
-      <p class="pl-1 pt-4 bg-white w-[250px] font-bold">一个「流浪地球」设计资源站</p>
-      <div class="flex justify-end pt-10">
-        <img class="w-[140px] lg:hidden mr-[50px]" src="~/assets/img/illus/little-white.svg">
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-[1200px] mx-auto lg:px-4 px-0 my-[80px]">
-    <div class="w-full h-full lg:px-8 lg:py-8 px-6 py-6 border-solid border transition-shadow lg:hover:shadow-lg">
-      <p class="text-2xl font-bold" ref="displayElement">{{ displaySentence }}</p>
-      <div class="flex items-center text-[14px] mt-[16px] justify-between">
-        <div class="flex items-center">
-          <img class="mr-2" src="~/assets/icon/info.svg">
-          <p class="" ref="categoryElement">{{ displayCategory }}</p>
+    <div class="bg-no-repeat bg-cover bg-none lg:bg-[url('~/assets/img/illus/index-bg.svg')] w-full h-[620px]">
+      <div class="h-full max-w-[1200px] mx-auto pt-[220px] px-4">
+        <img class="h-[95px] bg-white pr-20 lg:pr-0" src="~/assets/tac-logo/name-mix.svg">
+        <p class="pl-1 pt-3 text-3xl bg-white w-[350px] font-bold">Tinder Archives Center</p>
+        <p class="pl-1 pt-4 bg-white w-[250px] font-bold">一个「流浪地球」设计资源站</p>
+        <div class="flex justify-end pt-10">
+          <img class="w-[140px] lg:hidden mr-[50px]" src="~/assets/img/illus/little-white.svg">
         </div>
-        <img id="generateButton" class="mr-2 cursor-pointer" @click="updateSentence" src="~/assets/icon/refresh.svg">
       </div>
     </div>
-  </div>
+
+    <div class="max-w-[1200px] mx-auto lg:px-4 px-0 my-[80px]">
+      <div class="w-full h-full lg:px-8 lg:py-8 px-6 py-6 border-solid border transition-shadow lg:hover:shadow-lg">
+        <p class="text-2xl font-bold" ref="displayElement">{{ displaySentence }}</p>
+        <div class="flex items-center mt-4 justify-between">
+          <div class="flex items-center">
+            <img class="mr-2" src="~/assets/icon/info.svg">
+            <p class="text-sm" ref="categoryElement">{{ displayCategory }}</p>
+          </div>
+          <img id="generateButton" class="mr-2 cursor-pointer" @click="updateSentence" src="~/assets/icon/refresh.svg">
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
