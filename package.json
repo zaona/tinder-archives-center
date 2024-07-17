@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "prettier --write"
+    "format": "prettier --write \"**/*.vue\""
   },
   "dependencies": {
     "nuxt": "^3.12.3",

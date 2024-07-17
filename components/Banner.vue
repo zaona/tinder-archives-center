@@ -1,9 +1,10 @@
 <template>
   <div
     :class="['bg-no-repeat', 'bg-cover', 'bg-center', 'w-full', 'h-[160px]']"
-    :style="{ backgroundImage: `url(${bgImage})` }">
-    <div class="bg-gradient-to-r from-black/50 h-full">
-      <div class="h-full max-w-[1200px] mx-auto pl-4 flex items-center">
+    :style="{ backgroundImage: `url(${bgImage})` }"
+  >
+    <div class="h-full bg-gradient-to-r from-black/50">
+      <div class="mx-auto flex h-full max-w-[1200px] items-center pl-4">
         <p class="text-5xl text-white">{{ bannerTitle }}</p>
       </div>
     </div>
@@ -11,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 const props = defineProps({
   bgImage: {
