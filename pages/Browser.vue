@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="inner-container">
-        <img class="image" src="~/assets/img/illus/broswer.svg" />
+        <img class="image" src="~/assets/img/illus/browser.svg" />
         <p class="text">浏览器版本不支持</p>
         <p class="text">
           请使用最新版本的 Chrome、Firefox、Safari 或 Edge 浏览器

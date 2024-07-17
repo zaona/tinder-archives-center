@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="inner-container">
-        <img class="image" src="~/assets/img/illus/broswer.svg" />
+        <img class="image" src="~/assets/img/illus/move.svg" />
         <p class="text">地球联合资源站”已更名为“火种档案</p>
         <p class="text">请使用新网址：tac.zaona.top 访问</p>
         <a class="link" target="_blank" href="https://tac.zaona.top"
