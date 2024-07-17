@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="bg-no-repeat bg-cover bg-none lg:bg-[url('~/assets/img/illus/index-bg.svg')] w-full h-[620px]">
     <div class="h-full max-w-[1200px] mx-auto pt-[220px] px-4">
       <img class="h-[95px] bg-white pr-20 lg:pr-0" src="~/assets/tac-logo/name-mix.svg">
@@ -21,6 +22,7 @@
         <img id="generateButton" class="mr-2 cursor-pointer" @click="updateSentence" src="~/assets/icon/refresh.svg">
       </div>
     </div>
+  </div>
   </div>
 </template>
 
