@@ -3,33 +3,27 @@
     <Banner bgImage="/img/pages-banner/bg-about.png" bannerTitle="关于" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
-      <p class="text-[36px] leading-loose">关于本站</p>
-      <p class="text-[16px] leading-loose">
-        在流浪地球中，“火种计划”是指一旦“流浪地球计划”失败，“领航员号”空间站将携带着受精卵和数据库飞往四光年外的半人马座。
+      <p class="text-4xl leading-loose">关于本站</p>
+      <p class="leading-loose">
+        在流浪地球1的结尾中，MOSS宣布“流浪地球计划”失败，启动“火种计划”，让“领航员号”空间站携带着受精卵和数据库飞往四光年外的半人马座。
       </p>
-      <p class="text-[16px] leading-loose">
+      <p class="leading-loose">
         “火种档案”目前整合了流浪地球电影中的颜色，字体，标志等内容，未来将会持续更新，
       </p>
-      <p class="text-[16px] leading-loose">
-        希望能给各个流浪地球二创作者带来便利。
-      </p>
-      <p class="mt-12 text-[36px] leading-loose">鸣谢</p>
-      <p class="text-[16px] leading-loose">
+      <p class="leading-loose">希望能给各个流浪地球二创作者带来便利。</p>
+      <p class="mt-12 text-4xl leading-loose">鸣谢</p>
+      <p class="leading-loose">
         衷心感谢电影流浪地球，衷心感谢为本网站提供部分设计资源与改进建议的小破球爱好者们。
       </p>
 
-      <div class="mt-[16px] grid grid-cols-2 gap-[16px] lg:grid-cols-4">
+      <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
         <a target="_blank" class="" href="https://space.bilibili.com/518916820">
           <div class="relative h-full transition-shadow hover:shadow-lg">
             <div
               class="flex h-full flex-col items-center divide-y border border-solid"
             >
-              <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">
-                海藻酸钠
-              </p>
-              <p class="w-full px-[16px] py-[16px] text-[16px]">
-                本站设计+前端开发
-              </p>
+              <p class="w-full p-4 font-bold">海藻酸钠</p>
+              <p class="w-full p-4">本站设计+前端开发</p>
             </div>
             <div
               class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
@@ -46,15 +40,13 @@
             <div
               class="flex h-full flex-col items-center divide-y border border-solid"
             >
-              <div
-                class="flex h-full w-full items-center justify-between px-[16px] py-[16px]"
-              >
+              <div class="flex h-full w-full items-center justify-between p-4">
                 <img
                   class="my-[4px] h-[16px]"
                   src="~/assets/img/about/terminator7211.svg"
                 />
               </div>
-              <p class="w-full px-[16px] py-[16px] text-[16px]">
+              <p class="w-full p-4">
                 本站Logo作者，修复了很多复杂的流浪地球标志
               </p>
             </div>
@@ -71,68 +63,44 @@
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">
-            吕小技同学
-          </p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            提供了非常多的高质量流浪地球海报以及台词
-          </p>
+          <p class="w-full p-4 font-bold">吕小技同学</p>
+          <p class="w-full p-4">提供了非常多的高质量流浪地球海报以及台词</p>
         </div>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">
-            梅花糕糕
-          </p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            为本站的“小苔藓计划”风格海报提供了手写字支持
-          </p>
+          <p class="w-full p-4 font-bold">梅花糕糕</p>
+          <p class="w-full p-4">为本站的“小苔藓计划”风格海报提供了手写字支持</p>
         </div>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">
-            小鱼yuzifu
-          </p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            将作者从 js 的水深火热中解脱出来
-          </p>
+          <p class="w-full p-4 font-bold">小鱼yuzifu</p>
+          <p class="w-full p-4">将作者从 js 的水深火热中解脱出来</p>
         </div>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">
-            刘lyxAndy
-          </p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            帮助改进了网站的部分 js 代码
-          </p>
+          <p class="w-full p-4 font-bold">刘lyxAndy</p>
+          <p class="w-full p-4">帮助改进了网站的部分 js 代码</p>
         </div>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">fish</p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            帮助作者找到了很多有用的开发资源
-          </p>
+          <p class="w-full p-4 font-bold">fish</p>
+          <p class="w-full p-4">帮助作者找到了很多有用的开发资源</p>
         </div>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">
-            小宏XeLa
-          </p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            帮助作者找到了很多有用的开发资源
-          </p>
+          <p class="w-full p-4 font-bold">小宏XeLa</p>
+          <p class="w-full p-4">帮助作者找到了很多有用的开发资源</p>
         </div>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
-          <p class="w-full px-[16px] py-[16px] text-[16px] font-bold">叶梦昀</p>
-          <p class="w-full px-[16px] py-[16px] text-[16px]">
-            提了非常多非常多我完不成的建议...
-          </p>
+          <p class="w-full p-4 font-bold">叶梦昀</p>
+          <p class="w-full p-4">提了非常多非常多我完不成的建议...</p>
         </div>
       </div>
       <img
