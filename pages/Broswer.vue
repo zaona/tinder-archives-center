@@ -2,10 +2,17 @@
   <div>
     <div class="container">
       <div class="inner-container">
-        <img class="image" src="~/assets/img/illus/broswer.svg">
+        <img class="image" src="~/assets/img/illus/broswer.svg" />
         <p class="text">浏览器版本不支持</p>
-        <p class="text">请使用最新版本的 Chrome、Firefox、Safari 或 Edge 浏览器</p>
-        <a class="link" target="_blank" href="https://www.google.cn/chrome/index.html">下载 Chrome</a>
+        <p class="text">
+          请使用最新版本的 Chrome、Firefox、Safari 或 Edge 浏览器
+        </p>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.google.cn/chrome/index.html"
+          >下载 Chrome</a
+        >
       </div>
     </div>
   </div>
@@ -13,8 +20,8 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'blank'
-})
+  layout: "blank",
+});
 </script>
 
 <style scoped>
@@ -54,7 +61,9 @@ html {
   line-height: 24px;
   text-align: center;
   margin: 0px;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
 }
 
 .link {
@@ -72,6 +81,8 @@ html {
   line-height: 24px;
   color: black;
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
 }
 </style>

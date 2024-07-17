@@ -145,8 +145,8 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: '火种档案 | 关于',
-})
+  titleTemplate: "火种档案 | 关于",
+});
 </script>
 
 <style></style>

@@ -126,11 +126,9 @@ onMounted(() => {
   displayCategory.value = `来自：${initialRandomSentence.category}`;
 });
 
-
-
 useHead({
-  titleTemplate: '火种档案 | 首页',
-})
+  titleTemplate: "火种档案 | 首页",
+});
 </script>
 
 <style></style>

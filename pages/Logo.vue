@@ -17,8 +17,8 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: '火种档案 | 标志',
-})
+  titleTemplate: "火种档案 | 标志",
+});
 </script>
 
 <style></style>

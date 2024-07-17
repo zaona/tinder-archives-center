@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Global page description' }
+        { hid: 'description', name: '火种档案', content: '一个流浪地球设计资源站' }
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/tac-logo/symbol-black.svg', media: '(prefers-color-scheme: light)' },

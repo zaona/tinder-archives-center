@@ -2,10 +2,12 @@
   <div>
     <div class="container">
       <div class="inner-container">
-        <img class="image" src="~/assets/img/illus/broswer.svg">
+        <img class="image" src="~/assets/img/illus/broswer.svg" />
         <p class="text">地球联合资源站”已更名为“火种档案</p>
         <p class="text">请使用新网址：tac.zaona.top 访问</p>
-        <a class="link" target="_blank" href="https://tac.zaona.top">点击前往</a>
+        <a class="link" target="_blank" href="https://tac.zaona.top"
+          >点击前往</a
+        >
       </div>
     </div>
   </div>
@@ -13,8 +15,8 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'blank'
-})
+  layout: "blank",
+});
 </script>
 
 <style scoped>
@@ -54,7 +56,9 @@ html {
   line-height: 24px;
   text-align: center;
   margin: 0px;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
 }
 
 .link {
@@ -72,6 +76,8 @@ html {
   line-height: 24px;
   color: black;
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
 }
 </style>

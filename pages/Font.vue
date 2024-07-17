@@ -142,8 +142,8 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: '火种档案 | 字体',
-})
+  titleTemplate: "火种档案 | 字体",
+});
 </script>
 
 <style></style>
