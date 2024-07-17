@@ -14,7 +14,7 @@
             <a
               target="_blank"
               class="text-[14px] text-gray-500"
-              href="https://github.com/zaona/united-earth-files"
+              href="https://github.com/zaona/tinder-archives-center"
               >Github</a
             >
           </div>
@@ -28,15 +28,9 @@
             >
             <a
               target="_blank"
-              class="mb-1 text-[14px] text-gray-500"
+              class="text-[14px] text-gray-500"
               href="https://weibo.com/6436669966"
               >电影流浪地球</a
-            >
-            <a
-              target="_blank"
-              class="text-[14px] text-gray-500"
-              href="https://space.bilibili.com/3493277380643581"
-              >地球联合组</a
             >
           </div>
         </div>
