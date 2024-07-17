@@ -5,9 +5,8 @@
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <div class="mb-12">
         <p class="text-[36px]">流浪地球1</p>
-        <div class="mt-[16px] flex items-center text-[14px]">
-          <img class="mr-2" src="~/assets/icon/info.svg" />来自：电影片尾 ·
-          版权字体支持
+        <div class="mt-[16px]">
+          <OriginTag text="来自：电影片尾 · 版权字体支持" />
         </div>
         <div class="mt-[16px] grid grid-cols-2 gap-[16px] lg:grid-cols-5">
           <div
@@ -66,8 +65,8 @@
             />
           </div>
         </div>
-        <div class="mt-[16px] flex items-center text-[14px]">
-          <img class="mr-2" src="~/assets/icon/info.svg" />来自：知乎 · @Jerry
+        <div class="mt-[16px]">
+          <OriginTag text="来自：知乎 · @Jerry" />
         </div>
         <div
           class="mb-[16px] mt-[16px] grid grid-cols-2 gap-[16px] lg:grid-cols-5"
@@ -87,11 +86,8 @@
       </div>
       <div class="mb-12">
         <p class="text-[36px]">流浪地球2</p>
-        <div class="mt-[16px] flex items-center text-[14px]">
-          <img
-            class="mr-2"
-            src="~/assets/icon/info.svg"
-          />来自：流浪地球2制作手记 | 哔哩哔哩 · @RQvan
+        <div class="mt-[16px]">
+          <OriginTag text="来自：流浪地球2制作手记 | 哔哩哔哩 · @RQvan" />
         </div>
         <div class="mt-[16px] grid grid-cols-2 gap-[16px] lg:grid-cols-5">
           <div
@@ -145,12 +141,9 @@
 </template>
 
 <script lang="ts" setup>
-import { useHead } from "#app";
-
 useHead({
-  title: "火种档案 | 字体",
-  meta: [{ name: "description", content: "Page description" }],
-});
+  titleTemplate: '火种档案 | 字体',
+})
 </script>
 
 <style></style>

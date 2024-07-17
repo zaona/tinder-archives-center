@@ -31,10 +31,7 @@
           {{ displaySentence }}
         </p>
         <div class="mt-4 flex items-center justify-between">
-          <div class="flex items-center">
-            <img class="mr-2" src="~/assets/icon/info.svg" />
-            <p class="text-sm" ref="categoryElement">{{ displayCategory }}</p>
-          </div>
+          <OriginTag :text="displayCategory" />
           <img
             id="generateButton"
             class="mr-2 cursor-pointer"
@@ -129,12 +126,11 @@ onMounted(() => {
   displayCategory.value = `来自：${initialRandomSentence.category}`;
 });
 
-import { useHead } from "#app";
+
 
 useHead({
-  title: "火种档案 | 首页",
-  meta: [{ name: "description", content: "Page description" }],
-});
+  titleTemplate: '火种档案 | 首页',
+})
 </script>
 
 <style></style>

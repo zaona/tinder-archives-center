@@ -5,21 +5,14 @@
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <p class="mb-[12px] text-[36px]">来自网络</p>
       <div class="">
-        <div class="mt-[16px] flex items-center text-[14px]">
-          <img
-            class="mb-0.5 mr-2"
-            src="~/assets/icon/info.svg"
-          />以下内容来源于网络，仅收录
+        <div class="mt-[16px]">
+          <OriginTag text="以下内容来源于网络，仅收录" />
         </div>
         <div class="mt-[16px] grid grid-cols-2 gap-[16px] lg:grid-cols-4">
           <a target="_blank" class="" href="https://unitedearth.wiki/">
             <div class="relative h-full transition-shadow hover:shadow-lg">
-              <div
-                class="flex h-full flex-col items-center divide-y border border-solid"
-              >
-                <div
-                  class="flex w-full items-center justify-between px-[16px] py-[16px]"
-                >
+              <div class="flex h-full flex-col items-center divide-y border border-solid">
+                <div class="flex w-full items-center justify-between px-[16px] py-[16px]">
                   <p class="text-[16px] font-bold">地球联合百科</p>
                 </div>
                 <p class="w-full px-[16px] py-[16px] text-[16px]">
@@ -27,27 +20,15 @@
                 </p>
               </div>
               <div
-                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-              >
-                <img
-                  class="absolute right-[18px] top-[18px]"
-                  src="~/assets/icon/arrow.svg"
-                />
+                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100">
+                <img class="absolute right-[18px] top-[18px]" src="~/assets/icon/arrow.svg" />
               </div>
             </div>
           </a>
-          <a
-            target="_blank"
-            class=""
-            href="https://lab.wsm.ink/the-wandering-earth-2-countdown/#/"
-          >
+          <a target="_blank" class="" href="https://lab.wsm.ink/the-wandering-earth-2-countdown/#/">
             <div class="relative h-full transition-shadow hover:shadow-lg">
-              <div
-                class="flex h-full flex-col items-center divide-y border border-solid"
-              >
-                <div
-                  class="flex w-full items-center justify-between px-[16px] py-[16px]"
-                >
+              <div class="flex h-full flex-col items-center divide-y border border-solid">
+                <div class="flex w-full items-center justify-between px-[16px] py-[16px]">
                   <p class="text-[16px] font-bold">
                     The Wandering Earth 2 Countdown
                   </p>
@@ -57,27 +38,15 @@
                 </p>
               </div>
               <div
-                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-              >
-                <img
-                  class="absolute right-[18px] top-[18px]"
-                  src="~/assets/icon/arrow.svg"
-                />
+                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100">
+                <img class="absolute right-[18px] top-[18px]" src="~/assets/icon/arrow.svg" />
               </div>
             </div>
           </a>
-          <a
-            target="_blank"
-            class=""
-            href="https://xiaohong2022.github.io/h5-wandering-earth/"
-          >
+          <a target="_blank" class="" href="https://xiaohong2022.github.io/h5-wandering-earth/">
             <div class="relative h-full transition-shadow hover:shadow-lg">
-              <div
-                class="flex h-full flex-col items-center divide-y border border-solid"
-              >
-                <div
-                  class="flex w-full items-center justify-between px-[16px] py-[16px]"
-                >
+              <div class="flex h-full flex-col items-center divide-y border border-solid">
+                <div class="flex w-full items-center justify-between px-[16px] py-[16px]">
                   <p class="text-[16px] font-bold">h5-wandering-earth</p>
                 </div>
                 <p class="w-full px-[16px] py-[16px] text-[16px]">
@@ -85,23 +54,15 @@
                 </p>
               </div>
               <div
-                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-              >
-                <img
-                  class="absolute right-[18px] top-[18px]"
-                  src="~/assets/icon/arrow.svg"
-                />
+                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100">
+                <img class="absolute right-[18px] top-[18px]" src="~/assets/icon/arrow.svg" />
               </div>
             </div>
           </a>
           <a target="_blank" class="" href="https://uegov.world/ueg-card/">
             <div class="relative h-full transition-shadow hover:shadow-lg">
-              <div
-                class="flex h-full flex-col items-center divide-y border border-solid"
-              >
-                <div
-                  class="flex w-full items-center justify-between px-[16px] py-[16px]"
-                >
+              <div class="flex h-full flex-col items-center divide-y border border-solid">
+                <div class="flex w-full items-center justify-between px-[16px] py-[16px]">
                   <p class="text-[16px] font-bold">UEG 名牌生成</p>
                 </div>
                 <p class="w-full px-[16px] py-[16px] text-[16px]">
@@ -109,23 +70,15 @@
                 </p>
               </div>
               <div
-                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-              >
-                <img
-                  class="absolute right-[18px] top-[18px]"
-                  src="~/assets/icon/arrow.svg"
-                />
+                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100">
+                <img class="absolute right-[18px] top-[18px]" src="~/assets/icon/arrow.svg" />
               </div>
             </div>
           </a>
           <a target="_blank" class="" href="https://uegov.world/random-draw/">
             <div class="relative h-full transition-shadow hover:shadow-lg">
-              <div
-                class="flex h-full flex-col items-center divide-y border border-solid"
-              >
-                <div
-                  class="flex w-full items-center justify-between px-[16px] py-[16px]"
-                >
+              <div class="flex h-full flex-col items-center divide-y border border-solid">
+                <div class="flex w-full items-center justify-between px-[16px] py-[16px]">
                   <p class="text-[16px] font-bold">地下城居住资格抽签</p>
                 </div>
                 <p class="w-full px-[16px] py-[16px] text-[16px]">
@@ -133,58 +86,36 @@
                 </p>
               </div>
               <div
-                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-              >
-                <img
-                  class="absolute right-[18px] top-[18px]"
-                  src="~/assets/icon/arrow.svg"
-                />
+                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100">
+                <img class="absolute right-[18px] top-[18px]" src="~/assets/icon/arrow.svg" />
               </div>
             </div>
           </a>
-          <a
-            target="_blank"
-            class=""
-            href="https://github.com/picasso250/spring12"
-          >
+          <a target="_blank" class="" href="https://github.com/picasso250/spring12">
             <div class="relative h-full transition-shadow hover:shadow-lg">
-              <div
-                class="flex h-full flex-col items-center divide-y border border-solid"
-              >
-                <div
-                  class="flex w-full items-center justify-between px-[16px] py-[16px]"
-                >
+              <div class="flex h-full flex-col items-center divide-y border border-solid">
+                <div class="flex w-full items-center justify-between px-[16px] py-[16px]">
                   <p class="text-[16px] font-bold">spring12</p>
                 </div>
                 <p class="w-full px-[16px] py-[16px] text-[16px]">春节十二响</p>
               </div>
               <div
-                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-              >
-                <img
-                  class="absolute right-[18px] top-[18px]"
-                  src="~/assets/icon/arrow.svg"
-                />
+                class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100">
+                <img class="absolute right-[18px] top-[18px]" src="~/assets/icon/arrow.svg" />
               </div>
             </div>
           </a>
         </div>
       </div>
-      <img
-        class="mx-auto mt-12 w-[300px]"
-        src="~/assets/img/illus/thanks.svg"
-      />
+      <img class="mx-auto mt-12 w-[300px]" src="~/assets/img/illus/thanks.svg" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { useHead } from "#app";
-
 useHead({
-  title: "火种档案 | 工具",
-  meta: [{ name: "description", content: "Page description" }],
-});
+  titleTemplate: '火种档案 | 工具',
+})
 </script>
 
 <style></style>

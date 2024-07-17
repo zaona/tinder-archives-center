@@ -16,12 +16,9 @@
 </template>
 
 <script lang="ts" setup>
-import { useHead } from "#app";
-
 useHead({
-  title: "火种档案 | 标志",
-  meta: [{ name: "description", content: "Page description" }],
-});
+  titleTemplate: '火种档案 | 标志',
+})
 </script>
 
 <style></style>
