@@ -1,5 +1,6 @@
 <template>
-  <NuxtLoadingIndicator color="#FA3E00" :height="5" />
+  <NuxtLoadingIndicator color="#FA3E00" />
+  <!-- :throttle="0" -->
   <div>
     <Header />
     <NuxtPage />

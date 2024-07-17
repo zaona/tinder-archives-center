@@ -1,13 +1,6 @@
 <template>
   <div>
-    <div
-      class="bg-no-repeat bg-cover bg-center bg-[url('~/assets/img/pages-banner/bg-tool.png')] w-full h-[160px] mb-12">
-      <div class="bg-gradient-to-r from-black/50 h-full">
-        <div class="h-full max-w-[1200px] mx-auto pl-4">
-          <p class="text-[48px] pt-[56px] text-white leading-[48px]">工具</p>
-        </div>
-      </div>
-    </div>
+    <Banner bgImage="/img/pages-banner/bg-tool.png" bannerTitle="工具" />
 
     <div class="mx-auto max-w-[1200px] px-4 mb-12">
       <p class="text-[36px] mt-[48px] mb-[12px]">来自网络</p>

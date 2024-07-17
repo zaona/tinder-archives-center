@@ -1,13 +1,6 @@
 <template>
   <div>
-    <div
-      class="bg-no-repeat bg-cover bg-center bg-[url('~/assets/img/pages-banner/bg-logo.png')] w-full h-[160px] mb-12">
-      <div class="bg-gradient-to-r from-black/50 h-full">
-        <div class="h-full max-w-[1200px] mx-auto pl-4">
-          <p class="text-[48px] pt-[56px] text-white leading-[48px]">标志[ING]</p>
-        </div>
-      </div>
-    </div>
+    <Banner bgImage="/img/pages-banner/bg-logo.png" bannerTitle="标志[ING]" />
 
     <div class="max-w-[1200px] mx-auto mb-12 lg:px-4 px-0">
       <div class="bg-gray-50 border-solid border lg:px-8 lg:py-8 px-6 py-6">

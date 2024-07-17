@@ -18,8 +18,8 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: 'Global page description' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/symbol-black.svg', media: '(prefers-color-scheme: light)' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/symbol-white.svg', media: '(prefers-color-scheme: dark)' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/tac-logo/symbol-black.svg', media: '(prefers-color-scheme: light)' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/tac-logo/symbol-white.svg', media: '(prefers-color-scheme: dark)' },
       ]
     }
   },

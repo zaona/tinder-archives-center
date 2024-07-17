@@ -1,13 +1,7 @@
 <template>
     <div>
-        <div
-            class="bg-no-repeat bg-cover bg-center bg-[url('~/assets/img/pages-banner/bg-about.png')] w-full h-[160px] mb-12">
-            <div class="bg-gradient-to-r from-black/50 h-full">
-                <div class="h-full max-w-[1200px] mx-auto pl-4">
-                    <p class="text-[48px] pt-[56px] text-white leading-[48px]">关于</p>
-                </div>
-            </div>
-        </div>
+        <Banner bgImage="/img/pages-banner/bg-about.png" bannerTitle="关于" />
+
         <div class="mx-auto max-w-[1200px] px-4 mb-12">
             <p class="text-[36px] mb-[12px]">关于本站</p>
             <p class="text-[16px] mb-[12px]">在流浪地球中，“火种计划”是指一旦“流浪地球计划”失败，“领航员号”空间站将携带着受精卵和数据库飞往四光年外的半人马座。</p>
