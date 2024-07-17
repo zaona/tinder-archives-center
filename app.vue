@@ -1,9 +1,9 @@
 <template>
-  <NuxtLoadingIndicator color="#FA3E00" />
+  <NuxtLoadingIndicator color="#FA3E00" :throttle="0" />
   <!-- :throttle="0" -->
   <div>
-    <Header />
-    <NuxtPage />
-    <Footer />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
