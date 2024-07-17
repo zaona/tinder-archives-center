@@ -11,6 +11,8 @@
           若无特殊说明，均由 海藻酸钠 和 terminator7211 完成修复
         </p>
       </div>
+
+      <LogoList />
     </div>
   </div>
 </template>
