@@ -21,6 +21,13 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/tac-logo/symbol-black.svg', media: '(prefers-color-scheme: light)' },
         { rel: 'icon', type: 'image/svg+xml', href: '/tac-logo/symbol-white.svg', media: '(prefers-color-scheme: dark)' },
+      ],
+      script: [
+        { 
+          defer: true,
+          src: 'https://cloud.umami.is/script.js',
+          'data-website-id': '42ae9f33-340c-43dc-9807-122b857d5d22'
+        }
       ]
     }
   },
