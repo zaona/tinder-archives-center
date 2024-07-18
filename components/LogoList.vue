@@ -9,10 +9,11 @@
         <div v-for="logo in group.logos" :key="logo.name"
           class="flex flex-col items-center border-solid border divide-y transition-shadow hover:shadow-lg">
           <p class="font-bold p-4 w-full">{{ logo.name }}</p>
-          <img class="w-full h-[150px] p-4 bg-gray-50" :src="logo.imgSrc" :alt="logo.name">
-          <!-- <a :data-fancybox="true" :data-src="logo.imgSrc" :data-caption="logo.name" :data-download-src="logo.imgSrc" :data-download-filename="logo.name" class="w-full p-4 bg-gray-50">
+          <!-- <img class="w-full h-[150px] p-4 bg-gray-50" :src="logo.imgSrc" :alt="logo.name"> -->
+          <a :data-fancybox="true" :data-src="logo.imgSrc" :data-caption="logo.name" :data-download-src="logo.imgSrc"
+            :data-download-filename="logo.name" class="w-full p-4 bg-gray-50">
             <img class="w-full h-[150px]" :src="logo.imgSrc" alt="{{ logo.name }}">
-          </a> -->
+          </a>
         </div>
       </div>
     </div>
@@ -20,6 +21,31 @@
 </template>
 
 <script setup>
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { zh_CN } from '@fancyapps/ui/dist/fancybox/l10n/zh_CN.esm.js';
+
+Fancybox.bind('[data-fancybox]', {
+  groupAttr: false,
+  hideScrollbar: false,
+  l10n: zh_CN,
+  Toolbar: {
+    display: {
+      left: [
+        "infobar",
+      ],
+      middle: [],
+      right: [
+        "slideshow",
+        "download",
+        "thumbs",
+        "close",
+      ],
+    }
+  },
+});
+
+
 import { ref } from 'vue';
 
 const config = ref([
