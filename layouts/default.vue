@@ -1,7 +1,9 @@
 <template>
   <div>
-    <Header />
-    <slot />
+    <Header class="fixed top-0 w-full z-10" />
+    <div class="mt-20">
+      <slot />
+    </div>
     <Footer />
   </div>
 </template>
