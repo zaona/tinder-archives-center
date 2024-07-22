@@ -5,8 +5,9 @@
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
         <div class="hidden w-[166px] flex-col lg:flex">
-          <img class="mb-2 w-[60px]" src="~/assets/tac-logo/symbol-black.svg" />
-          <img class="w-[120px]" src="~/assets/tac-logo/type-black.svg" />
+          <img class="mb-2 w-[160px]" src="~/assets/tac-logo/symbol-type-black.svg" />
+          <!-- <img class="mb-2 w-[60px]" src="~/assets/tac-logo/symbol-mix.svg" />
+          <img class="w-[120px]" src="~/assets/tac-logo/type-mix.svg" /> -->
         </div>
         <div class="grid w-full grid-cols-2 gap-x-[100px] lg:w-[350px]">
           <div class="flex flex-col">
