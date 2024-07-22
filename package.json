@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
-    "nuxt": "^3.12.3",
-    "vue": "^3.4.32"
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.33"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
