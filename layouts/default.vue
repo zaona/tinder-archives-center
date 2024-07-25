@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header class="fixed top-0 w-full z-10" />
+    <Header class="fixed top-0 z-10 w-full" />
     <div class="mt-20">
       <slot />
       <BackTop />

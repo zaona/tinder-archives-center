@@ -9,7 +9,7 @@
           src="~/assets/tac-logo/name-mix.svg"
         />
         <img
-          class="w-[350px] pt-4 pl-1 bg-white pr-10 lg:pr-0"
+          class="w-[350px] bg-white pl-1 pr-10 pt-4 lg:pr-0"
           src="~/assets/tac-logo/eng-black.svg"
         />
         <!-- <p class="w-[350px] bg-white pl-1 pt-3 text-3xl font-bold">
