@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="(group, index) in config" :key="index" class="mt-12">
-      <p class="text-4xl leading-loose">{{ group.title }}</p>
+      <H1>{{ group.title }}</H1>
       <div v-if="group.source" class="mb-4 mt-2">
         <OriginTag :text="group.source" />
       </div>
@@ -12,7 +12,6 @@
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">{{ logo.name }}</p>
-          <!-- <img class="w-full h-[150px] p-4 bg-gray-50" :src="logo.imgSrc" :alt="logo.name"> -->
           <a
             :data-fancybox="true"
             :data-src="logo.imgSrc"

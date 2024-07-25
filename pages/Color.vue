@@ -3,7 +3,7 @@
     <Banner bgImage="/img/pages-banner/bg-color.png" bannerTitle="颜色" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
-      <p class="text-4xl leading-loose">流浪地球</p>
+      <H1>流浪地球</H1>
       <div class="mt-2">
         <OriginTag text="来自：哔哩哔哩 · @长期洗涤Longwashing" />
       </div>
@@ -28,7 +28,9 @@
         </div>
       </div>
 
-      <p class="mt-12 text-4xl leading-loose">地球联合政府</p>
+      <div class="mt-12">
+        <H1>地球联合政府</H1>
+      </div>
       <div class="mt-2">
         <OriginTag text="来自：UET设计组校准" />
       </div>
@@ -44,7 +46,9 @@
         </div>
       </div>
 
-      <p class="mt-12 text-4xl leading-loose">北京航天中心</p>
+      <div class="mt-12">
+        <H1>北京航天中心</H1>
+      </div>
       <div class="mt-2">
         <OriginTag text="来自：机核 · 流浪地球美术设定" />
       </div>

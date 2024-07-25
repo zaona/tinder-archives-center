@@ -3,7 +3,8 @@
     <Banner bgImage="/img/pages-banner/bg-tool.png" bannerTitle="工具" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
-      <p class="text-4xl leading-loose">来自网络</p>
+      
+      <H1>来自网络</H1>
       <div class="mt-2">
         <OriginTag text="以下内容来源于网络，仅收录" />
       </div>
