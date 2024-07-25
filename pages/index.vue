@@ -5,12 +5,16 @@
     >
       <div class="mx-auto h-full max-w-[1200px] px-4 pt-[220px]">
         <img
-          class="h-[95px] bg-white pr-20 lg:pr-0"
+          class="w-[390px] bg-white pr-10 lg:pr-0"
           src="~/assets/tac-logo/name-mix.svg"
         />
-        <p class="w-[350px] bg-white pl-1 pt-3 text-3xl font-bold">
+        <img
+          class="w-[350px] pt-4 pl-1 bg-white pr-10 lg:pr-0"
+          src="~/assets/tac-logo/eng-black.svg"
+        />
+        <!-- <p class="w-[350px] bg-white pl-1 pt-3 text-3xl font-bold">
           Tinder Archives Center
-        </p>
+        </p> -->
         <p class="w-[250px] bg-white pl-1 pt-4 font-bold">
           一个「流浪地球」设计资源站
         </p>
