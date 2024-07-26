@@ -185,4 +185,9 @@ const config = ref([
   --f-button-svg-fill: none;
   --f-button-svg-disabled-opacity: 0.65;
 }
+
+.is-compact .fancybox__footer {
+  /* background: rgba(24, 24, 27, .5); */
+  background: rgba(191, 191, 191, 0.5);
+}
 </style>
