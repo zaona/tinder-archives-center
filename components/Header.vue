@@ -22,13 +22,13 @@
     </div>
 
     <div class="block bg-black lg:hidden">
-      <div class="flex h-20 items-center justify-between px-4">
+      <div class="flex h-16 items-center justify-between px-4">
         <img
           @click="toggleMenu"
-          class="h-[40px] cursor-pointer"
+          class="h-6 cursor-pointer"
           src="~/assets/icon/menu-white.svg"
         />
-        <NuxtLink class="ml-8 mr-1 h-8" to="/">
+        <NuxtLink class="ml-4 mr-1 h-6" to="/">
           <img class="h-full" src="~/assets/tac-logo/symbol-type-white.svg" />
         </NuxtLink>
       </div>
