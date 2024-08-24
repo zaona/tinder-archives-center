@@ -120,7 +120,7 @@ const config = ref([
   },
   {
     title: "2044 上海",
-    source: "“图形+文字” · @克雷姬CraiGG.Z",
+    source: "",
     logos: [
       { name: "图形+文字", imgSrc: "/img/logo/2044上海-图形-文字.svg" },
       { name: "海报", imgSrc: "/img/logo/2044上海-海报.svg" },
