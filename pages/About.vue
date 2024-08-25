@@ -96,6 +96,12 @@
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
+          <p class="w-full p-4 font-bold">简与不简</p>
+          <p class="w-full p-4">给网站代码进行了诸多细节优化</p>
+        </div>
+        <div
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+        >
           <p class="w-full p-4 font-bold">fish</p>
           <p class="w-full p-4">帮助作者找到了很多有用的开发资源</p>
         </div>
