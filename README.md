@@ -1,6 +1,26 @@
 # 火种档案
 一个「流浪地球」设计资源站
 
+Vue + Nuxt + TailwindCSS + Vercel
+
+## 😎 本地运行
+1. 克隆仓库
+
+```shell
+git clone https://github.com/zaona/tinder-archives-center.git
+```
+2. 安装依赖
+
+```shell
+npm install
+```
+
+3. 启动本地开发服务器
+
+```shell
+npm run dev
+```
+
 ## ✅ Todo
 - [ ] 流浪地球标志修复（/logo）（进行中）
 - [x] 使用Nuxt重构
