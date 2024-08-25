@@ -2,7 +2,11 @@
   <div>
     <div class="container">
       <div class="inner-container">
-        <img class="image" src="~/assets/img/illus/browser.svg" />
+        <img
+          class="image"
+          src="~/assets/img/illus/browser.svg"
+          alt="Your Browser is too old."
+        />
         <p class="text">浏览器版本不支持</p>
         <p class="text">
           请使用最新版本的 Chrome、Firefox、Safari 或 Edge 浏览器
@@ -73,10 +77,7 @@ html {
   border-color: black;
   background-color: white;
   border-style: solid;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 500;
   line-height: 24px;
   color: black;

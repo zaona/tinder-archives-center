@@ -7,6 +7,7 @@
         <img
           class="mb-2 hidden w-[160px] lg:block"
           src="~/assets/tac-logo/symbol-type-black.svg"
+          alt="Logo"
         />
         <div class="grid w-full grid-cols-2 gap-x-[100px] lg:w-[350px]">
           <div class="flex flex-col gap-2">
@@ -46,6 +47,7 @@
         <img
           class="hidden h-full lg:block"
           src="~/assets/img/illus/earth-engine.svg"
+          alt="行星发动机"
         />
       </div>
     </div>

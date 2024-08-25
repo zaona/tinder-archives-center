@@ -37,6 +37,7 @@
               <img
                 class="absolute right-[18px] top-[18px]"
                 src="~/assets/icon/arrow.svg"
+                alt="前往"
               />
             </div>
           </div>
@@ -50,6 +51,7 @@
                 <img
                   class="my-[4px] h-[16px]"
                   src="~/assets/img/about/terminator7211.svg"
+                  alt="terminator7211"
                 />
               </div>
               <p class="w-full p-4">
@@ -62,6 +64,7 @@
               <img
                 class="absolute right-[18px] top-[18px]"
                 src="~/assets/icon/arrow.svg"
+                alt="前往"
               />
             </div>
           </div>
@@ -112,6 +115,7 @@
       <img
         class="mx-auto mt-12 w-[300px]"
         src="~/assets/img/illus/thanks.svg"
+        alt="感谢我们的家人，你们的爱是我们的发动机"
       />
     </div>
   </div>

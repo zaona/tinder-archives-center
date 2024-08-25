@@ -51,7 +51,6 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 import logos from "~/assets/config/logos.json";
-
 </script>
 
 <style>

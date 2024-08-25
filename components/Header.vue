@@ -3,7 +3,11 @@
     <div class="hidden bg-black lg:block">
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
-          <img class="h-8" src="~/assets/tac-logo/symbol-type-white.svg" />
+          <img
+            class="h-8"
+            src="~/assets/tac-logo/symbol-type-white.svg"
+            alt="Logo"
+          />
         </NuxtLink>
         <div class="mr-4 flex h-full w-1/2 items-center justify-between">
           <NuxtLink class="font-medium text-white" to="/color">颜色</NuxtLink>
@@ -27,9 +31,14 @@
           @click="toggleMenu"
           class="h-6 cursor-pointer"
           src="~/assets/icon/menu-white.svg"
+          alt="Menu Toggle Button"
         />
         <NuxtLink class="ml-4 mr-1 h-6" to="/">
-          <img class="h-full" src="~/assets/tac-logo/symbol-type-white.svg" />
+          <img
+            class="h-full"
+            src="~/assets/tac-logo/symbol-type-white.svg"
+            alt="Logo"
+          />
         </NuxtLink>
       </div>
     </div>
@@ -42,7 +51,7 @@
     <div
       id="sideMenu"
       class="fixed inset-y-0 left-0 z-20 w-80 bg-black transition ease-in-out"
-      :class="{'-translate-x-96': !isOpen }"
+      :class="{ '-translate-x-96': !isOpen }"
     >
       <div class="flex w-full flex-col gap-2 pt-14">
         <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/"

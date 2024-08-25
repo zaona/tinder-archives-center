@@ -15,6 +15,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/wryh.svg"
+            alt="字体示例：刘培强"
           />
         </div>
         <div
@@ -24,6 +25,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/gobold.svg"
+            alt="字体示例：HANGZHOU"
           />
         </div>
         <div
@@ -33,6 +35,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/yw.svg"
+            alt="字体示例：行星"
           />
         </div>
         <div
@@ -42,6 +45,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/lxk.svg"
+            alt="字体示例：十四年"
           />
         </div>
         <div
@@ -51,6 +55,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/candara.svg"
+            alt="字体示例：2019"
           />
         </div>
       </div>
@@ -65,6 +70,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/zmf.svg"
+            alt="字体示例：领航员"
           />
         </div>
       </div>
@@ -83,6 +89,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/sy.svg"
+            alt="字体示例：刘培强"
           />
         </div>
         <div
@@ -92,6 +99,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/rajdhani.svg"
+            alt="字体示例：UEG"
           />
         </div>
         <div
@@ -101,6 +109,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/cch.svg"
+            alt="字体示例：月球危机"
           />
         </div>
         <div
@@ -110,6 +119,7 @@
           <img
             class="h-[100px] w-full bg-gray-50"
             src="~/assets/img/font/hxbzs.svg"
+            alt="字体示例：催更版预告"
           />
         </div>
       </div>
