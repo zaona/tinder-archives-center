@@ -7,10 +7,12 @@
         <img
           class="w-[390px] bg-white pr-10 lg:pr-0"
           src="~/assets/tac-logo/name-mix.svg"
+          alt="火种档案"
         />
         <img
           class="w-[350px] bg-white pl-1 pr-10 pt-4 lg:pr-0"
           src="~/assets/tac-logo/eng-black.svg"
+          alt="Tinder Archives Center"
         />
         <!-- <p class="w-[350px] bg-white pl-1 pt-3 text-3xl font-bold">
           Tinder Archives Center
@@ -22,6 +24,7 @@
           <img
             class="mr-[50px] w-[140px] lg:hidden"
             src="~/assets/img/illus/little-white.svg"
+            alt=""
           />
         </div>
       </div>
@@ -41,6 +44,7 @@
             class="mr-2 cursor-pointer"
             @click="updateSentence"
             src="~/assets/icon/refresh.svg"
+            alt="刷新"
           />
         </div>
       </div>
@@ -68,7 +72,7 @@ function updateSentence() {
 }
 
 onMounted(() => {
-  updateSentence()
+  updateSentence();
 });
 
 useHead({

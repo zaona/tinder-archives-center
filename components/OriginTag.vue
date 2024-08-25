@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex items-center">
-      <img class="mr-2" src="~/assets/icon/info.svg" />
+      <img class="mr-2" src="~/assets/icon/info.svg" alt="信息" />
       <p class="text-sm">{{ text }}</p>
     </div>
   </div>

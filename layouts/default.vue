@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header class="fixed top-0 z-10 w-full" />
-    <div class="lg:mt-20 mt-16">
+    <div class="mt-16 lg:mt-20">
       <slot />
       <BackTop />
     </div>

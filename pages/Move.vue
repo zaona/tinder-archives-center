@@ -2,7 +2,11 @@
   <div>
     <div class="container">
       <div class="inner-container">
-        <img class="image" src="~/assets/img/illus/move.svg" />
+        <img
+          class="image"
+          src="~/assets/img/illus/move.svg"
+          alt="Your browser is too Old."
+        />
         <p class="text">“地球联合资源站”已更名为“火种档案”</p>
         <p class="text">请使用新网址：tac.zaona.top 访问</p>
         <a class="link" target="_blank" href="https://tac.zaona.top"
@@ -68,10 +72,7 @@ html {
   border-color: black;
   background-color: white;
   border-style: solid;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 500;
   line-height: 24px;
   color: black;
