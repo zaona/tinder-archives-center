@@ -51,7 +51,7 @@
     <div
       id="sideMenu"
       class="fixed inset-y-0 left-0 z-20 w-80 bg-black transition ease-in-out"
-      :class="{ '-translate-x-96': !isOpen }"
+      :class="{ '-translate-x-80': !isOpen }"
     >
       <div class="flex w-full flex-col gap-2 pt-14">
         <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/"
