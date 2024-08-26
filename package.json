@@ -13,6 +13,7 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
     "nuxt": "^3.13.0",
+    "overlayscrollbars-vue": "^0.5.9",
     "vue": "^3.4.38"
   },
   "devDependencies": {
