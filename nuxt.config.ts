@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  plugins: ['~/plugins/browser-check.ts'],
+  plugins: ['~/plugins/browser-check.ts', '~/plugins/overlayscrollbars.ts'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -28,7 +28,13 @@ export default defineNuxtConfig({
           src: 'https://cloud.umami.is/script.js',
           'data-website-id': '42ae9f33-340c-43dc-9807-122b857d5d22'
         }
-      ]
+      ],
+      htmlAttrs:{
+        'data-overlayscrollbars-initialize': true
+      },
+      bodyAttrs: {
+        'data-overlayscrollbars-initialize': true
+      },
     }
   },
 })
