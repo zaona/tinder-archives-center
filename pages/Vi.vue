@@ -51,6 +51,26 @@
               <p class="text-gray-500">英文全称</p>
             </div>
           </div>
+          <div
+            class="items-start border border-solid bg-white transition-shadow hover:shadow-lg flex flex-col lg:flex-row lg:divide-y-0 divide-y lg:divide-x divide-x-0">
+            <div class="bg-gray-100 p-8 w-full basis-1/3 flex justify-center">
+              <img src="~/assets/tac-logo/symbol-type-black.svg" alt="" class="h-24">
+            </div>
+            <div class="p-4 basis-2/3 h-full justify-between">
+              <p class="font-bold">symbol-type</p>
+              <p class="text-gray-500">组合方式1</p>
+            </div>
+          </div>
+          <div
+            class="items-start border border-solid bg-white transition-shadow hover:shadow-lg flex flex-col lg:flex-row lg:divide-y-0 divide-y lg:divide-x divide-x-0">
+            <div class="bg-gray-100 p-8 w-full basis-1/3 flex justify-center">
+              <img src="~/assets/tac-logo/symbol-name-type-black.svg" alt="" class="h-24">
+            </div>
+            <div class="p-4 basis-2/3 h-full justify-between">
+              <p class="font-bold">symbol-name-type</p>
+              <p class="text-gray-500">组合方式2</p>
+            </div>
+          </div>
         </div>
       </div>
 
