@@ -18,6 +18,11 @@
               >更新日志</a
             >
             <a
+              class="text-sm text-gray-500 hover:text-gray-600"
+              href="/vi"
+              >VI 指南</a
+            >
+            <a
               target="_blank"
               class="text-sm text-gray-500 hover:text-gray-600"
               href="https://github.com/zaona/tinder-archives-center"

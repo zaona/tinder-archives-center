@@ -40,6 +40,10 @@ function selectItem(index: number) {
 
 // 初始化显示第一个项目
 selectItem(0);
+
+useHead({
+  titleTemplate: "火种档案 | 文档",
+});
 </script>
 
 <style></style>

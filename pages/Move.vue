@@ -21,6 +21,10 @@
 definePageMeta({
   layout: "blank",
 });
+
+useHead({
+  titleTemplate: "火种档案 | 迁移",
+});
 </script>
 
 <style scoped>
