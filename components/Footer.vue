@@ -11,12 +11,17 @@
         />
         <div class="grid w-full grid-cols-2 gap-x-[100px] lg:w-[350px]">
           <div class="flex flex-col gap-2">
-            <p class="mb-1 text-sm font-bold">开源代码</p>
+            <p class="mb-1 text-sm font-bold">了解更多</p>
+            <a
+              class="text-sm text-gray-500 hover:text-gray-600"
+              href="/doc"
+              >更新日志</a
+            >
             <a
               target="_blank"
               class="text-sm text-gray-500 hover:text-gray-600"
               href="https://github.com/zaona/tinder-archives-center"
-              >Github</a
+              >Github 仓库</a
             >
           </div>
           <div class="flex flex-col gap-2">
