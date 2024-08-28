@@ -69,12 +69,33 @@
             </div>
           </div>
         </a>
-        <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">吕小技同学</p>
-          <p class="w-full p-4">提供了非常多的高质量流浪地球海报以及台词</p>
-        </div>
+        <a target="_blank" class="" href="https://space.bilibili.com/502569746">
+          <div class="relative transition-shadow hover:shadow-lg">
+            <div
+              class="flex h-full flex-col items-center divide-y border border-solid"
+            >
+              <div class="flex h-full w-full items-center justify-between p-4">
+                <img
+                  class="my-[4px] h-[16px]"
+                  src="~/assets/img/about/coresign.svg"
+                  alt="熔核设计"
+                />
+              </div>
+              <p class="w-full p-4">
+                提供了非常多的高质量流浪地球海报以及台词
+              </p>
+            </div>
+            <div
+              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
+            >
+              <img
+                class="absolute right-[18px] top-[18px]"
+                src="~/assets/icon/arrow.svg"
+                alt="前往"
+              />
+            </div>
+          </div>
+        </a>
         <div
           class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
         >
