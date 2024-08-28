@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner bgImage="/img/pages-banner/bg-about.png" bannerTitle="VI 指南" />
+    <Banner bgImage="/img/pages-banner/bg-vi.png" bannerTitle="VI 指南" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <div class="border border-solid bg-gray-50 p-6 lg:p-8">
