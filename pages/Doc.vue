@@ -8,7 +8,7 @@
         <div
           data-overlayscrollbars-initialize
           ref="itemList"
-          class="min-h-24 order-2 flex w-full flex-row bg-gray-50 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
+          class="order-2 flex min-h-24 w-full flex-row bg-gray-50 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
         >
           <div
             id="scroll-container"
