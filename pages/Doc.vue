@@ -8,7 +8,7 @@
         <div
           data-overlayscrollbars-initialize
           ref="itemList"
-          class="order-2 flex w-full flex-row bg-gray-50 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
+          class="min-h-24 order-2 flex w-full flex-row bg-gray-50 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
         >
           <div
             id="scroll-container"
@@ -27,7 +27,7 @@
         <div
           data-overlayscrollbars-initialize
           ref="itemDescription"
-          class="flex w-full flex-col gap-[12px] overflow-auto p-4 lg:basis-3/4"
+          class="flex w-full flex-col gap-[12px] p-4 lg:basis-3/4"
         >
           <H1>{{ selectedItem.name }}</H1>
           <p v-for="(content, index) in selectedItem.contents" :key="index">
@@ -54,8 +54,15 @@ import { useOverlayScrollbars } from "overlayscrollbars-vue";
 
 // 滚动条
 const itemList = ref();
+const [initItemListOverlayScrollbars] = useOverlayScrollbars({
+  options: {
+    scrollbars: {
+      theme: "os-theme-dark",
+    },
+  },
+});
 const itemDescription = ref();
-const [initOverlayScrollbars] = useOverlayScrollbars({
+const [initItemDescriptionOverlayScrollbars] = useOverlayScrollbars({
   options: {
     scrollbars: {
       theme: "os-theme-dark",
@@ -64,14 +71,16 @@ const [initOverlayScrollbars] = useOverlayScrollbars({
 });
 
 onMounted(() => {
-  initOverlayScrollbars(itemList.value);
-  initOverlayScrollbars(itemDescription.value);
+  initItemListOverlayScrollbars(itemList.value);
+  initItemDescriptionOverlayScrollbars(itemDescription.value);
 
   const container = document.getElementById("scroll-container");
-  container.addEventListener("wheel", function (event) {
+  container?.addEventListener("wheel", function (event) {
     if (event.deltaY !== 0) {
-      container.scrollLeft += event.deltaY;
-      event.preventDefault();
+      if (!window.matchMedia("(min-width: 1024px)").matches) {
+        container.scrollLeft += event.deltaY;
+        event.preventDefault();
+      }
     }
   });
 });
