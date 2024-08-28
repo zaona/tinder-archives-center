@@ -2,16 +2,33 @@
   <Header class="fixed top-0 z-10 w-full" />
   <div class="h-dvh pt-16 lg:pt-20">
     <div class="h-full">
-      <div class="flex lg:flex-row flex-col overflow-hidden h-full justify-between">
-        <div class="lg:order-first order-2 lg:basis-1/4 p-4 bg-gray-50 lg:w-[100px] w-full flex lg:flex-col flex-row">
-          <div class="flex lg:flex-col flex-row lg:divide-y lg:divide-x-0 divide-x overflow-auto" id="itemList">
-            <button v-for="(item, index) in items" :key="index"
-              class="text-left w-full px-4 hover:bg-gray-100 font-medium py-4" @click="selectItem(index)">
+      <div
+        class="flex h-full flex-col justify-between overflow-hidden lg:flex-row"
+      >
+        <div
+          data-overlayscrollbars-initialize
+          ref="itemList"
+          class="min-h-24 order-2 flex w-full flex-row bg-gray-50 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
+        >
+          <div
+            id="scroll-container"
+            class="flex flex-row divide-x overflow-x-auto whitespace-nowrap lg:flex-col lg:divide-x-0 lg:divide-y"
+          >
+            <button
+              v-for="(item, index) in items"
+              :key="index"
+              class="w-full px-4 py-4 text-left font-medium hover:bg-gray-100"
+              @click="selectItem(index)"
+            >
               {{ item.name }}
             </button>
           </div>
         </div>
-        <div id="itemDescription" class="lg:basis-3/4 w-full flex flex-col overflow-auto p-4 gap-[12px]">
+        <div
+          data-overlayscrollbars-initialize
+          ref="itemDescription"
+          class="flex w-full flex-col gap-[12px] p-4 lg:basis-3/4"
+        >
           <H1>{{ selectedItem.name }}</H1>
           <p v-for="(content, index) in selectedItem.contents" :key="index">
             {{ content }}
@@ -27,8 +44,46 @@ definePageMeta({
   layout: "blank",
 });
 
-import { ref } from 'vue';
+useHead({
+  titleTemplate: "火种档案 | 文档",
+});
+
+import { ref, onMounted } from "vue";
 import items from "~/assets/config/docs.json";
+import { useOverlayScrollbars } from "overlayscrollbars-vue";
+
+// 滚动条
+const itemList = ref();
+const [initItemListOverlayScrollbars] = useOverlayScrollbars({
+  options: {
+    scrollbars: {
+      theme: "os-theme-dark",
+    },
+  },
+});
+const itemDescription = ref();
+const [initItemDescriptionOverlayScrollbars] = useOverlayScrollbars({
+  options: {
+    scrollbars: {
+      theme: "os-theme-dark",
+    },
+  },
+});
+
+onMounted(() => {
+  initItemListOverlayScrollbars(itemList.value);
+  initItemDescriptionOverlayScrollbars(itemDescription.value);
+
+  const container = document.getElementById("scroll-container");
+  container?.addEventListener("wheel", function (event) {
+    if (event.deltaY !== 0) {
+      if (!window.matchMedia("(min-width: 1024px)").matches) {
+        container.scrollLeft += event.deltaY;
+        event.preventDefault();
+      }
+    }
+  });
+});
 
 // 当前选中的项目
 const selectedItem = ref(items[0]);
@@ -40,10 +95,14 @@ function selectItem(index: number) {
 
 // 初始化显示第一个项目
 selectItem(0);
-
-useHead({
-  titleTemplate: "火种档案 | 文档",
-});
 </script>
 
-<style></style>
+<style>
+#scroll-container {
+  scrollbar-width: none;
+}
+
+#scroll-container::-webkit-scrollbar {
+  display: none;
+}
+</style>
