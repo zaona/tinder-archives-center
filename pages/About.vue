@@ -23,77 +23,75 @@
       </p>
 
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-4">
-        <a target="_blank" class="" href="https://space.bilibili.com/518916820">
-          <div class="relative h-full transition-shadow hover:shadow-lg">
+        <a
+          target="_blank"
+          class="group"
+          href="https://space.bilibili.com/518916820"
+        >
+          <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
               class="flex h-full flex-col items-center divide-y border border-solid"
             >
               <p class="w-full p-4 font-bold">海藻酸钠</p>
               <p class="w-full p-4">本站设计+前端开发</p>
             </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
+            <img
+              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              src="~/assets/icon/arrow.svg"
+              alt="前往"
+            />
           </div>
         </a>
-        <a target="_blank" class="" href="https://space.bilibili.com/248314816">
-          <div class="relative transition-shadow hover:shadow-lg">
+        <a
+          target="_blank"
+          class="group"
+          href="https://space.bilibili.com/248314816"
+        >
+          <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
               class="flex h-full flex-col items-center divide-y border border-solid"
             >
               <div class="flex h-full w-full items-center justify-between p-4">
                 <img
-                  class="my-[4px] h-[16px]"
+                  class="h-4"
                   src="~/assets/img/about/terminator7211.svg"
                   alt="terminator7211"
                 />
               </div>
-              <p class="w-full p-4">
-                本站Logo作者，修复了很多复杂的流浪地球标志
-              </p>
+              <p class="w-full p-4"
+                >本站Logo作者，修复了很多复杂的流浪地球标志</p
+              >
             </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
+            <img
+              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              src="~/assets/icon/arrow.svg"
+              alt="前往"
+            />
           </div>
         </a>
-        <a target="_blank" class="" href="https://space.bilibili.com/502569746">
-          <div class="relative transition-shadow hover:shadow-lg">
+        <a
+          target="_blank"
+          class="group"
+          href="https://space.bilibili.com/502569746"
+        >
+          <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
               class="flex h-full flex-col items-center divide-y border border-solid"
             >
               <div class="flex h-full w-full items-center justify-between p-4">
                 <img
-                  class="my-[4px] h-[16px]"
+                  class="h-4"
                   src="~/assets/img/about/coresign.svg"
                   alt="熔核设计"
                 />
               </div>
-              <p class="w-full p-4">
-                提供了非常多的高质量流浪地球海报以及台词
-              </p>
+              <p class="w-full p-4">提供了非常多的高质量流浪地球海报以及台词</p>
             </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
+            <img
+              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              src="~/assets/icon/arrow.svg"
+              alt="前往"
+            />
           </div>
         </a>
         <div
