@@ -8,142 +8,24 @@
         <OriginTag text="以下内容来源于网络，仅收录" />
       </div>
       <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <a target="_blank" class="" href="https://unitedearth.wiki/">
-          <div class="relative h-full transition-shadow hover:shadow-lg">
-            <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
-            >
-              <div class="flex w-full items-center justify-between p-4">
-                <p class="font-bold">地球联合百科</p>
-              </div>
-              <p class="w-full p-4">一个《流浪地球》系列设定及二创 Wiki</p>
-            </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
-          </div>
-        </a>
         <a
+          v-for="(tool, index) in tools"
           target="_blank"
-          class=""
-          href="https://lab.wsm.ink/the-wandering-earth-2-countdown/#/"
+          class="group"
+          :href="tool.link"
         >
-          <div class="relative h-full transition-shadow hover:shadow-lg">
+          <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
               class="flex h-full flex-col items-center divide-y border border-solid"
             >
-              <div class="flex w-full items-center justify-between p-4">
-                <p class="font-bold">The Wandering Earth 2 Countdown</p>
-              </div>
-              <p class="w-full p-4">流浪地球2的倒计时梗图生成器</p>
+              <p class="w-full p-4 font-bold">{{ tool.name }}</p>
+              <p class="w-full p-4">{{ tool.description }}</p>
             </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
-          </div>
-        </a>
-        <a
-          target="_blank"
-          class=""
-          href="https://xiaohong2022.github.io/h5-wandering-earth/"
-        >
-          <div class="relative h-full transition-shadow hover:shadow-lg">
-            <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
-            >
-              <div class="flex w-full items-center justify-between p-4">
-                <p class="font-bold">h5-wandering-earth</p>
-              </div>
-              <p class="w-full p-4">《流浪地球2》倒计时制作</p>
-            </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
-          </div>
-        </a>
-        <a target="_blank" class="" href="https://uegov.world/ueg-card/">
-          <div class="relative h-full transition-shadow hover:shadow-lg">
-            <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
-            >
-              <div class="flex w-full items-center justify-between p-4">
-                <p class="font-bold">UEG 名牌生成</p>
-              </div>
-              <p class="w-full p-4">制作地球联合政府专属名牌</p>
-            </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
-          </div>
-        </a>
-        <a target="_blank" class="" href="https://uegov.world/random-draw/">
-          <div class="relative h-full transition-shadow hover:shadow-lg">
-            <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
-            >
-              <div class="flex w-full items-center justify-between p-4">
-                <p class="font-bold">地下城居住资格抽签</p>
-              </div>
-              <p class="w-full p-4">地下城资格抽签</p>
-            </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
-          </div>
-        </a>
-        <a
-          target="_blank"
-          class=""
-          href="https://github.com/picasso250/spring12"
-        >
-          <div class="relative h-full transition-shadow hover:shadow-lg">
-            <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
-            >
-              <div class="flex w-full items-center justify-between p-4">
-                <p class="font-bold">spring12</p>
-              </div>
-              <p class="w-full p-4">春节十二响</p>
-            </div>
-            <div
-              class="absolute right-0 top-0 h-full w-full divide-y-0 opacity-0 transition-opacity hover:opacity-100"
-            >
-              <img
-                class="absolute right-[18px] top-[18px]"
-                src="~/assets/icon/arrow.svg"
-                alt="前往"
-              />
-            </div>
+            <img
+              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              src="~/assets/icon/arrow.svg"
+              alt="前往"
+            />
           </div>
         </a>
       </div>
@@ -157,6 +39,34 @@
 </template>
 
 <script lang="ts" setup>
+const tools = [
+  {
+    link: "https://unitedearth.wiki/",
+    name: "地球联合百科",
+    description: "一个《流浪地球》系列设定及二创 Wiki",
+  },
+  {
+    link: "https://xiaohong2022.github.io/h5-wandering-earth/",
+    name: "h5-wandering-earth",
+    description: "《流浪地球2》倒计时制作",
+  },
+  {
+    link: "https://uegov.world/ueg-card/",
+    name: "UEG 名牌生成",
+    description: "制作地球联合政府专属名牌",
+  },
+  {
+    link: "https://uegov.world/random-draw/",
+    name: "地下城居住资格抽签",
+    description: "地下城资格抽签",
+  },
+  {
+    link: "https://github.com/picasso250/spring12",
+    name: "spring12",
+    description: "春节十二响",
+  },
+];
+
 useHead({
   titleTemplate: "火种档案 | 工具",
 });
