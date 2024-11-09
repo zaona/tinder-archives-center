@@ -29,7 +29,7 @@
           ref="itemDescription"
           class="flex w-full flex-col gap-[12px] p-4 lg:basis-3/4"
         >
-          <H1>{{ selectedItem.name }}</H1>
+          <TheTitle class="mb-4">{{ selectedItem.name }}</TheTitle>
           <p v-for="(content, index) in selectedItem.contents" :key="index">
             {{ content }}
           </p>

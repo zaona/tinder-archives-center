@@ -3,7 +3,7 @@
     <Banner bgImage="/img/pages-banner/bg-font.png" bannerTitle="字体" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
-      <H1>流浪地球1</H1>
+      <TheTitle>流浪地球1</TheTitle>
       <div class="mt-2">
         <OriginTag text="来自：电影片尾 · 版权字体支持" />
       </div>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="mt-12">
-        <H1>流浪地球2</H1>
+        <TheTitle>流浪地球2</TheTitle>
       </div>
       <div class="mt-2">
         <OriginTag text="来自：流浪地球2制作手记 | 哔哩哔哩 · @RQvan" />

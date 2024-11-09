@@ -3,7 +3,7 @@
     <Banner bgImage="/img/pages-banner/bg-about.png" bannerTitle="关于" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
-      <H1>关于本站</H1>
+      <TheTitle>关于本站</TheTitle>
       <p class="leading-loose">
         在《流浪地球 1》的结尾处，MOSS 宣告 “流浪地球计划” 以失败告终，启动
         “火种计划” ，让 “领航员号”
@@ -16,7 +16,7 @@
       <p class="leading-loose">希望能给各个流浪地球二创作者带来便利。</p>
 
       <div class="mt-12">
-        <H1>鸣谢</H1>
+        <TheTitle>鸣谢</TheTitle>
       </div>
       <p class="leading-loose">
         衷心感谢电影流浪地球，衷心感谢为本网站提供部分设计资源与改进建议的小破球爱好者们。

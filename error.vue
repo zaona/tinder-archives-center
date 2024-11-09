@@ -16,7 +16,7 @@ const props = defineProps({
             src="~/assets/img/illus/bone.svg"
             alt="A bone."
           />
-          <H1>{{ error?.statusCode }}</H1>
+          <TheTitle>{{ error?.statusCode }}</TheTitle>
           <NuxtLink
             class="mt-10 cursor-pointer truncate border-2 border-black bg-white px-6 py-2 font-medium text-black"
             to="/"

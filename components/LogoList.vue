@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div v-for="(category, index) in logos" :key="index" class="mt-12">
-      <H1>{{ category.title }}</H1>
+  <div class="flex flex-col gap-12">
+    <div v-for="(category, index) in logos" :key="index">
+      <TheTitle>{{ category.title }}</TheTitle>
       <div v-if="category.source" class="mb-4 mt-2">
         <OriginTag :text="category.source" />
       </div>

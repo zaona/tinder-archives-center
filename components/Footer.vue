@@ -12,12 +12,18 @@
         <div class="grid w-full grid-cols-2 gap-x-[100px] lg:w-[350px]">
           <div class="flex flex-col gap-2">
             <p class="mb-1 text-sm font-bold">了解更多</p>
-            <a class="text-sm text-gray-500 hover:text-gray-600" href="/doc"
-              >更新日志</a
+            <NuxtLink
+              class="text-sm text-gray-500 hover:text-gray-600"
+              to="/doc"
             >
-            <a class="text-sm text-gray-500 hover:text-gray-600" href="/vi"
-              >VI 指南</a
+              更新日志
+            </NuxtLink>
+            <NuxtLink
+              class="text-sm text-gray-500 hover:text-gray-600"
+              to="/vi"
             >
+              VI 指南
+            </NuxtLink>
             <a
               target="_blank"
               class="text-sm text-gray-500 hover:text-gray-600"

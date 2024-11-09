@@ -9,7 +9,7 @@
         </p>
       </div>
       <div class="mt-12">
-        <H1>获取 Logo</H1>
+        <TheTitle>获取 Logo</TheTitle>
         <div class="mt-4 flex flex-col gap-4">
           <div
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"

@@ -3,9 +3,14 @@
     :class="['bg-no-repeat', 'bg-cover', 'bg-center', 'w-full', 'h-[160px]']"
     :style="{ backgroundImage: `url(${bgImage})` }"
   >
-    <div class="h-full bg-gradient-to-r from-black/50">
+    <div
+      class="h-full bg-gradient-to-b from-black/50 to-black/30 lg:bg-gradient-to-r"
+    >
       <div class="mx-auto flex h-full max-w-[1200px] items-center pl-4">
-        <p class="text-5xl text-white">{{ bannerTitle }}</p>
+        <p
+          class="w-full text-center text-4xl text-white lg:text-left lg:text-5xl"
+          >{{ bannerTitle }}</p
+        >
       </div>
     </div>
   </div>

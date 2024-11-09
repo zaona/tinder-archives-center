@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-4xl leading-loose">
+    <p class="text-3xl leading-loose lg:text-4xl">
       <slot />
     </p>
   </div>
