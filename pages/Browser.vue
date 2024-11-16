@@ -32,7 +32,7 @@ definePageMeta({
 body,
 html {
   overflow: hidden;
-  margin: 0px;
+  margin: 0;
 }
 
 .container {
@@ -64,7 +64,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  margin: 0px;
+  margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
     "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
     sans-serif;
