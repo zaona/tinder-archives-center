@@ -15,14 +15,16 @@
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
-              <img
-                src="~/assets/tac-logo/symbol-black.svg"
-                alt=""
-                class="h-24"
-              />
+              <imgView imgSrc="/tac-logo/symbol-black.svg" name="symbol">
+                <img
+                  src="/tac-logo/symbol-black.svg"
+                  alt="symbol"
+                  class="h-24"
+                />
+              </imgView>
             </div>
             <div class="basis-2/3 p-4">
-              <p class="font-bold">Symbol</p>
+              <p class="font-bold">symbol</p>
               <p class="text-gray-500">图形</p>
             </div>
           </div>
@@ -30,7 +32,9 @@
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
-              <img src="~/assets/tac-logo/name-black.svg" alt="" class="h-24" />
+              <imgView imgSrc="/tac-logo/name-black.svg" name="name">
+              <img src="/tac-logo/name-black.svg" alt="name" class="h-24" />
+              </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
               <p class="font-bold">name</p>
@@ -41,7 +45,9 @@
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
-              <img src="~/assets/tac-logo/type-black.svg" alt="" class="h-24" />
+              <imgView imgSrc="/tac-logo/type-black.svg" name="type">
+              <img src="/tac-logo/type-black.svg" alt="type" class="h-24" />
+              </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
               <p class="font-bold">type</p>
@@ -52,7 +58,9 @@
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
-              <img src="~/assets/tac-logo/eng-black.svg" alt="" class="h-24" />
+              <imgView imgSrc="/tac-logo/eng-black.svg" name="eng">
+              <img src="/tac-logo/eng-black.svg" alt="eng" class="h-24" />
+              </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
               <p class="font-bold">eng</p>
@@ -63,11 +71,13 @@
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
+              <imgView imgSrc="/tac-logo/symbol-type-black.svg" name="symbol-type">
               <img
-                src="~/assets/tac-logo/symbol-type-black.svg"
-                alt=""
+                src="/tac-logo/symbol-type-black.svg"
+                alt="symbol-type"
                 class="h-24"
               />
+              </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
               <p class="font-bold">symbol-type</p>
@@ -78,11 +88,13 @@
             class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
+              <imgView imgSrc="/tac-logo/symbol-name-type-black.svg" name="symbol-name-type">
               <img
-                src="~/assets/tac-logo/symbol-name-type-black.svg"
-                alt=""
+                src="/tac-logo/symbol-name-type-black.svg"
+                alt="symbol-name-type"
                 class="h-24"
               />
+              </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
               <p class="font-bold">symbol-name-type</p>

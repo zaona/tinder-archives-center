@@ -1,41 +1,18 @@
-<template>
-  <div class="flex flex-col gap-12">
-    <div v-for="(category, index) in logos" :key="index">
-      <TheTitle>{{ category.title }}</TheTitle>
-      <div v-if="category.source" class="mb-4 mt-2">
-        <OriginTag :text="category.source" />
-      </div>
-      <div class="mt-2 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          v-for="logo in category.logos"
-          :key="logo.name"
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">{{ logo.name }}</p>
-          <a
-            :data-fancybox="true"
-            :data-src="logo.imgSrc"
-            :data-caption="logo.name"
-            :data-download-src="logo.imgSrc"
-            :data-download-filename="logo.name"
-            class="w-full bg-gray-50 p-4"
-          >
-            <img
-              class="h-[150px] w-full"
-              :src="logo.imgSrc"
-              alt="{{ logo.name }}"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { zh_CN } from "@fancyapps/ui/dist/fancybox/l10n/zh_CN.esm.js";
+
+const props = defineProps({
+  imgSrc: {
+    type: String,
+    required: true
+  },
+  name: {
+    type: String,
+    required: true
+  }
+});
 
 Fancybox.bind("[data-fancybox]", {
   groupAttr: false,
@@ -49,9 +26,19 @@ Fancybox.bind("[data-fancybox]", {
     },
   },
 });
-
-import logos from "~/assets/config/logos.json";
 </script>
+
+<template>
+  <a
+    :data-fancybox="true"
+    :data-src="props.imgSrc"
+    :data-caption="props.name"
+    :data-download-src="props.imgSrc"
+    :data-download-filename="props.name"
+  >
+    <slot />
+  </a>
+</template>
 
 <style>
 .fancybox__container {

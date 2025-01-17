@@ -15,13 +15,38 @@
       </div>
 
       <div class="mt-12 px-4">
-        <LogoList />
+        <div class="flex flex-col gap-12">
+          <div v-for="(category, index) in logos" :key="index">
+            <TheTitle>{{ category.title }}</TheTitle>
+            <div v-if="category.source" class="mb-4 mt-2">
+              <OriginTag :text="category.source" />
+            </div>
+            <div class="mt-2 grid grid-cols-2 gap-4 lg:grid-cols-5">
+              <div
+                v-for="logo in category.logos"
+                :key="logo.name"
+                class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+              >
+                <p class="w-full p-4 font-bold">{{ logo.name }}</p>
+                <imgView :imgSrc="logo.imgSrc" :name="logo.name" class="w-full bg-gray-50 p-4">
+                  <img
+                    class="h-[150px] w-full"
+                    :src="logo.imgSrc"
+                    alt="{{ logo.name }}"
+                  />
+                </imgView>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import logos from "assets/config/logos.json";
+
 useHead({
   titleTemplate: "火种档案 | 标志",
 });
