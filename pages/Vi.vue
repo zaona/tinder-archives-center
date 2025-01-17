@@ -2,13 +2,16 @@
   <div>
     <Banner bgImage="/img/pages-banner/bg-vi.png" bannerTitle="VI 指南" />
 
-    <div class="mx-auto max-w-[1200px] px-4 py-12">
-      <div class="border border-solid bg-gray-50 p-6 lg:p-8">
-        <p class="leading-loose">
-          在这里可以找到 火种档案 Logo 等常用元素，希望能帮助到你。
-        </p>
+    <div class="mx-auto max-w-[1200px] py-12">
+      <div class="px-0 lg:px-4">
+        <div class="border border-solid bg-gray-50 p-6 lg:p-8">
+          <p class="leading-loose">
+            在这里可以找到 火种档案 Logo 等常用元素，希望能帮助到你。
+          </p>
+        </div>
       </div>
-      <div class="mt-12">
+
+      <div class="mt-12 px-4">
         <TheTitle>获取 Logo</TheTitle>
         <div class="mt-4 flex flex-col gap-4">
           <div
