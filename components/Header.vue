@@ -10,17 +10,7 @@
           />
         </NuxtLink>
         <div class="mr-4 flex h-full w-1/2 items-center justify-between">
-          <NuxtLink class="font-medium text-white" to="/color">颜色</NuxtLink>
-          <NuxtLink class="font-medium text-white" to="/font">字体</NuxtLink>
-          <NuxtLink class="font-medium text-white" to="/logo">标志</NuxtLink>
-          <NuxtLink class="font-medium text-white" to="/tool">工具</NuxtLink>
-          <NuxtLink class="font-medium text-white" to="/about">关于</NuxtLink>
-          <NuxtLink
-            class="font-medium text-white"
-            to="https://github.com/zaona/tinder-archives-center/discussions"
-            target="_blank"
-            >交流</NuxtLink
-          >
+          <NuxtLink v-for="link in links" :to="link.to" :target="link.target" class="font-medium text-white">{{ link.text }}</NuxtLink>
         </div>
       </div>
     </div>
@@ -54,37 +44,13 @@
       :class="{ '-translate-x-80': !isOpen }"
     >
       <div class="flex w-full flex-col gap-2 pt-14">
-        <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/"
-          >首页</NuxtLink
-        >
-        <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/color"
-          >颜色</NuxtLink
-        >
-        <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/font"
-          >字体</NuxtLink
-        >
-        <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/logo"
-          >标志</NuxtLink
-        >
-        <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/tool"
-          >工具</NuxtLink
-        >
-        <NuxtLink @click="toggleMenu" class="px-8 py-2 text-white" to="/about"
-          >关于</NuxtLink
-        >
-        <NuxtLink
-          @click="toggleMenu"
-          class="px-8 py-2 text-white"
-          to="https://github.com/zaona/tinder-archives-center/discussions"
-          target="_blank"
-          >交流</NuxtLink
-        >
+        <NuxtLink @click="toggleMenu" v-for="link in links" :to="link.to" :target="link.target" class="font-medium text-white px-8 py-2 ">{{ link.text }}</NuxtLink>
       </div>
     </div>
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
 
 const isOpen = ref(false);
@@ -92,6 +58,16 @@ const isOpen = ref(false);
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
 };
+
+const links = [
+  { to: '/', text: '首页' },
+  { to: '/color', text: '颜色' },
+  { to: '/font', text: '字体' },
+  { to: '/logo', text: '标志' },
+  { to: '/tool', text: '工具' },
+  { to: '/about', text: '关于' },
+  { to: 'https://github.com/zaona/tinder-archives-center/discussions', text: '交流', target: '_blank' }
+];
 </script>
 
 <style></style>
