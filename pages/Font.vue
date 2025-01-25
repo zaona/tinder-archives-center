@@ -9,51 +9,51 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">微软雅黑(旧版)</p>
+          <p class="w-full p-4 font-bold bg-white">微软雅黑(旧版)</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/wryh.svg"
             alt="字体示例：刘培强"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">Gobold Thin</p>
+          <p class="w-full p-4 font-bold bg-white">Gobold Thin</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/gobold.svg"
             alt="字体示例：HANGZHOU"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">禹卫书法行书简体</p>
+          <p class="w-full p-4 font-bold bg-white">禹卫书法行书简体</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/yw.svg"
             alt="字体示例：行星"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">李旭科书法</p>
+          <p class="w-full p-4 font-bold bg-white">李旭科书法</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/lxk.svg"
             alt="字体示例：十四年"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">Candara</p>
+          <p class="w-full p-4 font-bold bg-white">Candara</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/candara.svg"
             alt="字体示例：2019"
           />
@@ -64,11 +64,11 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">新蒂赵孟頫体</p>
+          <p class="w-full p-4 font-bold bg-white">新蒂赵孟頫体</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/zmf.svg"
             alt="字体示例：领航员"
           />
@@ -83,41 +83,41 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">思源黑体</p>
+          <p class="w-full p-4 font-bold bg-white">思源黑体</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/sy.svg"
             alt="字体示例：刘培强"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">Rajdhani</p>
+          <p class="w-full p-4 font-bold bg-white">Rajdhani</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/rajdhani.svg"
             alt="字体示例：UEG"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">字魂创粗黑</p>
+          <p class="w-full p-4 font-bold bg-white">字魂创粗黑</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/cch.svg"
             alt="字体示例：月球危机"
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
         >
-          <p class="w-full p-4 font-bold">胡晓波真帅体</p>
+          <p class="w-full p-4 font-bold bg-white">胡晓波真帅体</p>
           <img
-            class="h-[100px] w-full bg-gray-50"
+            class="h-[100px] w-full"
             src="~/assets/img/font/hxbzs.svg"
             alt="字体示例：催更版预告"
           />
