@@ -6,12 +6,12 @@ import { zh_CN } from "@fancyapps/ui/dist/fancybox/l10n/zh_CN.esm.js";
 const props = defineProps({
   imgSrc: {
     type: String,
-    required: true
+    required: true,
   },
   name: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 });
 
 Fancybox.bind("[data-fancybox]", {

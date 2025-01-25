@@ -9,9 +9,9 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">微软雅黑(旧版)</p>
+          <p class="w-full bg-white p-4 font-bold">微软雅黑(旧版)</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/wryh.svg"
@@ -19,9 +19,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">Gobold Thin</p>
+          <p class="w-full bg-white p-4 font-bold">Gobold Thin</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/gobold.svg"
@@ -29,9 +29,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">禹卫书法行书简体</p>
+          <p class="w-full bg-white p-4 font-bold">禹卫书法行书简体</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/yw.svg"
@@ -39,9 +39,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">李旭科书法</p>
+          <p class="w-full bg-white p-4 font-bold">李旭科书法</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/lxk.svg"
@@ -49,9 +49,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">Candara</p>
+          <p class="w-full bg-white p-4 font-bold">Candara</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/candara.svg"
@@ -64,9 +64,9 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">新蒂赵孟頫体</p>
+          <p class="w-full bg-white p-4 font-bold">新蒂赵孟頫体</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/zmf.svg"
@@ -83,9 +83,9 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">思源黑体</p>
+          <p class="w-full bg-white p-4 font-bold">思源黑体</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/sy.svg"
@@ -93,9 +93,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">Rajdhani</p>
+          <p class="w-full bg-white p-4 font-bold">Rajdhani</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/rajdhani.svg"
@@ -103,9 +103,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">字魂创粗黑</p>
+          <p class="w-full bg-white p-4 font-bold">字魂创粗黑</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/cch.svg"
@@ -113,9 +113,9 @@
           />
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+          class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
         >
-          <p class="w-full p-4 font-bold bg-white">胡晓波真帅体</p>
+          <p class="w-full bg-white p-4 font-bold">胡晓波真帅体</p>
           <img
             class="h-[100px] w-full"
             src="~/assets/img/font/hxbzs.svg"

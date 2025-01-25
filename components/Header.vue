@@ -10,7 +10,13 @@
           />
         </NuxtLink>
         <div class="mr-4 flex h-full w-1/2 items-center justify-between">
-          <NuxtLink v-for="link in links" :to="link.to" :target="link.target" class="font-medium text-white">{{ link.text }}</NuxtLink>
+          <NuxtLink
+            v-for="link in links"
+            :to="link.to"
+            :target="link.target"
+            class="font-medium text-white"
+            >{{ link.text }}</NuxtLink
+          >
         </div>
       </div>
     </div>
@@ -44,7 +50,14 @@
       :class="{ '-translate-x-80': !isOpen }"
     >
       <div class="flex w-full flex-col gap-2 pt-14">
-        <NuxtLink @click="toggleMenu" v-for="link in links" :to="link.to" :target="link.target" class="font-medium text-white px-8 py-2 ">{{ link.text }}</NuxtLink>
+        <NuxtLink
+          @click="toggleMenu"
+          v-for="link in links"
+          :to="link.to"
+          :target="link.target"
+          class="px-8 py-2 font-medium text-white"
+          >{{ link.text }}</NuxtLink
+        >
       </div>
     </div>
   </header>
@@ -60,13 +73,17 @@ const toggleMenu = () => {
 };
 
 const links = [
-  { to: '/', text: '首页' },
-  { to: '/color', text: '颜色' },
-  { to: '/font', text: '字体' },
-  { to: '/logo', text: '标志' },
-  { to: '/tool', text: '工具' },
-  { to: '/about', text: '关于' },
-  { to: 'https://github.com/zaona/tinder-archives-center/discussions', text: '交流', target: '_blank' }
+  { to: "/", text: "首页" },
+  { to: "/color", text: "颜色" },
+  { to: "/font", text: "字体" },
+  { to: "/logo", text: "标志" },
+  { to: "/tool", text: "工具" },
+  { to: "/about", text: "关于" },
+  {
+    to: "https://github.com/zaona/tinder-archives-center/discussions",
+    text: "交流",
+    target: "_blank",
+  },
 ];
 </script>
 

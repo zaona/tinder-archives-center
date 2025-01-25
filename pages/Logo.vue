@@ -25,10 +25,14 @@
               <div
                 v-for="logo in category.logos"
                 :key="logo.name"
-                class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg bg-gray-50"
+                class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
               >
-                <p class="w-full p-4 font-bold bg-white">{{ logo.name }}</p>
-                <imgView :imgSrc="logo.imgSrc" :name="logo.name" class="w-full h-full p-4">
+                <p class="w-full bg-white p-4 font-bold">{{ logo.name }}</p>
+                <imgView
+                  :imgSrc="logo.imgSrc"
+                  :name="logo.name"
+                  class="h-full w-full p-4"
+                >
                   <img
                     class="h-[150px] w-full"
                     :src="logo.imgSrc"
