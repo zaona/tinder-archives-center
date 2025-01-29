@@ -26,6 +26,7 @@ npm run dev
 
 ## ✅ Todo
 
+- [ ] 升级到Tailwind4.0
 - [ ] 流浪地球标志修复（/logo）（进行中）
 - [x] 使用Nuxt重构
 
