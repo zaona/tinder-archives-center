@@ -4,11 +4,11 @@
     :style="{ backgroundImage: `url(${props.bgImage})` }"
   >
     <div
-      class="h-full bg-linear-to-b from-black/50 to-black/30 lg:bg-linear-to-r"
+      class="h-full bg-linear-to-b from-gray-950/50 to-gray-950/30 lg:bg-linear-to-r"
     >
       <div class="mx-auto flex h-full max-w-[1200px] items-center px-4">
         <p
-          class="w-full text-center text-4xl text-white lg:text-left lg:text-5xl"
+          class="w-full text-center text-4xl text-gray-50 lg:text-left lg:text-5xl"
           >{{ props.bannerTitle }}</p
         >
       </div>

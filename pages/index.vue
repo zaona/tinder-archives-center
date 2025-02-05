@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="h-[620px] w-full bg-none bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')]"
+      class="h-[620px] w-full bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')]"
     >
       <div class="mx-auto h-full max-w-[1200px] px-4 pt-[220px]">
         <img
@@ -14,10 +14,10 @@
           src="~/assets/tac-logo/eng-black.svg"
           alt="Tinder Archives Center"
         />
-        <!-- <p class="w-[350px] bg-white pl-1 pt-3 text-3xl font-bold">
+        <!-- <p class="w-[350px] bg-gray-50 pl-1 pt-3 text-3xl font-bold">
           Tinder Archives Center
         </p> -->
-        <p class="w-[250px] bg-white pt-4 pl-1 font-bold">
+        <p class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950">
           一个「流浪地球」设计资源站
         </p>
         <div class="flex justify-end pt-10">
@@ -32,12 +32,12 @@
 
     <div class="mx-auto my-[80px] max-w-[1200px] px-0 lg:px-4">
       <div
-        class="h-full w-full border border-solid border-gray-200 px-6 py-6 transition-shadow lg:px-8 lg:py-8 lg:hover:shadow-lg"
+        class="h-full w-full border border-solid border-gray-200 bg-gray-50 px-6 py-6 transition-shadow lg:px-8 lg:py-8 lg:hover:shadow-lg"
       >
-        <p class="text-2xl font-bold" ref="displayElement">
+        <p class="text-2xl font-bold text-gray-950" ref="displayElement">
           {{ displaySentence }}
         </p>
-        <div class="mt-4 flex items-center justify-between">
+        <div class="mt-4 flex items-center justify-between text-gray-950">
           <OriginTag :text="displayCategory" />
           <img
             id="generateButton"
