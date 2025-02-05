@@ -1,23 +1,29 @@
 <template>
   <div>
     <div
-      class="h-[620px] w-full bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')]"
+      class="h-[620px] w-full bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')] dark:invert"
     >
       <div class="mx-auto h-full max-w-[1200px] px-4 pt-[220px]">
-        <img
-          class="w-[390px] bg-white pr-10 lg:pr-0"
-          src="~/assets/tac-logo/name-mix.svg"
-          alt="火种档案"
-        />
-        <img
-          class="w-[350px] bg-white pt-4 pr-10 pl-1 lg:pr-0"
-          src="~/assets/tac-logo/eng-black.svg"
-          alt="Tinder Archives Center"
-        />
+        <div class="w-[390px] bg-white dark:bg-black">
+          <img
+            class="w-[390px] pr-10 lg:pr-0"
+            src="~/assets/tac-logo/name-mix.svg"
+            alt="火种档案"
+          />
+        </div>
+        <div class="w-[350px] bg-white dark:bg-black">
+          <img
+            class="w-[350px] pt-4 pr-10 pl-1 lg:pr-0"
+            src="~/assets/tac-logo/eng-black.svg"
+            alt="Tinder Archives Center"
+          />
+        </div>
         <!-- <p class="w-[350px] bg-gray-50 pl-1 pt-3 text-3xl font-bold">
           Tinder Archives Center
         </p> -->
-        <p class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950">
+        <p
+          class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950 dark:bg-black dark:text-gray-50"
+        >
           一个「流浪地球」设计资源站
         </p>
         <div class="flex justify-end pt-10">
@@ -41,7 +47,7 @@
           <OriginTag :text="displayCategory" />
           <img
             id="generateButton"
-            class="mr-2 cursor-pointer"
+            class="mr-2 cursor-pointer dark:invert"
             @click="updateSentence"
             src="~/assets/icon/refresh.svg"
             alt="刷新"

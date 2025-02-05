@@ -4,7 +4,7 @@
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
           <img
-            class="h-8"
+            class="h-8 dark:invert"
             src="~/assets/tac-logo/symbol-type-white.svg"
             alt="Logo"
           />
@@ -25,13 +25,13 @@
       <div class="flex h-16 items-center justify-between px-4">
         <img
           @click="toggleMenu"
-          class="h-6 cursor-pointer"
+          class="h-6 cursor-pointer dark:invert"
           src="~/assets/icon/menu-white.svg"
           alt="Menu Toggle Button"
         />
         <NuxtLink class="mr-1 ml-4 h-6" to="/">
           <img
-            class="h-full"
+            class="h-full dark:invert"
             src="~/assets/tac-logo/symbol-type-white.svg"
             alt="Logo"
           />

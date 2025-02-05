@@ -36,7 +36,7 @@
                   class="h-full w-full p-4"
                 >
                   <img
-                    class="h-[150px] w-full"
+                    class="h-[150px] w-full dark:invert"
                     :src="logo.imgSrc"
                     alt="{{ logo.name }}"
                   />

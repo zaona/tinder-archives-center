@@ -84,19 +84,19 @@ Fancybox.bind("[data-fancybox]", {
 
 @media (prefers-color-scheme: dark) {
   .fancybox__container {
-  --fancybox-color: #dbdbdb;
-  --fancybox-bg: rgba(24, 24, 27, 0.98);
-}
-
-.fancybox__toolbar {
-  --f-button-color: var(--fancybox-color);
-  --f-button-bg: rgba(24, 24, 27, 0.65);
-  --f-button-hover-bg: rgba(70, 70, 73, 0.65);
-  --f-button-active-bg: rgba(90, 90, 93, 0.65);
-}
-
-.is-compact .fancybox__footer {
-  background: rgba(24, 24, 27, .5);
-}
+    --fancybox-color: #dbdbdb;
+    --fancybox-bg: rgba(24, 24, 27, 0.98);
   }
+
+  .fancybox__toolbar {
+    --f-button-color: var(--fancybox-color);
+    --f-button-bg: rgba(24, 24, 27, 0.65);
+    --f-button-hover-bg: rgba(70, 70, 73, 0.65);
+    --f-button-active-bg: rgba(90, 90, 93, 0.65);
+  }
+
+  .is-compact .fancybox__footer {
+    background: rgba(24, 24, 27, 0.5);
+  }
+}
 </style>
