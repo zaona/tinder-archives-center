@@ -6,8 +6,7 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/browser-check.ts", "~/plugins/overlayscrollbars.ts"],
   postcss: {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
+      "@tailwindcss/postcss": {},
     },
   },
   app: {

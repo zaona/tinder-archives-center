@@ -4,7 +4,7 @@
     :style="{ backgroundImage: `url(${props.bgImage})` }"
   >
     <div
-      class="h-full bg-gradient-to-b from-black/50 to-black/30 lg:bg-gradient-to-r"
+      class="h-full bg-linear-to-b from-black/50 to-black/30 lg:bg-linear-to-r"
     >
       <div class="mx-auto flex h-full max-w-[1200px] items-center px-4">
         <p
