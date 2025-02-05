@@ -5,7 +5,7 @@
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
         <img
-          class="mb-2 hidden w-[160px] lg:block"
+          class="mb-2 hidden w-[160px] lg:block dark:invert"
           src="~/assets/tac-logo/symbol-type-black.svg"
           alt="Logo"
         />
@@ -57,7 +57,7 @@
           Copyright © 2024 火种档案。保留所有权利。
         </p>
         <img
-          class="hidden h-full lg:block"
+          class="hidden h-full lg:block dark:invert"
           src="~/assets/img/illus/earth-engine.svg"
           alt="行星发动机"
         />

@@ -22,7 +22,7 @@
                 <img
                   src="/tac-logo/symbol-black.svg"
                   alt="symbol"
-                  class="h-24"
+                  class="h-24 dark:invert"
                 />
               </imgView>
             </div>
@@ -36,7 +36,11 @@
           >
             <div class="flex w-full basis-1/3 justify-center p-8">
               <imgView imgSrc="/tac-logo/name-black.svg" name="name">
-                <img src="/tac-logo/name-black.svg" alt="name" class="h-24" />
+                <img
+                  src="/tac-logo/name-black.svg"
+                  alt="name"
+                  class="h-24 dark:invert"
+                />
               </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
@@ -49,7 +53,11 @@
           >
             <div class="flex w-full basis-1/3 justify-center p-8">
               <imgView imgSrc="/tac-logo/type-black.svg" name="type">
-                <img src="/tac-logo/type-black.svg" alt="type" class="h-24" />
+                <img
+                  src="/tac-logo/type-black.svg"
+                  alt="type"
+                  class="h-24 dark:invert"
+                />
               </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
@@ -62,7 +70,11 @@
           >
             <div class="flex w-full basis-1/3 justify-center p-8">
               <imgView imgSrc="/tac-logo/eng-black.svg" name="eng">
-                <img src="/tac-logo/eng-black.svg" alt="eng" class="h-24" />
+                <img
+                  src="/tac-logo/eng-black.svg"
+                  alt="eng"
+                  class="h-24 dark:invert"
+                />
               </imgView>
             </div>
             <div class="h-full basis-2/3 justify-between p-4">
@@ -81,7 +93,7 @@
                 <img
                   src="/tac-logo/symbol-type-black.svg"
                   alt="symbol-type"
-                  class="h-24"
+                  class="h-24 dark:invert"
                 />
               </imgView>
             </div>
@@ -101,7 +113,7 @@
                 <img
                   src="/tac-logo/symbol-name-type-black.svg"
                   alt="symbol-name-type"
-                  class="h-24"
+                  class="h-24 dark:invert"
                 />
               </imgView>
             </div>

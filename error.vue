@@ -8,11 +8,13 @@ const props = defineProps({
 
 <template>
   <div>
-    <div class="mx-auto flex h-screen w-screen items-center justify-center bg-white">
+    <div
+      class="mx-auto flex h-screen w-screen items-center justify-center bg-white"
+    >
       <div class="mx-auto max-w-[1200px] px-4">
         <div class="flex flex-col items-center">
           <img
-            class="mb-10 w-[100px]"
+            class="mb-10 w-[100px] dark:invert"
             src="~/assets/img/illus/bone.svg"
             alt="A bone."
           />
