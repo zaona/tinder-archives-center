@@ -17,7 +17,7 @@
             <button
               v-for="(item, index) in items"
               :key="index"
-              class="w-full px-4 py-4 text-left font-medium hover:bg-gray-100"
+              class="w-full cursor-pointer px-4 py-4 text-left font-medium hover:bg-gray-100 text-gray-950"
               @click="selectItem(index)"
             >
               {{ item.name }}
@@ -30,7 +30,7 @@
           class="flex w-full flex-col gap-[12px] p-4 lg:basis-3/4"
         >
           <TheTitle class="mb-4">{{ selectedItem.name }}</TheTitle>
-          <p v-for="(content, index) in selectedItem.contents" :key="index">
+          <p v-for="(content, index) in selectedItem.contents" :key="index" class="text-gray-950">
             {{ content }}
           </p>
         </div>

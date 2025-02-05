@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div>
-    <div class="mx-auto flex h-screen w-screen items-center justify-center">
+    <div class="mx-auto flex h-screen w-screen items-center justify-center bg-white">
       <div class="mx-auto max-w-[1200px] px-4">
         <div class="flex flex-col items-center">
           <img
@@ -18,7 +18,7 @@ const props = defineProps({
           />
           <TheTitle>{{ error?.statusCode }}</TheTitle>
           <NuxtLink
-            class="mt-10 cursor-pointer truncate border-2 border-black bg-white px-6 py-2 font-medium text-black"
+            class="mt-10 cursor-pointer truncate border-2 border-gray-950 bg-gray-50 px-6 py-2 font-medium text-gray-950"
             to="/"
             >返回首页</NuxtLink
           >

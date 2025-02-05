@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="hidden bg-black lg:block">
+    <div class="hidden bg-gray-950 lg:block">
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
           <img
@@ -14,14 +14,14 @@
             v-for="link in links"
             :to="link.to"
             :target="link.target"
-            class="font-medium text-white"
+            class="font-medium text-gray-50"
             >{{ link.text }}</NuxtLink
           >
         </div>
       </div>
     </div>
 
-    <div class="block bg-black lg:hidden">
+    <div class="block bg-gray-950 lg:hidden">
       <div class="flex h-16 items-center justify-between px-4">
         <img
           @click="toggleMenu"
@@ -40,13 +40,13 @@
     </div>
     <div
       id="overlay"
-      class="fixed inset-0 z-10 bg-black opacity-30 transition-opacity"
+      class="fixed inset-0 z-10 bg-gray-950 opacity-30 transition-opacity"
       :class="{ hidden: !isOpen }"
       @click="toggleMenu"
     ></div>
     <div
       id="sideMenu"
-      class="fixed inset-y-0 left-0 z-20 w-80 bg-black transition ease-in-out"
+      class="fixed inset-y-0 left-0 z-20 w-80 bg-gray-950 transition ease-in-out"
       :class="{ '-translate-x-80': !isOpen }"
     >
       <div class="flex w-full flex-col gap-2 pt-14">
@@ -55,7 +55,7 @@
           v-for="link in links"
           :to="link.to"
           :target="link.target"
-          class="px-8 py-2 font-medium text-white"
+          class="px-8 py-2 font-medium text-gray-50"
           >{{ link.text }}</NuxtLink
         >
       </div>

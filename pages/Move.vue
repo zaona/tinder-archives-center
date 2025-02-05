@@ -5,7 +5,7 @@
         <img
           class="image"
           src="~/assets/img/illus/move.svg"
-          alt="Your browser is too Old."
+          alt="Your Website is too Old."
         />
         <p class="text">“地球联合资源站”已更名为“火种档案”</p>
         <p class="text">请使用新网址：tac.zaona.top 访问</p>

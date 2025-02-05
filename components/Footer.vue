@@ -11,7 +11,7 @@
         />
         <div class="grid w-full grid-cols-2 gap-x-[100px] lg:w-[350px]">
           <div class="flex flex-col gap-2">
-            <p class="mb-1 text-sm font-bold">了解更多</p>
+            <p class="mb-1 text-sm font-bold text-gray-950">了解更多</p>
             <NuxtLink
               class="text-sm text-gray-500 hover:text-gray-600"
               to="/doc"
@@ -32,7 +32,7 @@
             >
           </div>
           <div class="flex flex-col gap-2">
-            <p class="mb-1 text-sm font-bold">特别鸣谢</p>
+            <p class="mb-1 text-sm font-bold text-gray-950">特别鸣谢</p>
             <a
               target="_blank"
               class="text-sm text-gray-500 hover:text-gray-600"
