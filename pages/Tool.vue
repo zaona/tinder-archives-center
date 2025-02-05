@@ -16,13 +16,13 @@
         >
           <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
+              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
             >
               <p class="w-full p-4 font-bold">{{ tool.name }}</p>
               <p class="w-full p-4">{{ tool.description }}</p>
             </div>
             <img
-              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100"
               src="~/assets/icon/arrow.svg"
               alt="前往"
             />

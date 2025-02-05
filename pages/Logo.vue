@@ -4,7 +4,7 @@
 
     <div class="mx-auto max-w-[1200px] py-12">
       <div class="px-0 lg:px-4">
-        <div class="border border-solid bg-gray-50 p-6 lg:p-8">
+        <div class="border border-solid border-gray-200 bg-gray-50 p-6 lg:p-8">
           <p class="leading-loose">
             以下所有标志的修复底图都取自「流浪地球美术设定」和「流浪地球2制作手记」
           </p>
@@ -18,14 +18,14 @@
         <div class="flex flex-col gap-12">
           <div v-for="(category, index) in logos" :key="index">
             <TheTitle>{{ category.title }}</TheTitle>
-            <div v-if="category.source" class="mb-4 mt-2">
+            <div v-if="category.source" class="mt-2 mb-4">
               <OriginTag :text="category.source" />
             </div>
             <div class="mt-2 grid grid-cols-2 gap-4 lg:grid-cols-5">
               <div
                 v-for="logo in category.logos"
                 :key="logo.name"
-                class="flex flex-col items-center divide-y border border-solid bg-gray-50 transition-shadow hover:shadow-lg"
+                class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
               >
                 <p class="w-full bg-white p-4 font-bold">{{ logo.name }}</p>
                 <imgView

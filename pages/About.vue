@@ -27,13 +27,13 @@
         >
           <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
+              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
             >
               <p class="w-full p-4 font-bold">海藻酸钠</p>
               <p class="w-full p-4">本站设计+前端开发</p>
             </div>
             <img
-              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100"
               src="~/assets/icon/arrow.svg"
               alt="前往"
             />
@@ -46,7 +46,7 @@
         >
           <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
+              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
             >
               <div class="flex h-full w-full items-center justify-between p-4">
                 <img
@@ -60,7 +60,7 @@
               >
             </div>
             <img
-              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100"
               src="~/assets/icon/arrow.svg"
               alt="前往"
             />
@@ -73,7 +73,7 @@
         >
           <div class="relative h-full transition-shadow group-hover:shadow-lg">
             <div
-              class="flex h-full flex-col items-center divide-y border border-solid"
+              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
             >
               <div class="flex h-full w-full items-center justify-between p-4">
                 <img
@@ -85,50 +85,50 @@
               <p class="w-full p-4">提供了非常多的高质量流浪地球海报以及台词</p>
             </div>
             <img
-              class="absolute right-[18px] top-[18px] opacity-0 transition-opacity group-hover:opacity-100"
+              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100"
               src="~/assets/icon/arrow.svg"
               alt="前往"
             />
           </div>
         </a>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">梅花糕糕</p>
           <p class="w-full p-4">为本站的“小苔藓计划”风格海报提供了手写字支持</p>
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">小鱼yuzifu</p>
           <p class="w-full p-4">将作者从 js 的水深火热中解脱出来</p>
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">刘lyxAndy</p>
           <p class="w-full p-4">帮助改进了网站的部分 js 代码</p>
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">简与不简</p>
           <p class="w-full p-4">给网站代码进行了诸多细节优化</p>
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">fish</p>
           <p class="w-full p-4">帮助作者找到了很多有用的开发资源</p>
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">小宏XeLa</p>
           <p class="w-full p-4">帮助作者找到了很多有用的开发资源</p>
         </div>
         <div
-          class="flex flex-col items-center divide-y border border-solid transition-shadow hover:shadow-lg"
+          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 transition-shadow hover:shadow-lg"
         >
           <p class="w-full p-4 font-bold">叶梦昀</p>
           <p class="w-full p-4">提了非常多非常多我完不成的建议...</p>

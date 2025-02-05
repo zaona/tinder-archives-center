@@ -29,7 +29,7 @@
           src="~/assets/icon/menu-white.svg"
           alt="Menu Toggle Button"
         />
-        <NuxtLink class="ml-4 mr-1 h-6" to="/">
+        <NuxtLink class="mr-1 ml-4 h-6" to="/">
           <img
             class="h-full"
             src="~/assets/tac-logo/symbol-type-white.svg"

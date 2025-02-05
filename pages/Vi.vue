@@ -4,7 +4,7 @@
 
     <div class="mx-auto max-w-[1200px] py-12">
       <div class="px-0 lg:px-4">
-        <div class="border border-solid bg-gray-50 p-6 lg:p-8">
+        <div class="border border-solid border-gray-200 bg-gray-50 p-6 lg:p-8">
           <p class="leading-loose">
             在这里可以找到 火种档案 Logo 等常用元素，希望能帮助到你。
           </p>
@@ -15,7 +15,7 @@
         <TheTitle>获取 Logo</TheTitle>
         <div class="mt-4 flex flex-col gap-4">
           <div
-            class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
+            class="flex flex-col items-start divide-x-0 divide-y divide-gray-200 border border-solid border-gray-200 bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
               <imgView imgSrc="/tac-logo/symbol-black.svg" name="symbol">
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
+            class="flex flex-col items-start divide-x-0 divide-y divide-gray-200 border border-solid border-gray-200 bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
               <imgView imgSrc="/tac-logo/name-black.svg" name="name">
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
+            class="flex flex-col items-start divide-x-0 divide-y divide-gray-200 border border-solid border-gray-200 bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
               <imgView imgSrc="/tac-logo/type-black.svg" name="type">
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
+            class="flex flex-col items-start divide-x-0 divide-y divide-gray-200 border border-solid border-gray-200 bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
               <imgView imgSrc="/tac-logo/eng-black.svg" name="eng">
@@ -71,7 +71,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
+            class="flex flex-col items-start divide-x-0 divide-y divide-gray-200 border border-solid border-gray-200 bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
               <imgView
@@ -91,7 +91,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col items-start divide-x-0 divide-y border border-solid bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
+            class="flex flex-col items-start divide-x-0 divide-y divide-gray-200 border border-solid border-gray-200 bg-white transition-shadow hover:shadow-lg lg:flex-row lg:divide-x lg:divide-y-0"
           >
             <div class="flex w-full basis-1/3 justify-center bg-gray-100 p-8">
               <imgView
