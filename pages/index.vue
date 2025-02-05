@@ -4,23 +4,16 @@
       class="h-[620px] w-full bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')] dark:invert"
     >
       <div class="mx-auto h-full max-w-[1200px] px-4 pt-[220px]">
-        <div class="w-[390px] bg-white dark:bg-black">
-          <img
-            class="w-[390px] pr-10 lg:pr-0"
-            src="~/assets/tac-logo/name-mix.svg"
-            alt="火种档案"
-          />
-        </div>
-        <div class="w-[350px] bg-white dark:bg-black">
-          <img
-            class="w-[350px] pt-4 pr-10 pl-1 lg:pr-0"
-            src="~/assets/tac-logo/eng-black.svg"
-            alt="Tinder Archives Center"
-          />
-        </div>
-        <!-- <p class="w-[350px] bg-gray-50 pl-1 pt-3 text-3xl font-bold">
-          Tinder Archives Center
-        </p> -->
+        <img
+          class="w-[390px] bg-white pr-10 lg:pr-0 dark:bg-black"
+          src="~/assets/tac-logo/name-mix.svg"
+          alt="火种档案"
+        />
+        <img
+          class="w-[350px] bg-white pt-4 pr-10 pl-1 lg:pr-0 dark:bg-black"
+          src="~/assets/tac-logo/eng-black.svg"
+          alt="Tinder Archives Center"
+        />
         <p
           class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950 dark:bg-black dark:text-gray-50"
         >
