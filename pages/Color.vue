@@ -9,7 +9,7 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="items-center border border-solid bg-white p-4 transition-shadow hover:shadow-lg"
+          class="items-center border border-solid border-gray-200 bg-white p-4 transition-shadow hover:shadow-lg"
         >
           <div class="flex flex-row justify-between">
             <p class="font-bold">红-1</p>
@@ -18,7 +18,7 @@
           <p class="mt-8 text-gray-500">#EC2021</p>
         </div>
         <div
-          class="items-center border border-solid bg-white p-4 transition-shadow hover:shadow-lg"
+          class="items-center border border-solid border-gray-200 bg-white p-4 transition-shadow hover:shadow-lg"
         >
           <div class="flex flex-row justify-between">
             <p class="font-bold">红-2</p>
@@ -36,7 +36,7 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="items-center border border-solid bg-white p-4 transition-shadow hover:shadow-lg"
+          class="items-center border border-solid border-gray-200 bg-white p-4 transition-shadow hover:shadow-lg"
         >
           <div class="flex flex-row justify-between">
             <p class="font-bold">浅蓝</p>
@@ -54,7 +54,7 @@
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
         <div
-          class="items-center border border-solid bg-white p-4 transition-shadow hover:shadow-lg"
+          class="items-center border border-solid border-gray-200 bg-white p-4 transition-shadow hover:shadow-lg"
         >
           <div class="flex flex-row justify-between">
             <p class="font-bold">深蓝</p>

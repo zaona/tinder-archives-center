@@ -12,7 +12,7 @@
         >
           <div
             id="scroll-container"
-            class="flex flex-row divide-x overflow-x-auto whitespace-nowrap lg:flex-col lg:divide-x-0 lg:divide-y"
+            class="flex flex-row divide-x divide-gray-200 overflow-x-auto whitespace-nowrap lg:flex-col lg:divide-x-0 lg:divide-y"
           >
             <button
               v-for="(item, index) in items"

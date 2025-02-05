@@ -2,7 +2,7 @@
   <div>
     <button
       v-if="showBackToTop"
-      class="fixed bottom-4 right-4 cursor-pointer bg-black p-3 transition-shadow hover:shadow-lg"
+      class="fixed right-4 bottom-4 cursor-pointer bg-black p-3 transition-shadow hover:shadow-lg"
       @click="scrollToTop"
     >
       <img src="~/assets/icon/up.svg" alt="Back to top" />
