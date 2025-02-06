@@ -4,7 +4,7 @@
 
     <div class="mx-auto max-w-[1200px] py-12">
       <div class="px-0 lg:px-4">
-        <div class="border border-solid border-gray-200 bg-gray-50 p-6 lg:p-8">
+        <div class="border border-gray-200 bg-gray-50 p-6 lg:p-8">
           <p class="leading-loose text-gray-950">
             在这里可以找到 火种档案 Logo 等常用元素，希望能帮助到你。
           </p>

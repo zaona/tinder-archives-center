@@ -84,10 +84,10 @@ Fancybox.bind("[data-fancybox]", {
 
 @media (prefers-color-scheme: dark) {
   .fancybox__container {
-    --fancybox-color: #dbdbdb;
-    --fancybox-bg: rgba(24, 24, 27, 0.98);
+    /* --fancybox-color: #dbdbdb; */
+    --fancybox-bg: rgba(128, 128, 128, 0.8);
   }
-
+/* 
   .fancybox__toolbar {
     --f-button-color: var(--fancybox-color);
     --f-button-bg: rgba(24, 24, 27, 0.65);
@@ -97,6 +97,6 @@ Fancybox.bind("[data-fancybox]", {
 
   .is-compact .fancybox__footer {
     background: rgba(24, 24, 27, 0.5);
-  }
+  } */
 }
 </style>

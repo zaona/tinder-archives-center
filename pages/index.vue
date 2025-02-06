@@ -15,7 +15,7 @@
           alt="Tinder Archives Center"
         />
         <p
-          class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950 dark:bg-black dark:text-gray-50"
+          class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950 dark:bg-black dark:text-white"
         >
           一个「流浪地球」设计资源站
         </p>
@@ -31,7 +31,7 @@
 
     <div class="mx-auto my-[80px] max-w-[1200px] px-0 lg:px-4">
       <div
-        class="h-full w-full border border-solid border-gray-200 bg-gray-50 px-6 py-6 transition-shadow lg:px-8 lg:py-8 lg:hover:shadow-lg"
+        class="h-full w-full border border-gray-200 bg-gray-50 px-6 py-6 transition-shadow lg:px-8 lg:py-8 lg:hover:shadow-lg"
       >
         <p class="text-2xl font-bold text-gray-950" ref="displayElement">
           {{ displaySentence }}
