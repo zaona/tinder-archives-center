@@ -8,71 +8,23 @@
         <OriginTag text="来自：电影片尾 · 版权字体支持" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">微软雅黑(旧版)</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/wryh.svg"
-            alt="字体示例：刘培强"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">Gobold Thin</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/gobold.svg"
-            alt="字体示例：HANGZHOU"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">禹卫书法行书简体</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/yw.svg"
-            alt="字体示例：行星"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">李旭科书法</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/lxk.svg"
-            alt="字体示例：十四年"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">Candara</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/candara.svg"
-            alt="字体示例：2019"
-          />
-        </div>
+        <Card
+          v-for="(font, index) in fonts"
+          :key="index"
+          :title="font.name"
+          :imageSrc="font.imageSrc"
+        />
       </div>
       <div class="mt-4">
         <OriginTag text="来自：知乎 · @Jerry" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">新蒂赵孟頫体</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/zmf.svg"
-            alt="字体示例：领航员"
-          />
-        </div>
+        <Card
+          v-for="(font, index) in fonts2"
+          :key="index"
+          :title="font.name"
+          :imageSrc="font.imageSrc"
+        />
       </div>
 
       <div class="mt-12">
@@ -82,55 +34,64 @@
         <OriginTag text="来自：流浪地球2制作手记 | 哔哩哔哩 · @RQvan" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">思源黑体</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/sy.svg"
-            alt="字体示例：刘培强"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">Rajdhani</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/rajdhani.svg"
-            alt="字体示例：UEG"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">字魂创粗黑</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/cch.svg"
-            alt="字体示例：月球危机"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold text-gray-950">胡晓波真帅体</p>
-          <img
-            class="h-[100px] w-full dark:invert"
-            src="~/assets/img/font/hxbzs.svg"
-            alt="字体示例：催更版预告"
-          />
-        </div>
+        <Card
+          v-for="(font, index) in fonts3"
+          :key="index"
+          :title="font.name"
+          :imageSrc="font.imageSrc"
+        />
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
-useHead({
-  titleTemplate: "火种档案 | 字体",
-});
-</script>
+<script setup>
+const fonts = [
+  {
+    name: "微软雅黑(旧版)",
+    imageSrc: "/img/font/wryh.svg",
+  },
+  {
+    name: "Gobold Thin",
+    imageSrc: "/img/font/gobold.svg",
+  },
+  {
+    name: "禹卫书法行书简体",
+    imageSrc: "/img/font/yw.svg",
+  },
+  {
+    name: "李旭科书法",
+    imageSrc: "/img/font/lxk.svg",
+  },
+  {
+    name: "Candara",
+    imageSrc: "/img/font/candara.svg",
+  },
+];
 
-<style></style>
+const fonts2 = [
+  {
+    name: "新蒂赵孟頫体",
+    imageSrc: "/img/font/zmf.svg",
+  },
+];
+
+const fonts3 = [
+  {
+    name: "思源黑体",
+    imageSrc: "/img/font/sy.svg",
+  },
+  {
+    name: "Rajdhani",
+    imageSrc: "/img/font/rajdhani.svg",
+  },
+  {
+    name: "字魂创粗黑",
+    imageSrc: "/img/font/cch.svg",
+  },
+  {
+    name: "胡晓波真帅体",
+    imageSrc: "/img/font/hxbzs.svg",
+  },
+];
+</script>

@@ -20,143 +20,62 @@
       </p>
 
       <div class="mt-4 grid grid-cols-2 gap-4 text-gray-950 lg:grid-cols-4">
-        <a
-          target="_blank"
-          class="group"
-          href="https://space.bilibili.com/518916820"
-        >
-          <div
-            class="relative h-full bg-gray-50 transition-shadow group-hover:shadow-lg"
-          >
-            <div
-              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
-            >
-              <p class="w-full p-4 font-bold">海藻酸钠</p>
-              <p class="w-full bg-gray-50 p-4">本站设计+前端开发</p>
-            </div>
-            <img
-              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
-              src="~/assets/icon/arrow.svg"
-              alt="前往"
-            />
-          </div>
-        </a>
-        <a
-          target="_blank"
-          class="group"
-          href="https://space.bilibili.com/248314816"
-        >
-          <div
-            class="relative h-full bg-gray-50 transition-shadow group-hover:shadow-lg"
-          >
-            <div
-              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
-            >
-              <div class="flex h-full w-full items-center justify-between p-4">
-                <img
-                  class="h-4 dark:invert"
-                  src="~/assets/img/about/terminator7211.svg"
-                  alt="terminator7211"
-                />
-              </div>
-              <p class="w-full bg-gray-50 p-4"
-                >本站Logo作者，修复了很多复杂的流浪地球标志</p
-              >
-            </div>
-            <img
-              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
-              src="~/assets/icon/arrow.svg"
-              alt="前往"
-            />
-          </div>
-        </a>
-        <a
-          target="_blank"
-          class="group"
-          href="https://space.bilibili.com/502569746"
-        >
-          <div
-            class="relative h-full bg-gray-50 transition-shadow group-hover:shadow-lg"
-          >
-            <div
-              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200"
-            >
-              <div class="flex h-full w-full items-center justify-between p-4">
-                <img
-                  class="h-4 dark:invert"
-                  src="~/assets/img/about/coresign.svg"
-                  alt="熔核设计"
-                />
-              </div>
-              <p class="w-full bg-gray-50 p-4"
-                >提供了非常多的高质量流浪地球海报以及台词</p
-              >
-            </div>
-            <img
-              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
-              src="~/assets/icon/arrow.svg"
-              alt="前往"
-            />
-          </div>
-        </a>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">梅花糕糕</p>
-          <p class="w-full bg-gray-50 p-4"
-            >为本站的“小苔藓计划”风格海报提供了手写字支持</p
-          >
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">小鱼yuzifu</p>
-          <p class="w-full bg-gray-50 p-4">将作者从 js 的水深火热中解脱出来</p>
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">刘lyxAndy</p>
-          <p class="w-full bg-gray-50 p-4">帮助改进了网站的部分 js 代码</p>
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">简与不简</p>
-          <p class="w-full bg-gray-50 p-4">给网站代码进行了诸多细节优化</p>
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">fish</p>
-          <p class="w-full bg-gray-50 p-4">帮助作者找到了很多有用的开发资源</p>
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">小宏XeLa</p>
-          <p class="w-full bg-gray-50 p-4">帮助作者找到了很多有用的开发资源</p>
-        </div>
-        <div
-          class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-        >
-          <p class="w-full p-4 font-bold">叶梦昀</p>
-          <p class="w-full bg-gray-50 p-4">提了非常多非常多我完不成的建议...</p>
-        </div>
+        <Card
+          v-for="(contributor, index) in contributors"
+          :key="index"
+          :title="contributor.name"
+          :description="contributor.description"
+          :href="contributor.link"
+        />
       </div>
-      <img
-        class="mx-auto mt-12 w-[300px]"
-        src="~/assets/img/illus/thanks.svg"
-        alt="感谢我们的家人，你们的爱是我们的发动机"
-      />
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
-useHead({
-  titleTemplate: "火种档案 | 关于",
-});
+<script setup>
+const contributors = [
+  {
+    name: "海藻酸钠",
+    description: "本站设计+前端开发",
+    link:"https://space.bilibili.com/518916820",
+  },
+  {
+    name: "terminator7211",
+    description: "修复了很多复杂的流浪地球标志",
+    link:"https://space.bilibili.com/248314816",
+  },
+  {
+    name: "熔核设计",
+    description: "提供了非常多的高质量流浪地球海报以及台词",
+    link:"https://space.bilibili.com/502569746",
+  },
+  {
+    name: "梅花糕糕",
+    description: "为本站的“小苔藓计划”风格海报提供了手写字支持",
+  },
+  {
+    name: "小鱼yuzifu",
+    description: "将作者从 js 的水深火热中解脱出来",
+  },
+  {
+    name: "刘lyxAndy",
+    description: "帮助改进了网站的部分 js 代码",
+  },
+  {
+    name: "简与不简",
+    description: "给网站代码进行了诸多细节优化",
+  },
+  {
+    name: "fish",
+    description: "帮助作者找到了很多有用的开发资源",
+  },
+  {
+    name: "小宏XeLa",
+    description: "帮助作者找到了很多有用的开发资源",
+  },
+  {
+    name: "叶梦昀",
+    description: "提了非常多非常多我完不成的建议...",
+  },
+];
 </script>
-
-<style></style>

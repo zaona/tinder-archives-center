@@ -8,26 +8,13 @@
         <OriginTag text="以下内容来源于网络，仅收录" />
       </div>
       <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <a
+        <Card
           v-for="(tool, index) in tools"
-          target="_blank"
-          class="group"
+          :key="index"
+          :title="tool.name"
+          :description="tool.description"
           :href="tool.link"
-        >
-          <div class="relative h-full transition-shadow group-hover:shadow-lg">
-            <div
-              class="flex h-full flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50"
-            >
-              <p class="w-full p-4 font-bold text-gray-950">{{ tool.name }}</p>
-              <p class="w-full p-4 text-gray-950">{{ tool.description }}</p>
-            </div>
-            <img
-              class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
-              src="~/assets/icon/arrow.svg"
-              alt="前往"
-            />
-          </div>
-        </a>
+        />
       </div>
       <img
         class="mx-auto mt-12 w-[300px]"
@@ -38,7 +25,9 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
+import Card from '~/components/Card.vue';
+
 const tools = [
   {
     link: "https://unitedearth.wiki/",
@@ -66,10 +55,4 @@ const tools = [
     description: "春节十二响",
   },
 ];
-
-useHead({
-  titleTemplate: "火种档案 | 工具",
-});
 </script>
-
-<style></style>

@@ -22,26 +22,12 @@
               <OriginTag :text="category.source" />
             </div>
             <div class="mt-2 grid grid-cols-2 gap-4 lg:grid-cols-5">
-              <div
+              <Card
                 v-for="logo in category.logos"
                 :key="logo.name"
-                class="flex flex-col items-center divide-y divide-gray-200 border border-solid border-gray-200 bg-gray-50 transition-shadow hover:shadow-lg"
-              >
-                <p class="w-full p-4 font-bold text-gray-950">{{
-                  logo.name
-                }}</p>
-                <imgView
-                  :imgSrc="logo.imgSrc"
-                  :name="logo.name"
-                  class="h-full w-full p-4"
-                >
-                  <img
-                    class="h-[150px] w-full dark:invert"
-                    :src="logo.imgSrc"
-                    alt="{{ logo.name }}"
-                  />
-                </imgView>
-              </div>
+                :title="logo.name"
+                :imageSrc="logo.imgSrc"
+              />
             </div>
           </div>
         </div>
@@ -50,12 +36,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import logos from "assets/config/logos.json";
-
-useHead({
-  titleTemplate: "火种档案 | 标志",
-});
+<script setup>
+import Card from '~/components/Card.vue';
+import logos from '~/assets/config/logos.json';
 </script>
-
-<style></style>
