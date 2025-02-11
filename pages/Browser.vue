@@ -61,6 +61,7 @@ html {
 }
 
 .text {
+  color: var(--color-black);
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -71,19 +72,27 @@ html {
 }
 
 .link {
-  margin-top: 40px;
-  cursor: pointer;
-  border-width: 2px;
-  border-color: black;
-  background-color: white;
-  border-style: solid;
-  padding: 0.5rem 1.5rem;
-  font-weight: 500;
-  line-height: 24px;
-  color: black;
-  text-decoration: none;
+  margin-top: 2.5rem; /* mt-10 */
+  cursor: pointer; /* cursor-pointer */
+  white-space: nowrap; /* truncate */
+  overflow: hidden; /* truncate */
+  text-overflow: ellipsis; /* truncate */
+  border-width: 2px; /* border-2 */
+  border-color: var(--color-gray-950); /* border-gray-950 */
+  background-color: var(--color-gray-50); /* bg-gray-50 */
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+  padding-top: 0.5rem; /* py-2 */
+  padding-bottom: 0.5rem; /* py-2 */
+  font-weight: 500; /* font-medium */
+  color: var(--color-gray-950); /* text-gray-950 */
   font-family:
     "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB",
     "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.link:hover {
+  background-color: var(--color-gray-950); /* hover:bg-gray-950 */
+  color: var(--color-gray-50); /* hover:text-gray-50 */
 }
 </style>

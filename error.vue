@@ -20,7 +20,7 @@ const props = defineProps({
           />
           <TheTitle>{{ error?.statusCode }}</TheTitle>
           <NuxtLink
-            class="mt-10 cursor-pointer truncate border-2 border-gray-950 bg-gray-50 px-6 py-2 font-medium text-gray-950"
+            class="mt-10 cursor-pointer truncate border-2 border-gray-950 bg-gray-50 px-6 py-2 font-medium text-gray-950 hover:bg-gray-950 hover:text-gray-50"
             to="/"
             >返回首页</NuxtLink
           >
