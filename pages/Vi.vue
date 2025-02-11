@@ -48,6 +48,13 @@
               />
             </div>
           </div>
+          <div>
+            <TheTitle>颜色</TheTitle>
+            <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <ColorCard name="primary" color="#FA3E00" />
+              <ColorCard name="primary-dark" color="#17B2FF" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

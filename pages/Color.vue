@@ -8,24 +8,8 @@
         <OriginTag text="来自：哔哩哔哩 · @长期洗涤Longwashing" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          class="items-center border border-gray-200 bg-gray-50 p-4 shadow-gray-200/50 transition-shadow hover:shadow-lg"
-        >
-          <div class="flex flex-row justify-between">
-            <p class="font-bold text-gray-950">红-1</p>
-            <span class="h-[24px] w-[24px] bg-[#EC2021]"></span>
-          </div>
-          <p class="mt-8 text-gray-500">#EC2021</p>
-        </div>
-        <div
-          class="items-center border border-gray-200 bg-gray-50 p-4 shadow-gray-200/50 transition-shadow hover:shadow-lg"
-        >
-          <div class="flex flex-row justify-between">
-            <p class="font-bold text-gray-950">红-2</p>
-            <span class="h-[24px] w-[24px] bg-[#FA3E00]"></span>
-          </div>
-          <p class="mt-8 text-gray-500">#FA3E00</p>
-        </div>
+        <ColorCard name="红-1" color="#EC2021" />
+        <ColorCard name="红-2" color="#FA3E00" />
       </div>
 
       <div class="mt-12">
@@ -35,15 +19,7 @@
         <OriginTag text="来自：UET设计组校准" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          class="items-center border border-gray-200 bg-gray-50 p-4 shadow-gray-200/50 transition-shadow hover:shadow-lg"
-        >
-          <div class="flex flex-row justify-between">
-            <p class="font-bold text-gray-950">浅蓝</p>
-            <span class="h-[24px] w-[24px] bg-[#267F9D]"></span>
-          </div>
-          <p class="mt-8 text-gray-500">#267F9D</p>
-        </div>
+        <ColorCard name="浅蓝" color="#267F9D" />
       </div>
 
       <div class="mt-12">
@@ -53,21 +29,15 @@
         <OriginTag text="来自：机核 · 流浪地球美术设定" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <div
-          class="items-center border border-gray-200 bg-gray-50 p-4 shadow-gray-200/50 transition-shadow hover:shadow-lg"
-        >
-          <div class="flex flex-row justify-between">
-            <p class="font-bold text-gray-950">深蓝</p>
-            <span class="h-[24px] w-[24px] bg-[#22408F]"></span>
-          </div>
-          <p class="mt-8 text-gray-500">#22408F</p>
-        </div>
+        <ColorCard name="深蓝" color="#22408F" />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import ColorCard from "@/components/ColorCard.vue"; // 假设ColorCard组件位于components目录下
+
 useHead({
   titleTemplate: "火种档案 | 颜色",
 });

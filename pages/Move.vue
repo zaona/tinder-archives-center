@@ -64,9 +64,9 @@ html {
   line-height: 24px;
   text-align: center;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
-    sans-serif;
+  font-family:
+    "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB",
+    "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .link {
@@ -81,8 +81,8 @@ html {
   line-height: 24px;
   color: black;
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
-    sans-serif;
+  font-family:
+    "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB",
+    "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 </style>
