@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --primary-color: #fa3e00;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
+    --primary-color: #17b2ff;
+
     --color-gray-950: oklch(0.967 0.003 264.542);
     --color-gray-900: oklch(0.928 0.006 264.531);
     --color-gray-800: oklch(0.872 0.01 258.338);

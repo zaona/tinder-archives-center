@@ -33,6 +33,7 @@ body,
 html {
   overflow: hidden;
   margin: 0;
+  background-color: var(--color-white);
 }
 
 .container {
