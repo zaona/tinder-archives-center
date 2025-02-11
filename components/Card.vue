@@ -1,7 +1,11 @@
 <template>
   <div v-if="href" class="group relative">
     <a target="_blank" :href="href">
-      <CardContent :title="title" :description="description" :imageSrc="imageSrc" />
+      <CardContent
+        :title="title"
+        :description="description"
+        :imageSrc="imageSrc"
+      />
       <img
         class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
         src="~/assets/icon/arrow.svg"
@@ -10,7 +14,11 @@
     </a>
   </div>
   <div v-else class="group relative">
-    <CardContent :title="title" :description="description" :imageSrc="imageSrc" />
+    <CardContent
+      :title="title"
+      :description="description"
+      :imageSrc="imageSrc"
+    />
   </div>
 </template>
 

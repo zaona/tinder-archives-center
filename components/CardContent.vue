@@ -2,7 +2,7 @@
   <div
     class="flex h-full flex-col items-center divide-y divide-gray-200 border border-gray-200 bg-gray-50 shadow-gray-200/50 transition-shadow hover:shadow-lg"
   >
-    <p class="w-full p-4 font-bold text-gray-950 truncate">{{ title }}</p>
+    <p class="w-full truncate p-4 font-bold text-gray-950">{{ title }}</p>
     <imgView
       v-if="imageSrc"
       :imgSrc="imageSrc"
@@ -33,4 +33,3 @@ defineProps({
 </script>
 
 <style></style>
-

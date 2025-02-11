@@ -37,6 +37,6 @@
 </template>
 
 <script setup>
-import Card from '~/components/Card.vue';
-import logos from '~/assets/config/logos.json';
+import Card from "~/components/Card.vue";
+import logos from "~/assets/config/logos.json";
 </script>

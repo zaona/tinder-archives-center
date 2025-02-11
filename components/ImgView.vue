@@ -87,7 +87,7 @@ Fancybox.bind("[data-fancybox]", {
     /* --fancybox-color: #dbdbdb; */
     --fancybox-bg: rgba(128, 128, 128, 0.8);
   }
-/* 
+  /* 
   .fancybox__toolbar {
     --f-button-color: var(--fancybox-color);
     --f-button-bg: rgba(24, 24, 27, 0.65);

@@ -17,7 +17,7 @@
         />
       </div>
       <img
-        class="mx-auto mt-12 w-[300px]"
+        class="mx-auto mt-12 w-[300px] dark:invert"
         src="~/assets/img/illus/thanks.svg"
         alt="感谢我们的家人，你们的爱是我们的发动机"
       />
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import Card from '~/components/Card.vue';
+import Card from "~/components/Card.vue";
 
 const tools = [
   {

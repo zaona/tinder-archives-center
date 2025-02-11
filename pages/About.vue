@@ -37,17 +37,17 @@ const contributors = [
   {
     name: "海藻酸钠",
     description: "本站设计+前端开发",
-    link:"https://space.bilibili.com/518916820",
+    link: "https://space.bilibili.com/518916820",
   },
   {
     name: "terminator7211",
     description: "修复了很多复杂的流浪地球标志",
-    link:"https://space.bilibili.com/248314816",
+    link: "https://space.bilibili.com/248314816",
   },
   {
     name: "熔核设计",
     description: "提供了非常多的高质量流浪地球海报以及台词",
-    link:"https://space.bilibili.com/502569746",
+    link: "https://space.bilibili.com/502569746",
   },
   {
     name: "梅花糕糕",
