@@ -50,8 +50,9 @@ const contributors = [
     link: "https://space.bilibili.com/502569746",
   },
   {
-    name: "梅花糕糕",
+    name: "江染柳",
     description: "为本站的“小苔藓计划”风格海报提供了手写字支持",
+    link: "https://x.com/chianghsiaosui",
   },
   {
     name: "小鱼yuzifu",
