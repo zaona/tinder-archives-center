@@ -2,7 +2,10 @@
   <div
     class="flex h-full flex-col items-center divide-y divide-gray-200 border border-gray-200 bg-gray-50 shadow-gray-200/50 transition-shadow hover:shadow-lg"
   >
-    <p class="w-full truncate p-4 font-bold text-gray-950">{{ title }}</p>
+    <div v-if="titleImg" class="w-full truncate p-[20px] h-[56px]">
+      <img class="h-full dark:invert" :src="titleImg" :alt="titleImg" />
+    </div>
+    <p v-if="title" class="w-full truncate p-4 font-bold text-gray-950 leading-[24px] shrink-0">{{ title }}</p>
     <imgView
       v-if="imageSrc"
       :imgSrc="imageSrc"
@@ -17,9 +20,13 @@
 
 <script lang="ts" setup>
 defineProps({
+  titleImg: {
+    type: String,
+    default: "",
+  },
   title: {
     type: String,
-    required: true,
+    default: "",
   },
   imageSrc: {
     type: String,

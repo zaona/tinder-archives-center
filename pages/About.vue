@@ -24,6 +24,7 @@
           v-for="(contributor, index) in contributors"
           :key="index"
           :title="contributor.name"
+          :titleImg="contributor.personalLogo"
           :description="contributor.description"
           :href="contributor.link"
         />
@@ -40,12 +41,12 @@ const contributors = [
     link: "https://space.bilibili.com/518916820",
   },
   {
-    name: "terminator7211",
+    personalLogo: "/img/about/terminator7211.svg",
     description: "修复了很多复杂的流浪地球标志",
     link: "https://space.bilibili.com/248314816",
   },
   {
-    name: "熔核设计",
+    personalLogo: "/img/about/coresign.svg",
     description: "提供了非常多的高质量流浪地球海报以及台词",
     link: "https://space.bilibili.com/502569746",
   },

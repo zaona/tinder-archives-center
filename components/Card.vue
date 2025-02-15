@@ -5,6 +5,7 @@
         :title="title"
         :description="description"
         :imageSrc="imageSrc"
+        :titleImg="titleImg"
       />
       <img
         class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
@@ -18,6 +19,7 @@
       :title="title"
       :description="description"
       :imageSrc="imageSrc"
+      :titleImg="titleImg"
     />
   </div>
 </template>
@@ -26,7 +28,11 @@
 defineProps({
   title: {
     type: String,
-    required: true,
+    default: "",
+  },
+  titleImg: {
+    type: String,
+    default: "",
   },
   imageSrc: {
     type: String,
