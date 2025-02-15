@@ -26,7 +26,7 @@
         <img
           @click="toggleMenu"
           class="h-6 cursor-pointer"
-          src="~/assets/icon/menu.svg"
+          src="~/assets/icon/menu-white.svg"
           alt="Menu Toggle Button"
         />
         <NuxtLink class="mr-1 ml-4 h-6" to="/">
