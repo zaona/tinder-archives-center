@@ -22,7 +22,7 @@
               <OriginTag :text="category.source" />
             </div>
             <div class="mt-2 grid grid-cols-2 gap-4 lg:grid-cols-5">
-              <Card
+              <NormalCard
                 v-for="logo in category.logos"
                 :key="logo.name"
                 :title="logo.name"
@@ -37,6 +37,9 @@
 </template>
 
 <script setup>
-import Card from "~/components/Card.vue";
 import logos from "~/assets/config/logos.json";
+
+useHead({
+  titleTemplate: "火种档案 | 标志",
+});
 </script>

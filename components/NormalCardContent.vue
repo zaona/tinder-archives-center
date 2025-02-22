@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-full flex-col items-center divide-y divide-gray-200 border border-gray-200 bg-gray-50 shadow-gray-200/50 transition-shadow hover:shadow-lg"
-  >
+  <div class="flex h-full flex-col items-center divide-y divide-gray-200">
     <div v-if="titleImg" class="w-full truncate p-[20px] h-[56px]">
       <img class="h-full dark:invert" :src="titleImg" :alt="titleImg" />
     </div>
@@ -18,13 +16,13 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 defineProps({
-  titleImg: {
+  title: {
     type: String,
     default: "",
   },
-  title: {
+  titleImg: {
     type: String,
     default: "",
   },
@@ -38,5 +36,3 @@ defineProps({
   },
 });
 </script>
-
-<style></style>

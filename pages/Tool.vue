@@ -8,7 +8,7 @@
         <OriginTag text="以下内容来源于网络，仅收录" />
       </div>
       <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <Card
+        <NormalCard
           v-for="(tool, index) in tools"
           :key="index"
           :title="tool.name"
@@ -26,7 +26,9 @@
 </template>
 
 <script setup>
-import Card from "~/components/Card.vue";
+useHead({
+  titleTemplate: "火种档案 | 工具",
+});
 
 const tools = [
   {

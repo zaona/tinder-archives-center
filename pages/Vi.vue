@@ -16,32 +16,32 @@
           <div>
             <TheTitle>标志元素</TheTitle>
             <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-              <Card
+              <NormalCard
                 title="symbol"
                 imageSrc="/tac-logo/symbol-black.svg"
                 description="图形"
               />
-              <Card
+              <NormalCard
                 title="name"
                 imageSrc="/tac-logo/name-black.svg"
                 description="名称"
               />
-              <Card
+              <NormalCard
                 title="type"
                 imageSrc="/tac-logo/type-black.svg"
                 description="英文名称"
               />
-              <Card
+              <NormalCard
                 title="eng"
                 imageSrc="/tac-logo/eng-black.svg"
                 description="英文全称"
               />
-              <Card
+              <NormalCard
                 title="symbol-type"
                 imageSrc="/tac-logo/symbol-type-black.svg"
                 description="组合方式1"
               />
-              <Card
+              <NormalCard
                 title="symbol-name-type"
                 imageSrc="/tac-logo/symbol-name-type-black.svg"
                 description="组合方式2"
@@ -51,8 +51,8 @@
           <div>
             <TheTitle>颜色</TheTitle>
             <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-              <ColorCard name="primary" color="#FA3E00" />
-              <ColorCard name="primary-dark" color="#17B2FF" />
+              <PaletteCard name="primary" color="#FA3E00" />
+              <PaletteCard name="primary-dark" color="#17B2FF" />
             </div>
           </div>
         </div>
@@ -60,3 +60,9 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+useHead({
+  titleTemplate: "火种档案 | VI",
+});
+</script>

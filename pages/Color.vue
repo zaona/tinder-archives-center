@@ -8,8 +8,8 @@
         <OriginTag text="来自：哔哩哔哩 · @长期洗涤Longwashing" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <ColorCard name="红-1" color="#EC2021" />
-        <ColorCard name="红-2" color="#FA3E00" />
+        <PaletteCard name="红-1" color="#EC2021" />
+        <PaletteCard name="红-2" color="#FA3E00" />
       </div>
 
       <div class="mt-12">
@@ -19,7 +19,7 @@
         <OriginTag text="来自：UET设计组校准" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <ColorCard name="浅蓝" color="#267F9D" />
+        <PaletteCard name="浅蓝" color="#267F9D" />
       </div>
 
       <div class="mt-12">
@@ -29,15 +29,13 @@
         <OriginTag text="来自：机核 · 流浪地球美术设定" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <ColorCard name="深蓝" color="#22408F" />
+        <PaletteCard name="深蓝" color="#22408F" />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import ColorCard from "@/components/ColorCard.vue"; // 假设ColorCard组件位于components目录下
-
 useHead({
   titleTemplate: "火种档案 | 颜色",
 });

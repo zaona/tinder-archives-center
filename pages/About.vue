@@ -20,7 +20,7 @@
       </p>
 
       <div class="mt-4 grid grid-cols-2 gap-4 text-gray-950 lg:grid-cols-4">
-        <Card
+        <NormalCard
           v-for="(contributor, index) in contributors"
           :key="index"
           :title="contributor.name"
@@ -34,6 +34,10 @@
 </template>
 
 <script setup>
+useHead({
+  titleTemplate: "火种档案 | 关于",
+});
+
 const contributors = [
   {
     name: "海藻酸钠",

@@ -8,7 +8,7 @@
         <OriginTag text="来自：电影片尾 · 版权字体支持" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <Card
+        <NormalCard
           v-for="(font, index) in fonts"
           :key="index"
           :title="font.name"
@@ -19,7 +19,7 @@
         <OriginTag text="来自：知乎 · @Jerry" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <Card
+        <NormalCard
           v-for="(font, index) in fonts2"
           :key="index"
           :title="font.name"
@@ -34,7 +34,7 @@
         <OriginTag text="来自：流浪地球2制作手记 | 哔哩哔哩 · @RQvan" />
       </div>
       <div class="mt-4 grid grid-cols-2 gap-4 lg:grid-cols-5">
-        <Card
+        <NormalCard
           v-for="(font, index) in fonts3"
           :key="index"
           :title="font.name"
@@ -46,6 +46,10 @@
 </template>
 
 <script setup>
+useHead({
+  titleTemplate: "火种档案 | 字体",
+});
+
 const fonts = [
   {
     name: "微软雅黑(旧版)",
