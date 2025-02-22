@@ -54,7 +54,7 @@
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
         <p class="text-sm text-gray-500">
-          Copyright © 2024 火种档案。保留所有权利。
+          Copyright © 2025 火种档案。保留所有权利。
         </p>
         <img
           class="hidden h-full lg:block dark:invert"
