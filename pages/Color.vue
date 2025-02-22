@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner bgImage="/img/pages-banner/bg-color.png" bannerTitle="颜色" />
+    <Banner backgroundImage="/img/pages-banner/bg-color.png" title="颜色" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <TheTitle>流浪地球</TheTitle>

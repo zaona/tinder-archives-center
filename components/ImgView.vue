@@ -4,7 +4,7 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { zh_CN } from "@fancyapps/ui/dist/fancybox/l10n/zh_CN.esm.js";
 
 const props = defineProps({
-  imgSrc: {
+  imageSrc: {
     type: String,
     required: true,
   },
@@ -31,9 +31,9 @@ Fancybox.bind("[data-fancybox]", {
 <template>
   <a
     :data-fancybox="true"
-    :data-src="props.imgSrc"
+    :data-src="props.imageSrc"
     :data-caption="props.name"
-    :data-download-src="props.imgSrc"
+    :data-download-src="props.imageSrc"
     :data-download-filename="props.name"
   >
     <slot />

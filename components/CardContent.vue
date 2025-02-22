@@ -8,7 +8,7 @@
     <p v-if="title" class="w-full truncate p-4 font-bold text-gray-950 leading-[24px] shrink-0">{{ title }}</p>
     <imgView
       v-if="imageSrc"
-      :imgSrc="imageSrc"
+      :imageSrc="imageSrc"
       :name="title"
       class="h-full w-full p-6"
     >

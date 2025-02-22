@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner bgImage="/img/pages-banner/bg-tool.png" bannerTitle="工具" />
+    <Banner backgroundImage="/img/pages-banner/bg-tool.png" title="工具" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <TheTitle>来自网络</TheTitle>

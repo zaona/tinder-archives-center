@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner bgImage="/img/pages-banner/bg-logo.png" bannerTitle="标志[ING]" />
+    <Banner backgroundImage="/img/pages-banner/bg-logo.png" title="标志[ING]" />
 
     <div class="mx-auto max-w-[1200px] py-12">
       <div class="px-0 lg:px-4">
