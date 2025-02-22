@@ -4,14 +4,14 @@
 
     <div class="mx-auto max-w-[1200px] py-12">
       <div class="px-0 lg:px-4">
-        <div class="border border-gray-200 bg-gray-50 p-6 lg:p-8">
+        <BaseCard class="p-6 lg:p-8">
           <p class="leading-loose text-gray-950">
             以下所有标志的修复底图都取自「流浪地球美术设定」和「流浪地球2制作手记」
           </p>
           <p class="leading-loose text-gray-950">
             若无特殊说明，均由 海藻酸钠 和 terminator7211 完成修复
           </p>
-        </div>
+        </BaseCard>
       </div>
 
       <div class="mt-12 px-4">

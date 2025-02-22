@@ -30,9 +30,7 @@
     </div>
 
     <div class="mx-auto my-[80px] max-w-[1200px] px-0 lg:px-4">
-      <div
-        class="h-full w-full border border-gray-200 bg-gray-50 px-6 py-6 transition-shadow lg:px-8 lg:py-8 lg:hover:shadow-lg"
-      >
+      <BaseCard class="p-6 lg:p-8">
         <p class="text-2xl font-bold text-gray-950" ref="displayElement">
           {{ displaySentence }}
         </p>
@@ -46,7 +44,7 @@
             alt="刷新"
           />
         </div>
-      </div>
+      </BaseCard>
     </div>
   </div>
 </template>
