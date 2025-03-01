@@ -84,6 +84,10 @@ const contributors = [
     description: "提了非常多非常多我完不成的建议...",
   },
   {
+    name: "永和松Chain.",
+    description: "开发交流群成员之一",
+  },
+  {
     name: "MochenGW",
     description: "开发交流群成员之一，给作者布置了很多艰难的任务...",
   },
