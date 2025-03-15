@@ -5,7 +5,7 @@
       class="fixed right-4 bottom-4 cursor-pointer border border-gray-200 bg-gray-950 p-3 transition-shadow hover:shadow-lg"
       @click="scrollToTop"
     >
-      <img src="~/assets/icon/up-white.svg" alt="Back to top" class="dark:invert" />
+    <BaseIcon name="#icon-up" class="size-[20px] text-gray-50" />
     </button>
   </div>
 </template>

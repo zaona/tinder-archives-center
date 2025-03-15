@@ -8,11 +8,7 @@
           :imageSrc="imageSrc"
           :description="description"
         />
-        <img
-          class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 dark:invert"
-          src="~/assets/icon/arrow.svg"
-          alt="前往"
-        />
+        <BaseIcon name="#icon-arrow" class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 size-[20px]" />
       </a>
     </div>
     <div v-else>

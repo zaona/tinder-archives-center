@@ -36,13 +36,13 @@
         </p>
         <div class="mt-4 flex items-center justify-between text-gray-950">
           <OriginTag :text="displayCategory" />
-          <img
-            id="generateButton"
-            class="mr-2 cursor-pointer dark:invert"
+          <i
+            class="mr-2 cursor-pointer"
             @click="updateSentence"
-            src="~/assets/icon/refresh.svg"
-            alt="刷新"
-          />
+            id="generateButton"
+          >
+          <BaseIcon name="#icon-refresh" class="size-[20px]" />
+          </i>
         </div>
       </BaseCard>
     </div>
@@ -77,4 +77,12 @@ useHead({
 });
 </script>
 
-<style></style>
+<style>
+.icon {
+  > svg {
+    width: 1em;
+    height: 1em;
+    fill: currentcolor;
+  }
+}
+</style>

@@ -23,12 +23,7 @@
 
     <div class="block border-b-gray-100 bg-slate-950 lg:hidden dark:border">
       <div class="flex h-16 items-center justify-between px-4">
-        <img
-          @click="toggleMenu"
-          class="h-6 cursor-pointer"
-          src="~/assets/icon/menu-white.svg"
-          alt="Menu Toggle Button"
-        />
+        <BaseIcon name="#icon-menu" class="size-6 cursor-pointer text-slate-50" @click="toggleMenu" />
         <NuxtLink class="mr-1 ml-4 h-6" to="/">
           <img
             class="h-full"

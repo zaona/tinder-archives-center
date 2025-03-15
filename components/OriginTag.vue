@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex items-center">
-      <img class="mr-2 dark:invert" src="~/assets/icon/info.svg" alt="信息" />
+      <BaseIcon name="#icon-info" class="size-[20px] mr-2 text-gray-950" />
       <p class="text-sm text-gray-950">{{ props.text }}</p>
     </div>
   </div>
