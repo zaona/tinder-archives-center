@@ -8,7 +8,7 @@
           :imageSrc="imageSrc"
           :description="description"
         />
-        <BaseIcon name="#icon-arrow" class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 size-[20px]" />
+        <BaseIcon name="#icon-arrow" class="absolute top-[18px] right-[18px] opacity-0 transition-opacity group-hover:opacity-100 size-[20px] text-gray-950" />
       </a>
     </div>
     <div v-else>
