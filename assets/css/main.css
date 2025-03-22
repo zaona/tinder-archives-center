@@ -6,7 +6,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: #17b2ff;
+    --primary-color: #05c1ff;
 
     --color-gray-950: oklch(0.967 0.003 264.542);
     --color-gray-900: oklch(0.928 0.006 264.531);

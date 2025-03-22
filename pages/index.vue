@@ -1,27 +1,26 @@
 <template>
-  <div>
+  <div class="relative">
     <div
-      class="h-[620px] w-full bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')] dark:invert"
-    >
-      <div class="mx-auto h-full max-w-[1200px] px-4 pt-[220px]">
+      class="absolute h-[620px] w-full bg-cover bg-no-repeat lg:bg-[url('~/assets/img/illus/index-bg.svg')] dark:invert"
+    ></div>
+    <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[220px]">
+      <div class="backdrop-blur-xs lg:w-[400px]">
         <img
-          class="w-[390px] bg-white pr-10 lg:pr-0 dark:bg-black"
+          class="w-[390px] pr-10 lg:pr-0 dark:invert"
           src="~/assets/tac-logo/name-mix.svg"
           alt="火种档案"
         />
         <img
-          class="w-[350px] bg-white pt-4 pr-10 pl-1 lg:pr-0 dark:bg-black"
+          class="w-[350px] pt-4 pr-10 pl-1 lg:pr-0 dark:invert"
           src="~/assets/tac-logo/eng-black.svg"
           alt="Tinder Archives Center"
         />
-        <p
-          class="w-[250px] bg-white pt-4 pl-1 font-bold text-gray-950 dark:bg-black dark:text-white"
-        >
+        <p class="w-[250px] pt-4 pl-1 font-bold text-gray-950">
           一个「流浪地球」设计资源站
         </p>
-        <div class="flex justify-end pt-10">
+        <div class="flex justify-end pt-10 lg:hidden">
           <img
-            class="mr-[50px] w-[140px] lg:hidden"
+            class="mr-[50px] w-[140px] dark:invert"
             src="~/assets/img/illus/little-white.svg"
             alt=""
           />

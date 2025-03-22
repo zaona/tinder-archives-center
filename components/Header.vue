@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="hidden border-b-gray-100 bg-slate-950 lg:block dark:border">
+    <div class="hidden border border-b-gray-100 bg-slate-950 lg:block">
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
           <img
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="block border-b-gray-100 bg-slate-950 lg:hidden dark:border">
+    <div class="block border border-b-gray-100 bg-slate-950 lg:hidden">
       <div class="flex h-16 items-center justify-between px-4">
         <BaseIcon
           name="#icon-menu"

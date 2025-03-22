@@ -52,7 +52,7 @@
             <TheTitle>颜色</TheTitle>
             <div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
               <PaletteCard name="primary" color="#FA3E00" />
-              <PaletteCard name="primary-dark" color="#17B2FF" />
+              <PaletteCard name="primary-dark" color="#05C1FF" />
             </div>
           </div>
         </div>
