@@ -1,9 +1,13 @@
 <template>
   <div class="flex h-full flex-col items-center divide-y divide-gray-200">
-    <div v-if="titleImg" class="w-full truncate p-[20px] h-[56px]">
+    <div v-if="titleImg" class="h-[56px] w-full truncate p-[20px]">
       <img class="h-full dark:invert" :src="titleImg" :alt="titleImg" />
     </div>
-    <p v-if="title" class="w-full truncate p-4 font-bold text-gray-950 leading-[24px] shrink-0">{{ title }}</p>
+    <p
+      v-if="title"
+      class="w-full shrink-0 truncate p-4 leading-[24px] font-bold text-gray-950"
+      >{{ title }}</p
+    >
     <imgView
       v-if="imageSrc"
       :imageSrc="imageSrc"

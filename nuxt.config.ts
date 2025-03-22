@@ -1,12 +1,12 @@
 // nuxt.config.ts
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-import path from 'path'
+import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
+import path from "path";
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  plugins: ["~/plugins/overlayscrollbars.ts","~/plugins/svg-icons-register"],
+  plugins: ["~/plugins/overlayscrollbars.ts", "~/plugins/svg-icons-register"],
   postcss: {
     plugins: {
       "@tailwindcss/postcss": {},
@@ -56,9 +56,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       createSvgIconsPlugin({
-        iconDirs: [path.resolve(__dirname, 'assets/icon')], // 存放图标的目录
-        symbolId: 'icon-[dir]-[name]',                   // symbolId 的格式
+        iconDirs: [path.resolve(__dirname, "assets/icon")], // 存放图标的目录
+        symbolId: "icon-[dir]-[name]", // symbolId 的格式
       }),
     ],
   },
-})
+});

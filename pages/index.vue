@@ -41,7 +41,7 @@
             @click="updateSentence"
             id="generateButton"
           >
-          <BaseIcon name="#icon-refresh" class="size-[20px]" />
+            <BaseIcon name="#icon-refresh" class="size-[20px]" />
           </i>
         </div>
       </BaseCard>

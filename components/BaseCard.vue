@@ -1,7 +1,8 @@
 <template>
-  <div class="border border-gray-200 bg-gray-50 shadow-gray-200/50 transition-shadow hover:shadow-lg">
-    <slot>
-    </slot>
+  <div
+    class="border border-gray-200 bg-gray-50 shadow-gray-200/50 transition-shadow hover:shadow-lg"
+  >
+    <slot> </slot>
   </div>
 </template>
 
