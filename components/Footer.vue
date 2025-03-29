@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="h-[250px] bg-gray-50">
+    <div class="h-[250px] bg-gray-100">
       <div
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="h-[78px] bg-gray-100">
+    <div class="h-[78px] bg-gray-200">
       <div
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
