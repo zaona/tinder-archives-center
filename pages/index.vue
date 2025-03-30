@@ -3,9 +3,9 @@
     <div
       class="transparent absolute h-[620px] w-full bg-[url('~/assets/img/illus/index-bg.svg')] bg-cover bg-center bg-no-repeat dark:invert"
     ></div>
-    <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[220px]">
+    <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[190px]">
       <div class="flex justify-start pr-10 lg:pr-0">
-        <div class="backdrop-blur-md">
+        <div class="backdrop-blur-md p-2">
           <img
             class="w-[390px] dark:invert"
             src="~/assets/tac-logo/name-mix.svg"
