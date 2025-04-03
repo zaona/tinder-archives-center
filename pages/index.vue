@@ -32,18 +32,21 @@
 
     <div class="mx-auto my-[80px] max-w-[1200px] px-0 lg:px-4">
       <BaseCard class="p-6 lg:p-8">
-        <p class="text-2xl font-bold text-gray-950" ref="displayElement">
-          {{ displaySentence }}
-        </p>
+        <Transition name="fade" mode="out-in">
+          <p class="text-2xl font-bold text-gray-950" :key="displaySentence">
+            {{ displaySentence }}
+          </p>
+        </Transition>
         <div class="mt-4 flex items-center justify-between text-gray-950">
           <OriginTag :text="displayCategory" />
-          <i
+          <button
             class="mr-2 cursor-pointer"
             @click="updateSentence"
             id="generateButton"
+            aria-label="刷新句子"
           >
             <BaseIcon name="#icon-refresh" class="size-[20px]" />
-          </i>
+          </button>
         </div>
       </BaseCard>
     </div>
@@ -79,11 +82,18 @@ useHead({
 </script>
 
 <style>
-.icon {
-  > svg {
-    width: 1em;
-    height: 1em;
-    fill: currentcolor;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
 }
 </style>
