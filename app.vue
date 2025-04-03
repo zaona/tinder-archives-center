@@ -7,3 +7,4 @@
     </NuxtLayout>
   </main>
 </template>
+<script></script>

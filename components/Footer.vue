@@ -65,7 +65,7 @@
             <button
               v-for="mode in ['system', 'light', 'dark']"
               :key="mode"
-              @click="setColorMode(mode)"
+              @click="$colorMode.preference = mode"
               class="items-center p-1 text-gray-500 hover:text-gray-600"
             >
               <BaseIcon :name="`#icon-theme-${mode}`" class="size-4" />
@@ -82,17 +82,6 @@
   </footer>
 </template>
 
-<script setup>
-import { ref, onMounted } from "vue";
-import { useThemeMode } from "~/composables/useThemeMode";
-
-const { initializeTheme, setColorMode } = useThemeMode();
-const currentTheme = ref("system");
-
-onMounted(() => {
-  initializeTheme();
-  currentTheme.value = localStorage.theme || "system";
-});
-</script>
+<script setup></script>
 
 <style></style>
