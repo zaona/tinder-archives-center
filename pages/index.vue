@@ -32,7 +32,13 @@
 
     <div class="mx-auto my-[80px] max-w-[1200px] px-0 lg:px-4">
       <BaseCard class="p-6 lg:p-8">
-        <Transition name="fade" mode="out-in">
+        <Transition
+          enter-active-class="transition-all duration-300 ease-in-out"
+          leave-active-class="transition-all duration-300 ease-in-out"
+          enter-from-class="opacity-0 -translate-x-5"
+          leave-to-class="opacity-0 translate-x-5"
+          mode="out-in"
+        >
           <p class="text-2xl font-bold text-gray-950" :key="displaySentence">
             {{ displaySentence }}
           </p>
@@ -82,18 +88,4 @@ useHead({
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 0.3s ease;
-}
-
-.fade-enter-from {
-  opacity: 0;
-  transform: translateX(-20px);
-}
-
-.fade-leave-to {
-  opacity: 0;
-  transform: translateX(20px);
-}
 </style>

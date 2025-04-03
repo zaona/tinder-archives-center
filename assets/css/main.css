@@ -20,6 +20,6 @@
     --color-gray-100: oklch(0.21 0.034 264.665);
     --color-gray-50: oklch(0.13 0.028 261.692);
     --color-white: #000;
-    --color-black: #000;
+    --color-black: #fff;
   }
 }
