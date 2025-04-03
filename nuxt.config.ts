@@ -6,6 +6,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+  modules: ["@nuxtjs/color-mode"],
+  colorMode: {
+    classSuffix: "",
+    preference: "system",
+    fallback: "light",
+  },
   plugins: ["~/plugins/overlayscrollbars.ts", "~/plugins/svg-icons-register"],
   postcss: {
     plugins: {

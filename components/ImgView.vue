@@ -82,7 +82,7 @@ Fancybox.bind("[data-fancybox]", {
   background: rgba(191, 191, 191, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
+.dark {
   .fancybox__container {
     /* --fancybox-color: #dbdbdb; */
     --fancybox-bg: rgba(128, 128, 128, 0.8);

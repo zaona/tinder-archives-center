@@ -5,7 +5,7 @@
     ></div>
     <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[190px]">
       <div class="flex justify-start pr-10 lg:pr-0">
-        <div class="backdrop-blur-md p-2">
+        <div class="p-2 backdrop-blur-md">
           <img
             class="w-[390px] dark:invert"
             src="~/assets/tac-logo/name-mix.svg"
@@ -87,5 +87,4 @@ useHead({
 });
 </script>
 
-<style>
-</style>
+<style></style>

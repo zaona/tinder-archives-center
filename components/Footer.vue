@@ -9,6 +9,7 @@
           src="~/assets/tac-logo/symbol-type-black.svg"
           alt="Logo"
         />
+
         <div class="grid w-full grid-cols-2 gap-x-[100px] lg:w-[350px]">
           <div class="flex flex-col gap-2">
             <p class="mb-1 text-sm font-bold text-gray-950">了解更多</p>
@@ -53,9 +54,24 @@
       <div
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
-        <p class="text-sm text-gray-500">
-          Copyright © 2025 火种档案。保留所有权利。
-        </p>
+        <div
+          class="flex w-full items-center justify-between lg:justify-normal lg:gap-4"
+        >
+          <p class="text-sm text-gray-500">
+            Copyright © 2025 火种档案。保留所有权利。
+          </p>
+
+          <div class="flex items-center gap-1 border border-gray-300 p-1">
+            <button
+              v-for="mode in ['system', 'light', 'dark']"
+              :key="mode"
+              @click="setColorMode(mode)"
+              class="items-center p-1 text-gray-500 hover:text-gray-600"
+            >
+              <BaseIcon :name="`#icon-theme-${mode}`" class="size-4" />
+            </button>
+          </div>
+        </div>
         <img
           class="hidden h-full lg:block dark:invert"
           src="~/assets/img/illus/earth-engine.svg"
@@ -66,6 +82,17 @@
   </footer>
 </template>
 
-<script lang="ts" setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+import { useThemeMode } from "~/composables/useThemeMode";
+
+const { initializeTheme, setColorMode } = useThemeMode();
+const currentTheme = ref("system");
+
+onMounted(() => {
+  initializeTheme();
+  currentTheme.value = localStorage.theme || "system";
+});
+</script>
 
 <style></style>
