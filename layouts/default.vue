@@ -3,7 +3,7 @@
     <Header class="fixed top-0 z-10 w-full" />
     <div class="mt-16 lg:mt-20">
       <slot />
-      <BackTopButton />
+      <FloatingButton />
     </div>
     <Footer />
   </div>

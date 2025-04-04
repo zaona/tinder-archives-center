@@ -54,24 +54,9 @@
       <div
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
-        <div
-          class="flex w-full items-center justify-between lg:justify-normal lg:gap-4"
-        >
-          <p class="text-sm text-gray-500">
-            Copyright © 2025 火种档案。保留所有权利。
-          </p>
-
-          <div class="flex items-center gap-1 border border-gray-300 p-1">
-            <button
-              v-for="mode in ['system', 'light', 'dark']"
-              :key="mode"
-              @click="$colorMode.preference = mode"
-              class="items-center p-1 text-gray-500 hover:text-gray-600"
-            >
-              <BaseIcon :name="`#icon-theme-${mode}`" class="size-4" />
-            </button>
-          </div>
-        </div>
+        <p class="text-sm text-gray-500">
+          Copyright © 2025 火种档案。保留所有权利。
+        </p>
         <img
           class="hidden h-full lg:block dark:invert"
           src="~/assets/img/illus/earth-engine.svg"
