@@ -1,9 +1,14 @@
 <template>
   <div class="relative">
     <!-- <div
-      class="transparent absolute h-[620px] w-full bg-[url('~/assets/img/illus/index-bg.svg')] bg-cover bg-center bg-no-repeat dark:invert"
-    ></div> -->
-    <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[190px]">
+      class="absolute hidden h-[620px] w-full bg-[url('~/assets/img/illus/index-bg.svg')] bg-cover bg-center bg-no-repeat md:block dark:invert"
+      >
+    </div> -->
+    <BaseIcon
+      name="#icon-index-bg"
+      class="absolute hidden h-[620px] w-full text-gray-600 md:block"
+    />
+    <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[150px]">
       <div class="flex justify-start pr-10 lg:pr-0">
         <div class="p-2">
           <BaseIcon
@@ -25,7 +30,7 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-end pt-10">
+      <div class="flex justify-end pt-10 md:hidden">
         <img
           class="mr-[50px] w-[140px]"
           src="~/assets/img/illus/little-white.svg"
