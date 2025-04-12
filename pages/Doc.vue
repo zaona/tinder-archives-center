@@ -30,13 +30,31 @@
           class="flex w-full flex-col gap-[12px] p-4 lg:basis-3/4"
         >
           <TheTitle class="mb-4">{{ selectedItem.name }}</TheTitle>
-          <p
-            v-for="(content, index) in selectedItem.contents"
-            :key="index"
-            class="text-gray-950"
-          >
-            {{ content }}
-          </p>
+          <div class="flex flex-col gap-2">
+            <div v-for="(content, index) in selectedItem.contents" :key="index">
+              <div class="flex items-center gap-2">
+                <span
+                  class="px-2 py-0.5 text-sm font-medium"
+                  :class="{
+                    'border border-blue-700 text-blue-700':
+                      content.type === 'feature',
+                    'border border-green-700 text-green-700':
+                      content.type === 'optimize',
+                    'border border-red-700 text-red-700':
+                      content.type === 'fix',
+                  }"
+                >
+                  {{ content.type }}
+                </span>
+                <p class="leading-loose font-medium text-gray-950">
+                  {{ content.title }}
+                </p>
+              </div>
+              <p class="text-sm leading-loose text-gray-600">
+                {{ content.description }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
