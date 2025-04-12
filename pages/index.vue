@@ -9,11 +9,11 @@
       class="absolute hidden h-[620px] w-full text-gray-600 md:block"
     />
     <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[150px]">
-      <div class="flex justify-start pr-10 lg:pr-0">
-        <div class="p-2">
+      <div class="flex justify-start lg:pr-0">
+        <div class="w-full p-2">
           <BaseIcon
             name="#icon-tac-name-mix"
-            class="h-[100px] w-[390px] text-gray-950"
+            class="aspect-[390/100] w-4/5 text-gray-950 md:w-[390px]"
           />
           <!-- <img
             class="w-[390px] dark:invert"
@@ -21,11 +21,11 @@
             alt="火种档案"
           /> -->
           <img
-            class="w-[350px] pt-4 pl-1 dark:invert"
+            class="w-4/5 pt-4 pl-1 md:w-[350px] dark:invert"
             src="~/assets/tac-logo/eng-black.svg"
             alt="Tinder Archives Center"
           />
-          <p class="w-[250px] pt-4 pl-1 font-bold text-gray-950">
+          <p class="pt-4 pl-1 font-bold text-gray-950">
             一个「流浪地球」设计资源站
           </p>
         </div>
