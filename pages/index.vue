@@ -1,16 +1,20 @@
 <template>
   <div class="relative">
-    <div
+    <!-- <div
       class="transparent absolute h-[620px] w-full bg-[url('~/assets/img/illus/index-bg.svg')] bg-cover bg-center bg-no-repeat dark:invert"
-    ></div>
+    ></div> -->
     <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[190px]">
       <div class="flex justify-start pr-10 lg:pr-0">
-        <div class="p-2 backdrop-blur-md">
-          <img
+        <div class="p-2">
+          <BaseIcon
+            name="#icon-tac-name-mix"
+            class="h-[100px] w-[390px] text-gray-950"
+          />
+          <!-- <img
             class="w-[390px] dark:invert"
             src="~/assets/tac-logo/name-mix.svg"
             alt="火种档案"
-          />
+          /> -->
           <img
             class="w-[350px] pt-4 pl-1 dark:invert"
             src="~/assets/tac-logo/eng-black.svg"
@@ -21,9 +25,9 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-end pt-10 md:hidden">
+      <div class="flex justify-end pt-10">
         <img
-          class="mr-[50px] w-[140px] dark:invert"
+          class="mr-[50px] w-[140px]"
           src="~/assets/img/illus/little-white.svg"
           alt=""
         />

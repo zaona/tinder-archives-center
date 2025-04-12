@@ -8,7 +8,7 @@
         <div
           data-overlayscrollbars-initialize
           ref="itemList"
-          class="order-2 flex min-h-24 w-full flex-row bg-gray-50 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
+          class="order-2 flex min-h-24 w-full flex-row bg-gray-100 p-4 lg:order-first lg:w-[100px] lg:basis-1/4 lg:flex-col"
         >
           <div
             id="scroll-container"
@@ -17,7 +17,7 @@
             <button
               v-for="(item, index) in items"
               :key="index"
-              class="w-full cursor-pointer px-4 py-4 text-left font-medium text-gray-950 hover:bg-gray-100"
+              class="w-full cursor-pointer px-4 py-4 text-left font-medium text-gray-950 hover:bg-gray-200"
               @click="selectItem(index)"
             >
               {{ item.name }}

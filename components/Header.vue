@@ -82,11 +82,11 @@ const links = [
   { to: "/logo", text: "标志" },
   { to: "/tool", text: "工具" },
   { to: "/about", text: "关于" },
-  {
-    to: "https://github.com/zaona/tinder-archives-center/discussions",
-    text: "交流",
-    target: "_blank",
-  },
+  // {
+  //   to: "https://github.com/zaona/tinder-archives-center/discussions",
+  //   text: "交流",
+  //   target: "_blank",
+  // },
 ];
 </script>
 

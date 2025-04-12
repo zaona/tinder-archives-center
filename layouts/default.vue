@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-[var(--color-gray-50)]">
     <Header class="fixed top-0 z-10 w-full" />
     <div class="mt-16 lg:mt-20">
       <slot />

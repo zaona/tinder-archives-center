@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
   <div>
     <div
-      class="mx-auto flex h-screen w-screen items-center justify-center bg-white"
+      class="mx-auto flex h-screen w-screen items-center justify-center bg-[var(--color-gray-50)]"
     >
       <div class="mx-auto max-w-[1200px] px-4">
         <div class="flex flex-col items-center">
