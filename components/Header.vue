@@ -80,7 +80,7 @@ const links = [
   { to: "/color", text: "颜色" },
   { to: "/font", text: "字体" },
   { to: "/logo", text: "标志" },
-  { to: "/tool", text: "工具" },
+  { to: "/more", text: "更多" },
   { to: "/about", text: "关于" },
   // {
   //   to: "https://github.com/zaona/tinder-archives-center/discussions",

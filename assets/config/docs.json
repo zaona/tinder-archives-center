@@ -1,6 +1,16 @@
 [
   {
-    "name": "[NEW]20250412",
+    "name": "[NEW]20250419",
+    "contents": [
+      {
+        "type": "feature",
+        "title": "更多页面功能升级",
+        "description": "将工具页面更名为更多页面，重构为多个分类展示（工具、电影、书籍）"
+      }
+    ]
+  },
+  {
+    "name": "20250412",
     "contents": [
       {
         "type": "feature",
