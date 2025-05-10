@@ -15,22 +15,24 @@
             <p class="mb-1 text-sm font-bold text-gray-950">了解更多</p>
             <NuxtLink
               class="text-sm text-gray-500 hover:text-gray-600"
-              to="/doc"
-            >
-              更新日志
-            </NuxtLink>
-            <NuxtLink
-              class="text-sm text-gray-500 hover:text-gray-600"
               to="/vi"
             >
               VI 指南
             </NuxtLink>
-            <a
+            <NuxtLink
               target="_blank"
               class="text-sm text-gray-500 hover:text-gray-600"
-              href="https://github.com/zaona/tinder-archives-center"
-              >Github 仓库</a
+              to="https://www.yuque.com/zaona/tac/changelog"
             >
+              更新日志
+            </NuxtLink>
+            <NuxtLink
+              target="_blank"
+              class="text-sm text-gray-500 hover:text-gray-600"
+              to="https://github.com/zaona/tinder-archives-center"
+            >
+              Github 仓库
+            </NuxtLink>
           </div>
           <div class="flex flex-col gap-2">
             <p class="mb-1 text-sm font-bold text-gray-950">特别鸣谢</p>
@@ -39,6 +41,12 @@
               class="text-sm text-gray-500 hover:text-gray-600"
               href="https://tongyi.aliyun.com/lingma"
               >通义灵码</a
+            >
+            <a
+              target="_blank"
+              class="text-sm text-gray-500 hover:text-gray-600"
+              href="https://www.trae.com.cn/"
+              >Trae</a
             >
             <a
               target="_blank"
