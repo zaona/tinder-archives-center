@@ -42,8 +42,8 @@
                 description="组合方式1"
               />
               <NormalCard
-                title="symbol-name-type"
-                imageSrc="/tac-logo/symbol-name-type-black.svg"
+                title="symbol-name"
+                imageSrc="/tac-logo/symbol-name-black.svg"
                 description="组合方式2"
               />
             </div>

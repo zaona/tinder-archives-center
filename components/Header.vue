@@ -1,5 +1,5 @@
 <template>
-  <header :style="{ backgroundColor: headerBgColor, transition: 'background-color 0.3s ease' }">
+  <header :style="{ backgroundColor: headerBgColor }">
     <div class="hidden border-b border-white/40 lg:block backdrop-filter backdrop-blur-sm">
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
@@ -84,7 +84,7 @@ const links = [
 // 监听滚动事件
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop;
-  headerBgColor.value = scrollY > 0 ? "rgba(0, 0, 0, 0.6)" : "#000"; // 滑动后变为透明黑
+  headerBgColor.value = scrollY > 100 ? "rgba(0, 0, 0, 0.8)" : "#000"; // 滑动后变为透明黑
 };
 
 onMounted(() => {
