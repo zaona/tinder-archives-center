@@ -1,8 +1,6 @@
 <template>
-  <header>
-    <div
-      class="hidden bg-linear-65 from-[var(--primary-color)] to-[#000] lg:block"
-    >
+  <header :style="{ backgroundColor: headerBgColor, transition: 'background-color 0.3s ease' }">
+    <div class="hidden border-b border-white/40 lg:block backdrop-filter backdrop-blur-sm">
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
           <img
@@ -17,15 +15,13 @@
             :to="link.to"
             :target="link.target"
             class="font-medium text-[#fff]"
-            >{{ link.text }}</NuxtLink
-          >
+            >{{ link.text }}
+          </NuxtLink>
         </div>
       </div>
     </div>
 
-    <div
-      class="block bg-linear-65 from-[var(--primary-color)] to-[#000] lg:hidden"
-    >
+    <div class="block border-b border-white/40 lg:hidden backdrop-filter backdrop-blur-sm">
       <div class="flex h-16 items-center justify-between px-4">
         <BaseIcon
           name="#icon-menu"
@@ -67,9 +63,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const isOpen = ref(false);
+const headerBgColor = ref("#000"); // 初始背景颜色为纯黑
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
@@ -82,12 +79,21 @@ const links = [
   { to: "/logo", text: "标志" },
   { to: "/more", text: "更多" },
   { to: "/about", text: "关于" },
-  // {
-  //   to: "https://github.com/zaona/tinder-archives-center/discussions",
-  //   text: "交流",
-  //   target: "_blank",
-  // },
 ];
+
+// 监听滚动事件
+const handleScroll = () => {
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+  headerBgColor.value = scrollY > 0 ? "rgba(0, 0, 0, 0.6)" : "#000"; // 滑动后变为透明黑
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style></style>
