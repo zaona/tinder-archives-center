@@ -1,6 +1,8 @@
 <template>
   <header :style="{ backgroundColor: headerBgColor }">
-    <div class="hidden border-b border-white/40 lg:block backdrop-filter backdrop-blur-sm">
+    <div
+      class="hidden border-b border-white/40 backdrop-blur-sm backdrop-filter lg:block"
+    >
       <div class="flex h-20 items-center justify-between px-4">
         <NuxtLink class="flex h-full items-center" to="/">
           <img
@@ -21,7 +23,9 @@
       </div>
     </div>
 
-    <div class="block border-b border-white/40 lg:hidden backdrop-filter backdrop-blur-sm">
+    <div
+      class="block border-b border-white/40 backdrop-blur-sm backdrop-filter lg:hidden"
+    >
       <div class="flex h-16 items-center justify-between px-4">
         <BaseIcon
           name="#icon-menu"

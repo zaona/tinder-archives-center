@@ -48,7 +48,6 @@
             />
           </div>
         </div>
-
       </div>
 
       <img
@@ -96,36 +95,41 @@ const tools = [
 const movies = [
   {
     name: "流浪地球",
-    description: "2019年中国科幻电影，讲述了太阳即将毁灭，人类启动\"流浪地球\"计划，推动地球离开太阳系的故事。",
-    link: "https://movie.douban.com/subject/26266893/"
+    description:
+      '2019年中国科幻电影，讲述了太阳即将毁灭，人类启动"流浪地球"计划，推动地球离开太阳系的故事。',
+    link: "https://movie.douban.com/subject/26266893/",
   },
   {
     name: "流浪地球2",
-    description: "2023年中国科幻电影，讲述了人类为拯救地球，建造发动机推动地球逃离太阳系的故事。",
-    link: "https://movie.douban.com/subject/35267208/"
+    description:
+      "2023年中国科幻电影，讲述了人类为拯救地球，建造发动机推动地球逃离太阳系的故事。",
+    link: "https://movie.douban.com/subject/35267208/",
   },
   {
     name: "流浪地球2：再次冒险",
     description: "该纪录片将带观众深入探索《流浪地球2》的幕后世界",
-    link: "https://movie.douban.com/subject/36233343/"
-  }
+    link: "https://movie.douban.com/subject/36233343/",
+  },
 ];
 
 const books = [
   {
     name: "流浪地球",
-    description: "科学家们发现太阳将膨胀为一颗巨大红星，期间地球表面上的一切将毁灭殆尽，于是他们计划建造能将地球发射到其他星球的巨大引擎，以保证人类长远生存。",
-    link: "https://book.douban.com/subject/30443982/"
+    description:
+      "科学家们发现太阳将膨胀为一颗巨大红星，期间地球表面上的一切将毁灭殆尽，于是他们计划建造能将地球发射到其他星球的巨大引擎，以保证人类长远生存。",
+    link: "https://book.douban.com/subject/30443982/",
   },
   {
     name: "流浪地球电影制作手记",
-    description: "本书全面记录了国产科幻巨制《流浪地球》从开发策划、建组筹备、开机拍摄，再到后期视效合成的制作全流程。",
-    link: "https://book.douban.com/subject/30437364/"
+    description:
+      "本书全面记录了国产科幻巨制《流浪地球》从开发策划、建组筹备、开机拍摄，再到后期视效合成的制作全流程。",
+    link: "https://book.douban.com/subject/30437364/",
   },
   {
     name: "流浪地球2电影制作手记",
-    description: "《流浪地球2》官方授权电影制作全记录，披露创制细节和十万字完整世界观。一览中国科幻电影制作流程，看中国力量如何成就中国想象。",
-    link: "https://book.douban.com/subject/36222900/"
-  }
+    description:
+      "《流浪地球2》官方授权电影制作全记录，披露创制细节和十万字完整世界观。一览中国科幻电影制作流程，看中国力量如何成就中国想象。",
+    link: "https://book.douban.com/subject/36222900/",
+  },
 ];
 </script>
