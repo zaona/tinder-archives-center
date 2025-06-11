@@ -77,7 +77,7 @@
   {
     "title": "中国应急预案执行组",
     "source": "",
-    "logos": [{ "name": "图形+文字", "imgSrc": "/img/illus/bone.svg" }]
+    "logos": [{ "name": "图形+文字", "imgSrc": "/img/logo/中国应急预案执行组.svg" }]
   },
   {
     "title": "中国科学院数字生命研究所",
@@ -92,6 +92,6 @@
   {
     "title": "智能量子计算机重点实验室",
     "source": "",
-    "logos": [{ "name": "图形+文字", "imgSrc": "/img/illus/bone.svg" }]
+    "logos": [{ "name": "图形+文字", "imgSrc": "/img/logo/智能量子计算机重点实验室.svg" }]
   }
 ]
