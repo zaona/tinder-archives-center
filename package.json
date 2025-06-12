@@ -18,13 +18,13 @@
     "vue": "^3.5.16"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.9",
+    "@tailwindcss/postcss": "^4.1.10",
     "autoprefixer": "^10.4.21",
     "fast-glob": "^3.3.3",
-    "postcss": "^8.5.4",
+    "postcss": "^8.5.5",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.12",
-    "tailwindcss": "^4.1.9",
+    "tailwindcss": "^4.1.10",
     "vite-plugin-svg-icons": "^2.0.1"
   }
 }

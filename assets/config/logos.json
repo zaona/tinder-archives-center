@@ -89,7 +89,9 @@
   {
     "title": "中国互联网中心北京基地",
     "source": "",
-    "logos": [{ "name": "图形+文字", "imgSrc": "/img/illus/bone.svg" }]
+    "logos": [
+      { "name": "图形+文字", "imgSrc": "/img/logo/中国互联网中心北京基地.svg" }
+    ]
   },
   {
     "title": "智能量子计算机重点实验室",
