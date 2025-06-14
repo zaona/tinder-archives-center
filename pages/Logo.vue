@@ -9,7 +9,7 @@
             以下所有标志的修复底图都取自「流浪地球美术设定」和「流浪地球2制作手记」
           </p>
           <p class="leading-loose text-gray-950">
-            若无特殊说明，均由 海藻酸钠 和 terminator7211 完成修复
+            参与修复人员：海藻酸钠 、 terminator7211 、琦琦
           </p>
         </BaseCard>
       </div>

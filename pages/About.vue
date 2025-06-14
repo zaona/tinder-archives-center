@@ -55,6 +55,11 @@ const contributors = [
     link: "https://space.bilibili.com/502569746",
   },
   {
+    name: "琦琦",
+    description: "修复了[北京航天中心]标志",
+    link: "https://github.com/Qiqi29",
+  },
+  {
     name: "江染柳",
     description: "为本站的“小苔藓计划”风格海报提供了手写字支持",
     link: "https://x.com/chianghsiaosui",
