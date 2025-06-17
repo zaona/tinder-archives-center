@@ -1,9 +1,5 @@
 <template>
   <div class="relative">
-    <!-- <div
-      class="absolute hidden h-[620px] w-full bg-[url('~/assets/img/illus/index-bg.svg')] bg-cover bg-center bg-no-repeat md:block dark:invert"
-      >
-    </div> -->
     <BaseIcon
       name="#icon-index-bg"
       class="absolute hidden h-[620px] w-full text-gray-600 md:block"
@@ -15,11 +11,6 @@
             name="#icon-tac-name-mix"
             class="aspect-[390/100] w-4/5 text-gray-950 md:w-[390px]"
           />
-          <!-- <img
-            class="w-[390px] dark:invert"
-            src="~/assets/tac-logo/name-mix.svg"
-            alt="火种档案"
-          /> -->
           <img
             class="w-4/5 pt-4 pl-1 md:w-[350px] dark:invert"
             src="~/assets/tac-logo/eng-black.svg"

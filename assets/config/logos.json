@@ -84,7 +84,12 @@
   {
     "title": "中国科学院数字生命研究所",
     "source": "",
-    "logos": [{ "name": "图形+文字", "imgSrc": "/img/logo/中国科学院数字生命研究所.svg" }]
+    "logos": [
+      {
+        "name": "图形+文字",
+        "imgSrc": "/img/logo/中国科学院数字生命研究所.svg"
+      }
+    ]
   },
   {
     "title": "中国互联网中心北京基地",
