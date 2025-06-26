@@ -14,7 +14,8 @@ const props = defineProps({
 });
 
 Fancybox.bind("[data-fancybox]", {
-  theme: "auto",
+  zoomEffect: false,
+  theme: "dark",
   groupAttr: false,
   hideScrollbar: false,
 });
@@ -31,3 +32,9 @@ Fancybox.bind("[data-fancybox]", {
     <slot />
   </a>
 </template>
+
+<style>
+.f-panzoom__content {
+  filter: invert(100%);
+}
+</style>

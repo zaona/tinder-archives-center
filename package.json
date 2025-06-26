@@ -11,7 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@fancyapps/ui": "^6.0.4",
+    "@fancyapps/ui": "^6.0.5",
     "@nuxtjs/color-mode": "^3.5.2",
     "nuxt": "^3.17.5",
     "overlayscrollbars-vue": "^0.5.9",
@@ -22,8 +22,8 @@
     "autoprefixer": "^10.4.21",
     "fast-glob": "^3.3.3",
     "postcss": "^8.5.6",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.12",
+    "prettier": "^3.6.1",
+    "prettier-plugin-tailwindcss": "^0.6.13",
     "tailwindcss": "^4.1.10",
     "vite-plugin-svg-icons": "^2.0.1"
   }
