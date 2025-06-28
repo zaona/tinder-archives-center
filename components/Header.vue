@@ -88,7 +88,7 @@ const links = [
 // 监听滚动事件
 const handleScroll = () => {
   const scrollY = window.scrollY || document.documentElement.scrollTop;
-  headerBgColor.value = scrollY > 100 ? "rgba(0, 0, 0, 0.8)" : "#000"; // 滑动后变为透明黑
+  headerBgColor.value = scrollY > 80 ? "rgba(0, 0, 0, 0.8)" : "#000"; // 滑动后变为透明黑
 };
 
 onMounted(() => {
