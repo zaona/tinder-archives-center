@@ -2,20 +2,20 @@
   <ClientOnly>
     <div class="fixed right-4 bottom-4 flex flex-col gap-2">
       <button
-        class="cursor-pointer border-2 border-gray-950 bg-gray-50 p-3 text-gray-950 transition-shadow hover:bg-gray-950 hover:text-gray-50 hover:shadow-lg"
+        class="cursor-pointer bg-gray-950 p-3 text-gray-200 transition-colors hover:text-gray-50"
         @click="toggleColorMode"
       >
         <BaseIcon
           :name="`#icon-theme-${$colorMode.preference}`"
-          class="size-[20px]"
+          class="size-[24px]"
         />
       </button>
       <button
         v-if="showBackToTop"
-        class="cursor-pointer border-2 border-gray-950 bg-gray-50 p-3 text-gray-950 transition-shadow hover:bg-gray-950 hover:text-gray-50 hover:shadow-lg"
+        class="cursor-pointer bg-gray-950 p-3 text-gray-200 transition-colors hover:text-gray-50"
         @click="scrollToTop"
       >
-        <BaseIcon name="#icon-up" class="size-[20px]" />
+        <BaseIcon name="#icon-up" class="size-[24px]" />
       </button>
     </div>
   </ClientOnly>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[var(--color-gray-50)]">
+  <div class="bg-[var(--color-gray-50)] transition-colors">
     <Header class="fixed top-0 z-10 w-full" />
     <div class="pt-16 lg:pt-20">
       <slot />
