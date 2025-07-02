@@ -7,4 +7,10 @@
     </NuxtLayout>
   </main>
 </template>
-<script></script>
+<script>
+useHead({
+  titleTemplate(title) {
+    return title ? `火种档案 | ${title}` : "火种档案";
+  },
+});
+</script>

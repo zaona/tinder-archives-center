@@ -61,7 +61,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: "火种档案 | 更多",
+  title: "更多",
 });
 
 const tools = [

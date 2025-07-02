@@ -35,7 +35,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: "火种档案 | 关于",
+  title: "关于",
 });
 
 const contributors = [

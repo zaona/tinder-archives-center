@@ -83,7 +83,7 @@ onMounted(() => {
 });
 
 useHead({
-  titleTemplate: "火种档案 | 首页",
+  title: "首页",
 });
 </script>
 

@@ -62,6 +62,6 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: "火种档案 | VI",
+  title: "VI 指南",
 });
 </script>

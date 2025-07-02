@@ -37,7 +37,7 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: "火种档案 | 颜色",
+  title: "颜色",
 });
 </script>
 

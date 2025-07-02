@@ -128,6 +128,6 @@ onUnmounted(() => {
 });
 
 useHead({
-  titleTemplate: "火种档案 | 标志",
+  title: "标志",
 });
 </script>

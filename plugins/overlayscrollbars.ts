@@ -6,10 +6,10 @@ export default defineNuxtPlugin((nuxtApp) => {
   // 检查是否在客户端环境
   if (typeof window !== "undefined" && typeof navigator !== "undefined") {
     const colorMode = useColorMode();
-    
+
     const options = ref({
       scrollbars: {
-        theme: colorMode.value === 'dark' ? "os-theme-light" : "os-theme-dark",
+        theme: colorMode.value === "dark" ? "os-theme-light" : "os-theme-dark",
       },
     });
 
@@ -22,10 +22,10 @@ export default defineNuxtPlugin((nuxtApp) => {
       (newTheme) => {
         options.value = {
           scrollbars: {
-            theme: newTheme === 'dark' ? "os-theme-light" : "os-theme-dark",
+            theme: newTheme === "dark" ? "os-theme-light" : "os-theme-dark",
           },
         };
-      }
+      },
     );
 
     // 在插件卸载时清理资源
@@ -34,8 +34,8 @@ export default defineNuxtPlugin((nuxtApp) => {
       hooks: {
         beforeUnmount() {
           stopWatch();
-        }
-      }
+        },
+      },
     };
   }
 });

@@ -13,7 +13,7 @@
   "dependencies": {
     "@fancyapps/ui": "^6.0.5",
     "@nuxtjs/color-mode": "^3.5.2",
-    "nuxt": "^3.17.5",
+    "nuxt": "^3.17.6",
     "overlayscrollbars-vue": "^0.5.9",
     "vue": "^3.5.17"
   },

@@ -47,7 +47,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: "火种档案 | 字体",
+  title: "字体",
 });
 
 const fonts = [
