@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="block border-b border-white/40 backdrop-blur-sm backdrop-filter lg:hidden"
+      class="block border-b border-white/20 backdrop-blur-sm backdrop-filter lg:hidden"
     >
       <div class="flex h-16 items-center justify-between px-4">
         <BaseIcon

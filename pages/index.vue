@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <BaseIcon
-      name="#icon-index-bg"
+      name="#icon-illus-index-bg"
       class="absolute hidden h-[620px] w-full text-gray-600 md:block"
     />
     <div class="z-10 mx-auto h-[620px] max-w-[1200px] px-4 pt-[150px]">

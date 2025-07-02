@@ -2,7 +2,7 @@
   <ClientOnly>
     <div class="fixed right-4 bottom-4 flex flex-col gap-2">
       <button
-        class="cursor-pointer bg-gray-950 p-3 text-gray-200 transition-colors hover:text-gray-50"
+        class="cursor-pointer bg-gray-950/80 p-3 text-gray-200 backdrop-blur-sm backdrop-filter transition-colors hover:text-gray-50"
         @click="toggleColorMode"
       >
         <BaseIcon
@@ -12,7 +12,7 @@
       </button>
       <button
         v-if="showBackToTop"
-        class="cursor-pointer bg-gray-950 p-3 text-gray-200 transition-colors hover:text-gray-50"
+        class="cursor-pointer bg-gray-950/80 p-3 text-gray-200 backdrop-blur-sm backdrop-filter transition-colors hover:text-gray-50"
         @click="scrollToTop"
       >
         <BaseIcon name="#icon-up" class="size-[24px]" />

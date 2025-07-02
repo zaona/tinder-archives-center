@@ -62,13 +62,12 @@
       <div
         class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-4"
       >
-        <p class="text-sm text-gray-500">
-          Copyright © 2025 火种档案。保留所有权利。
+        <p class="text-sm text-gray-950/50">
+          © 2024-2025 Zaona. All Rights Reserved.
         </p>
-        <img
-          class="hidden h-full lg:block dark:invert"
-          src="~/assets/img/illus/earth-engine.svg"
-          alt="行星发动机"
+        <BaseIcon
+          name="#icon-illus-earth-engine"
+          class="hidden aspect-[104/39] h-full text-gray-950 lg:block"
         />
       </div>
     </div>
