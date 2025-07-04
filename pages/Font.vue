@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner backgroundImage="/img/pages-banner/bg-font.png" title="字体" />
+    <Banner backgroundImage="/img/pages-banner/bg-font.webp" title="字体" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <TheTitle>流浪地球1</TheTitle>

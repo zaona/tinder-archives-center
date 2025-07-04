@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner backgroundImage="/img/pages-banner/bg-more.png" title="更多" />
+    <Banner backgroundImage="/img/pages-banner/bg-more.webp" title="更多" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <div class="space-y-12">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner backgroundImage="/img/pages-banner/bg-about.png" title="关于" />
+    <Banner backgroundImage="/img/pages-banner/bg-about.webp" title="关于" />
 
     <div class="mx-auto max-w-[1200px] px-4 py-12">
       <TheTitle>关于本站</TheTitle>
